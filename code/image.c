@@ -1,6 +1,8 @@
 #include "zf_common_headfile.h"
 
 #define oled_show       (0)
+#define max_size (ImageW * ImageH)
+
 
 /*图像处理*/
 uint8_t bin_thr = 0;
@@ -28,78 +30,107 @@ uint8 C_Image[ImageH][ImageW];
 uint16 threshold = 50;
 uint16 light = 500;
 
-// 后车追光相关变量
-uint8 left_pointx = 0; // 左侧光点中心x坐标
-uint8 left_pointy = 0; // 左侧光点中心y坐标
-uint8 right_pointx = 0; // 右侧光点中心x坐标
-uint8 right_pointy = 0; // 右侧光点中心y坐标
-uint8 mid_pointx = 0; // 两个光点中心x坐标
-uint8 mid_pointy = 0; // 两个光点中心y坐标
-#define Servo_Sensitivity 2  // 调节灵敏度
+uint8 img_x = 0;
+uint8 img_y = 0;
+uint8 image_pross[ImageH][ImageW];
+uint8 pixel_min_num = 10; // 光点最小大小，小于这个大小的光点被视为噪声
+uint8 pixel_max_num = 200; // 光点最大大小，大于这个大小的光点被视为图像采集异常
 
 /************************************图像采集及处理************************************************/
 /*图像预处理函数打包*/
 void ImageProcess(void)
 {
-    uint8 i, j;
-    AIM_LINE = AIM_LINE_SET;
-
-    //边线和中心线都不存在
-    imageLine.Lost_Center = false;
-    imageLine.Lost_Left = false;
-    imageLine.Lost_Right = false;
-
-    for (i = 0; i < ImageH; i++)
-    {
-        //每一行的左右边界点和中心点都不存在
-        imageLine.Exist_Left[i] = false;
-        imageLine.Exist_Right[i] = false;
-        imageLine.Exist_Center[i] = false;
-
-        //边界点和中心点设为初始位置
-        imageLine.Point_Left[i] = 1;
-        imageLine.Point_Right[i] = ImageW - 1;
-        imageLine.Point_Center[i] = ImageW / 2;
-
-        //每一行的白点个数清零
-        imageLine.White_Num[i] = 0;
-
-        for (j = 0; j < ImageW; j++)
+    uint8 averx = 255;
+        uint8 visitnum = 0;
+        uint16 totalnum = 0;
+        uint32 sumx = 0;
+        uint32 sumy = 0;
+        uint32 visit_y = 0;
+        uint8 i, j;
+        bool rst = true;
+        static uint8_t lostTime = 0;
+        for (i = 0; i < ImageH; i++)
         {
-            isVisited[i][j] = false;//DFS用, 所有点都还没被遍历过
-            C_Image[i][j] = mt9v03x_image[i * 2][j * 2];          //  压缩图像
+            //
 
+            for (j = 0; j < ImageW; j++)
+            {
+                C_Image[i][j] = 0;          //  压缩图像
+            }
         }
-    }
-    mt9v03x_finish_flag = 0;//清零标志位，图像重新采集完后重新置为1
-
-    /*************大津法得到二值化的阈值**********************/
-    if(!Flag.break_Road)
-    {
-        if(Flag.Fix_Thr)
+        for (i = 10; i < 30; i++)
         {
-            bin_thr = threshold;
-        }else if(Flag.Ostu_2){
-            bin_thr = GetOSTU_2(C_Image);
-        }else{
-            bin_thr = GetOSTU(C_Image);
+            //
+
+            for (j = 15; j < 80; j++)
+            {
+                C_Image[i][j] = mt9v03x_image[i * 2][j * 2];          //  压缩图像
+            }
         }
+        mt9v03x_finish_flag = 0;//清零标志位，图像重新采集完后重新置为1
+        bin_thr = GetOSTU_2(C_Image);
 
-    }
-
-
-    /******************图像二值化*******************************/
-    for (i = 0; i < ImageH; i++)
-    {
-        for (j = 0; j < ImageW; j++)
+        for (uint8 j = 0; j < ImageW; j++)
         {
-            if (C_Image[i][j] > bin_thr)//白点 1；黑点 0
-                Pixle[i][j] = true;
-            else
-                Pixle[i][j] = false;
+            for (uint8 i = 0; i < ImageH; i++)
+            {
+                if (C_Image[i][j] > bin_thr)
+                {
+                    Pixle[i][j] = true;
+                }
+                else
+                    Pixle[i][j] = false;
+            }
         }
-    }
-    Pixle_Filter();             //过滤二值化图像噪点
+        rst = two_pass();
+        if (rst)
+        {
+            lostTime = 0;
+            for (uint8 j = 0; j < ImageW; j++)
+            {
+                for (uint8 i = 0; i < ImageH; i++)
+                {
+                    if (Pixle[i][j])
+                    {
+                        visitnum++;
+                        visit_y += i;
+                    }
+                }
+
+                sumx += j * visitnum;
+                sumy += visit_y;
+                totalnum += visitnum;
+                visitnum = 0;
+                visit_y = 0;
+
+            }
+            if (totalnum)
+            {
+                averx = (uint8)(sumx / totalnum);
+                visit_y = (uint8)(sumy / totalnum);
+            }
+            img_x = averx;
+            img_y = visit_y;
+            MediumLineCal_2(image.cam_finalCenterERR);
+            ips200_show_int(25, 250, image.cam_finalCenterERR[0], 3);
+            ips200_show_int(40, 250, image.cam_finalCenterERR[1], 3);
+            ips200_show_int(65, 250, image.cam_finalCenterERR[2], 3);
+            ips200_show_int(80, 250, image.cam_finalCenterERR[3], 3);
+            ips200_show_int(95, 250, image.cam_finalCenterERR[4], 3);
+            ips200_show_int(110, 250, image.cam_finalCenterERR[5], 3);
+            ips200_show_int(125, 250, image.cam_finalCenterERR[6], 3);
+            ips200_show_int(140, 250, image.cam_finalCenterERR[7], 3);
+            ips200_show_int(155, 250, image.cam_finalCenterERR[8], 3);
+            ips200_show_int(170, 250, image.cam_finalCenterERR[9], 3);
+        }
+        else if (!rst && (lostTime <= 50))
+        {
+            lostTime++;
+        }
+        else {
+            Flag.Duty_Stop_Flag = 1;
+            Flag.Ui_Stop_Flag = 1;
+        }
 
 
 }
@@ -759,6 +790,7 @@ void limitCenter(void)
         }
     }
 }
+
 /*补中线合集*/
 void doMend(void)
 {
@@ -2421,7 +2453,6 @@ void TurnPointR_Find(short* TurnPoint_Row, short* TurnPoint, float* kr_up, float
     }
 }
 
-
 // **************************************************************十字**************************************
 /*返回某行右半边或左半边的白点数*/
 uint8_t road_right(uint8_t row)
@@ -3101,7 +3132,7 @@ void Left_Ring_Out_Mend2(void)
         ring_cam.Left_Ring_Clc--;
         Flag.Left_Ring = false;
         Flag.Left_Ring_Out_Record = true;
-        
+
         //if(fork_param.ForkRoad_Position == 1)                         //三叉状态更新
             //Flag.ForkRoad_OnlyOnce = true;
         return;
@@ -4001,84 +4032,6 @@ void  barricade_by_image(void)
 
 }
 
-
-
-//void  barricade_by_imu(void)
-//{
-//    short i, L_Exit_Line = EFFECTIVE_ROW, R_Exit_Line = EFFECTIVE_ROW;
-//    if (Barr_Cnt <= 0 || Flag.Ramp|| Flag.Garage_Out || Flag.Right_Ring_Find || Flag.Right_Ring_Turn
-//            || Flag.Left_Ring_Find || Flag.Left_Ring_Turn)
-//    {
-//        Flag.barricade = 0;
-//        return;
-//    }
-//
-//    if (!Flag.barricade)//识别路障
-//    {
-//        if (dl1a_distance_mm < Barr_Dis_up)
-//          {
-//              for (i = ImageH;i > barricade_Line;i--)
-//              {
-//                  if (imageLine.Exist_Left[i])
-//                      break;
-//              }
-//              for (;i > barricade_Line;i--)
-//              {
-//                  if (imageLine.Exist_Left[i] && imageLine.Exist_Left[i + 1] && imageLine.Exist_Left[i + 2] && (!imageLine.Exist_Left[i - 1]) && (!imageLine.Exist_Left[i - 2]) && (!imageLine.Exist_Left[i - 3]))
-//                  {
-//                      L_Exit_Line = i;
-//                  }
-//              }
-//              for (i = ImageH;i > barricade_Line;i--)
-//              {
-//                  if (imageLine.Exist_Right[i])
-//                      break;
-//              }
-//              for (;i > barricade_Line;i--)
-//              {
-//                  if (imageLine.Exist_Right[i] && imageLine.Exist_Right[i + 1] && imageLine.Exist_Right[i + 2] && (!imageLine.Exist_Right[i - 1]) && (!imageLine.Exist_Right[i - 2]) && (!imageLine.Exist_Right[i - 3]))
-//                  {
-//                      R_Exit_Line = i;
-//                  }
-//              }
-//              if ((R_Exit_Line > barricade_Line) && (L_Exit_Line > barricade_Line) && (ABS(R_Exit_Line - L_Exit_Line) < 5) && ((imageLine.Point_Right[R_Exit_Line] - imageLine.Point_Left[L_Exit_Line]) > 10))
-//              {
-//                  Flag.barricade = true;
-//                  eulerAngle.yaw = 0;
-//                  barr_state += 1;
-//
-//                  beep_set_sound(BEEP_ON);
-//
-//              }
-//          }
-//
-//    }
-//    else if (barr_state==1 && (ABS(eulerAngle.yaw) > Barr_Fixd_Dis_up))
-//    {
-//        // 归中
-//        Barr_Direction = !Barr_Direction;
-//        barr_state += 1;
-//        eulerAngle.yaw = 0;
-//    }
-//    else if (barr_state==2 && (ABS(eulerAngle.yaw) > Barr_Fixd_Dis_Mid))
-//    {
-//        // 反转
-//        Barr_Direction = !Barr_Direction;
-//        barr_state += 1;
-//        eulerAngle.yaw = 0;
-//    }
-//    else if (barr_state==3 && (ABS(eulerAngle.yaw) > Barr_Fixd_Dis_up_2))
-//    {
-//        // 开启摄像头
-//        Flag.barricade = false;
-//        Barr_Cnt--;
-//        return;
-//    }
-//
-//}
-//
-
-
 /***************************************斑马线*****************************************************/
 /*寻找黑点来判断斑马线*/
 void zebra_found_zz(void)
@@ -4321,45 +4274,6 @@ void Break_Road_2(void)
                   Flag.Run_Time2 = true;
                   bluetooth_ch9141_send_string("1in");
               }
-
-//            // 看是左拐断路还是右拐断路
-//            if (LTurnPoint_Row != EFFECTIVE_ROW)
-//            {
-//                for (int i = L_Exit_Line; i < L_Exit_Line + 3; i++)
-//                {
-//                    road_wide += ABS(imageLine.Point_Left[i+1] - imageLine.Point_Left[i]);
-//                }
-//            }
-//            else if (RTurnPoint_Row != EFFECTIVE_ROW)
-//            {
-//                for (int i = R_Exit_Line; i < R_Exit_Line + 3; i++)
-//                {
-//                    road_wide += ABS(imageLine.Point_Right[i + 1] - imageLine.Point_Right[i]);
-//                }
-//            }
-//            else{
-//                return;
-//            }
-//
-//
-//            if(road_wide <= 8 && road_wide > 0)
-//            {
-//                CHARGE_OFF;
-//                Flag.break_Road_in = true;
-//                Bar_break_count--;
-//                Flag.break_Road = true;
-//                gpio_set_level(LED1, GPIO_LOW);
-//                beep_set_sound(BEEP_ON);
-//                Flag.turnWAY_state = 8;
-//                Flag.Run_Time2 = true;
-//                bluetooth_ch9141_send_string("1in");
-//            }
-
-
-//            if(Flag.Fix_Thr_in_break)
-//            {
-//                Flag.Fix_Thr = true;
-//            }
         }
         else
         {
@@ -4368,7 +4282,6 @@ void Break_Road_2(void)
     }
 
 }
-
 
 /**************************************中线误差****************************************************/
 /*计算中线打角*/
@@ -4544,75 +4457,132 @@ void updateMediumLine(void)
 #endif
 }
 
-// 后车追光处理打包函数
-void chase(){
-    find_light_points(Pixle, left_pointx, left_pointy, right_pointx, right_pointy, mid_pointx, mid_pointy);
+/**************************************后车****************************************************/
 
-    AdjustSteering(mid_pointx);
+int parent[max_size] = { 0 };
+int kind[max_size] = { 0 };
+// 找到label x的根节点
+int find(int x) {
+    int i = x;
+    while (0 != parent[i])
+        i = parent[i];
+    return i;
 }
 
-// 计算前车红外光点中心
-void find_light_points(bool Pixel[ImageH][ImageW], uint8 *cx1, uint8 *cy1, uint8 *cx2, uint8 *cy2, uint8 *mid_x, uint8 *mid_y) {
-    uint8 x_sum1 = 0, y_sum1 = 0, count1 = 0;
-    uint8 x_sum2 = 0, y_sum2 = 0, count2 = 0;
+// 将label x 和 label y合并到同一个连通域
+void union_label(int x, int y) {
+    int i = x;
+    int j = y;
+    while (0 != parent[i])
+        i = parent[i];
+    while (0 != parent[j])
+        j = parent[j];
+    if (i != j)
+        parent[MAX(i,j)] = MIN(i,j);
+}
 
-    for (int y = 0; y < ImageH; y++) {
-        for (int x = 0; x < ImageW; x++) {
-            if (Pixel[y][x]) { // 找到白色像素（红外光点）
-                if (count1 == 0) {
-                    // 第一个光点簇
-                    x_sum1 += x;
-                    y_sum1 += y;
-                    count1++;
-                } else if (count2 == 0 && abs(x - x_sum1 / count1) > 20) // 大于号后面的阈值可调
+int array_max(int arr[], int size) {
+    int max_index = 0;
+    int max_value = arr[0];
+
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > max_value) {
+            max_value = arr[i];
+            max_index = i;
+        }
+    }
+    return max_index;
+}
+
+
+bool two_pass(void)
+{
+    int i = 0;
+    int j = 0;
+    uint8 label = 1;
+    for (j = 0; j < max_size; j++)
+    {
+        parent[j] = 0;
+        kind[j] = 0;
+    }
+    for (i = 0; i < ImageH; i++)
+    {
+        for (j = 0; j < ImageW; j++)
+            image_pross[i][j] = 0;
+
+    }
+
+    for (i = 1; i < ImageH; i++)
+    {
+        for (j = 1; j < ImageW; j++)
+        {
+            if (Pixle[i][j])
+            {
+                if (!image_pross[i][j - 1] && !image_pross[i - 1][j])
                 {
-                    // 发现第二个光点，且与第一个光点有一定间隔
-                    x_sum2 += x;
-                    y_sum2 += y;
-                    count2++;
-                } else if (count2 > 0) {
-                    // 继续累积第二个光点的坐标
-                    x_sum2 += x;
-                    y_sum2 += y;
-                    count2++;
-                } else {
-                    // 继续累积第一个光点的坐标
-                    x_sum1 += x;
-                    y_sum1 += y;
-                    count1++;
+                    image_pross[i][j] = label;
+                    label++;
+                }
+                else if (image_pross[i][j - 1] && !image_pross[i - 1][j])
+                {
+                    image_pross[i][j] = image_pross[i][j - 1];
+                }
+                else if(!image_pross[i][j - 1] && image_pross[i - 1][j])
+                    image_pross[i][j] = image_pross[i - 1][j];
+                else
+                {
+                    if(image_pross[i][j - 1] == image_pross[i - 1][j])
+                        image_pross[i][j] = image_pross[i][j - 1];
+                    else
+                    {
+                        image_pross[i][j] = MIN(image_pross[i][j - 1], image_pross[i - 1][j]);
+                        union_label(image_pross[i][j - 1], image_pross[i - 1][j]);
+                    }
                 }
             }
         }
     }
 
 
-    // 计算光点质心
-    if (count1 > 0) {
-        //zf_log(0,count1);
-        ips200_show_int(25, 275, x_sum1 , 3);
-        ips200_show_int(110, 275, y_sum1 , 3);
-        *cx1 = x_sum1 / count1;
-        *cy1 = y_sum1 / count1;
+    for (i = 1; i < ImageH; i++)
+    {
+        for (j = 1; j < ImageW; j++)
+        {
+            image_pross[i][j] = find(image_pross[i][j]);
+        }
     }
-    if (count2 > 0) {
+    for (i = 0; i < ImageH; i++)
+    {
+        for (j = 0; j < ImageW; j++)
+        {
+            if(image_pross[i][j])
+                kind[image_pross[i][j]]++;
+        }
+    }
+    label = array_max(kind, max_size);
+    if (kind[label] < pixel_min_num || kind[label] > pixel_max_num)
+        return 0;
+    for (i = 0; i < ImageH; i++)
+    {
+        for (j = 0; j < ImageW; j++)
+        {
+            if (image_pross[i][j] == label)
+                Pixle[i][j] = true;
+            else
+                Pixle[i][j] = false;
+        }
+    }
+    return 1;
 
-        *cx2 = x_sum2 / count2;
-        *cy2 = y_sum2 / count2;
-    }
 
-    // 计算两个光点的中点
-    if (count1 > 0 && count2 > 0) {
-        *mid_x = (*cx1 + *cx2) / 2;
-        *mid_y = (*cy1 + *cy2) / 2;
-    }
 }
 
-// 根据光点中心调整舵机打角
-void AdjustSteering(uint8 mid_x) {
-    uint8 error = mid_x - (ImageW / 2);  // 计算光点中心相对于图像中心的偏差
-    uint8 adjustment = error * Servo_Sensitivity;  // 计算舵机调整量
-    uint16_t servo_duty = Servo_Center_Mid + adjustment;  // 计算新的舵机 PWM 值
+bool MediumLineCal_2(volatile float* final)
+{
+    uint8 i;
+    for (i = 0; i < 10; i++)
+        *(final + 10 - i) = *(final + 9 - i);
 
-    // 调用舵机控制函数
-    ServoCtrl(servo_duty);
+    *(final) = (img_x - (center + biaos));///(ImageH - img_y)*(ImageH - Break_Line)
+    return true;
 }

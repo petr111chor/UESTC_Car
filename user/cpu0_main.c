@@ -69,7 +69,7 @@ int core0_main(void)
 //    mt9v03x_test();
 //    servo_test();
     Param_Init();
-    threshold = 200;
+    threshold = 230;
     light = 250;
     mt9v03x_set_exposure_time(light);
 
@@ -98,6 +98,7 @@ int core0_main(void)
             //garage_out_process(); //³ö¿â
 
             /******************Í¼Ïñ´¦Àí*******************************/
+
             ImageProcess();
             ips200_show_gray_image(25, 50, (const uint8 *)C_Image, ImageW, ImageH, ImageW*2, ImageH*2, threshold);
             ips200_show_int(25, 225, threshold, 3);
@@ -107,12 +108,6 @@ int core0_main(void)
 
 
 
-            ips200_show_int(25, 275, mid_pointx, 3);
-            ips200_show_string(25, 250, "mid_pointx:");
-            ips200_show_int(110, 275, mid_pointy, 3);
-            ips200_show_string(110, 250, "mid_pointy:");
-
-            chase();
 
             key_clear_all_state();
             key_scanner();

@@ -45,8 +45,8 @@ extern uint8 C_Image[ImageH][ImageW];
 extern uint16 threshold;
 extern uint16 light;
 
-extern uint8 mid_pointx;
-extern uint8 mid_pointy;
+extern uint32_t mid_pointx;
+extern uint32_t mid_pointy;
 
 //结构体定义
 typedef struct
@@ -145,11 +145,12 @@ void Break_Road_2(void);
 
 void updateMediumLine(void);//更新中线打角
 bool MediumLineCal(volatile float* final);//计算中线打角
-
 /***************************************后车******************************************************/
-void chase(void);
-void find_light_points(bool Pixel[ImageH][ImageW], uint8 *cx1, uint8 *cy1, uint8 *cx2, uint8 *cy2, uint8 *mid_x, uint8 *mid_y);
-void AdjustSteering(uint8 mid_x);
+int find(int x);
+void union_label(int x, int y);
+int array_max(int arr[], int size);
+bool two_pass(void);
+bool MediumLineCal_2(volatile float* final);
 
 #endif
 
