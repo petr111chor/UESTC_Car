@@ -358,3 +358,5 @@ run_car.o :	"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\c
 "D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\pidpid.h" :
 run_car.o :	"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\motor.h"
 "D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\motor.h" :
+run_car.o :	"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\wifi.h"
+"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\wifi.h" :

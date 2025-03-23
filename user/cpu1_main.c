@@ -57,7 +57,7 @@ void core1_main(void)
     {
         // 此处编写需要循环执行的代码
 
-
+        //Final_Motor_Control(60,0.6,50,30);
 
 
         // 此处编写需要循环执行的代码

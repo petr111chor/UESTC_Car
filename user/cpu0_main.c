@@ -72,7 +72,7 @@ int core0_main(void)
 //    mt9v03x_test();
 
     Param_Init();
-    threshold = 145;
+    threshold = 230;
     light = 250;
     mt9v03x_set_exposure_time(light);
 
@@ -83,8 +83,8 @@ int core0_main(void)
     ips200_clear();
 
     // ************* 中断 初始化 ********************************
-    pit_ms_init(CCU60_CH0, 20); // 总中断
-    pit_ms_init(CCU60_CH0, 5);
+    //pit_ms_init(CCU60_CH0, 10); // 总中断
+    pit_ms_init(CCU60_CH1, 5);
    // ************* 看门狗 初始化 ********************************
 
     cpu_wait_event_ready();
@@ -94,63 +94,70 @@ int core0_main(void)
         // 喂狗
 
         IfxScuWdt_serviceCpuWatchdog(0x3C); // 使用相同的密码喂狗
+        //wifi(32);
 
         if (mt9v03x_finish_flag)//mt9v03x_finish_flag
-        {
-            //oled_show_int(0, 0, Total_time, 3);
-            //garage_out_process(); //出库
-            /******************图像处理*******************************/
-            ImageProcess();
-            ips200_show_gray_image(25, 50, (const uint8 *)C_Image, ImageW, ImageH, ImageW*2, ImageH*2, threshold);
-            ips200_show_int(25, 225, threshold, 3);
-            ips200_show_string(25, 200, "threshold:");
-            ips200_show_int(110, 225, light, 3);
-            ips200_show_string(110, 200, "light:");
+                {
+                    //oled_show_int(0, 0, Total_time, 3);
+                    //garage_out_process(); //出库
+                    /******************图像处理*******************************/
+                    ImageProcess();
+                    ips200_show_gray_image(25, 50, (const uint8 *)C_Image, ImageW, ImageH, ImageW*2, ImageH*2, threshold);
+                    ips200_show_int(25, 225, threshold, 3);
+                    ips200_show_string(25, 200, "threshold:");
+                    ips200_show_int(110, 225, light, 3);
+                    ips200_show_string(110, 200, "light:");
 
-            key_clear_all_state();
-            key_scanner();
-            if(key_get_state(KEY_1) == KEY_SHORT_PRESS)
-                        threshold += 5;                                            // 翻转 LED 引脚输出电平 控制 LED 亮灭
+                    key_clear_all_state();
+                    key_scanner();
+                    if(key_get_state(KEY_1) == KEY_SHORT_PRESS)
+                                threshold += 5;                                            // 翻转 LED 引脚输出电平 控制 LED 亮灭
 
-            if(key_get_state(KEY_2) == KEY_SHORT_PRESS)
-                        threshold -= 5;
+                    if(key_get_state(KEY_2) == KEY_SHORT_PRESS)
+                                threshold -= 5;
 
-            if(key_get_state(KEY_3) == KEY_SHORT_PRESS)
-                        light += 50;                                            // 翻转 LED 引脚输出电平 控制 LED 亮灭
+                    if(key_get_state(KEY_3) == KEY_SHORT_PRESS)
+                                light += 50;                                            // 翻转 LED 引脚输出电平 控制 LED 亮灭
 
-            if(key_get_state(KEY_4) == KEY_SHORT_PRESS)
-                        light -= 50;
+                    if(key_get_state(KEY_4) == KEY_SHORT_PRESS)
+                                light -= 50;
 
-            //mt9v03x_test();
-            Get_White_Num();
-            trackDFS();
-            Left_Right_Confusion_Filter();
-            if (!Flag.Ramp && !Flag.barricade && !Flag.Garage_Out && !Flag.break_Road)
-            {
-                TurnPointL_Find(&LTurnPoint_Row, &LTurnPoint, &Kl_up, &Bl_up, &Kl_down, &Bl_down, &Error_Cnt_L);
-                TurnPointR_Find(&RTurnPoint_Row, &RTurnPoint, &Kr_up, &Br_up, &Kr_down, &Br_down, &Error_Cnt_R);
-                zebra_found_zz();
-                Left_Ring();
-                Right_Ring();
-            }
+                    //mt9v03x_test();
+                    Get_White_Num();
+                    trackDFS();
+                    Left_Right_Confusion_Filter();
+                    if (!Flag.Ramp && !Flag.barricade && !Flag.Garage_Out && !Flag.break_Road)
+                    {
+                        TurnPointL_Find(&LTurnPoint_Row, &LTurnPoint, &Kl_up, &Bl_up, &Kl_down, &Bl_down, &Error_Cnt_L);
+                        TurnPointR_Find(&RTurnPoint_Row, &RTurnPoint, &Kr_up, &Br_up, &Kr_down, &Br_down, &Error_Cnt_R);
+                        zebra_found_zz();
+                        Left_Ring();
+                        Right_Ring();
+                    }
 
-            doFilter();
-            doMend();
-            barricade_by_image();
-            Ramp_task();
-           // Break_Road_2();
-            updateMediumLine();
-            //turn_Update(); //舵机调整角度
-            ips200_show_int(150,230,servo_param.Servo_filter,3);
-            //Final_Motor_Control(80,0.2,50,30);
-            //Final_Motor_Control(80,0.2,servo_param.Servo_filter,30);
+                    doFilter();
+                    doMend();
+                    barricade_by_image();
+                    Ramp_task();
+                   // Break_Road_2();
+                    updateMediumLine();
+                    show_line();
+                    //turn_Update(); //舵机调整角度
+                    ips200_show_int(150,230,servo_param.Servo_filter,3);
 
 
-            mt9v03x_finish_flag = 0;
 
-        }
+                    mt9v03x_finish_flag = 0;
+
+                }
+        ips200_show_string(10,240,"turn_value"); ips200_show_int(110,240,ssss,3);
+        ips200_show_string(10,260,"l_speed"); ips200_show_int(110,260,motor_l.encoder_speed,3);
+        ips200_show_string(10,280,"r_speed"); ips200_show_int(110,280,motor_r.encoder_speed,3);
+        ips200_show_string(10,300,"difference"); ips200_show_int(110,300,motor_l.encoder_speed-motor_r.encoder_speed,3);
+
+
         //system_delay(1000);
-
+        printf("%d,%d,%d,%d\n",motor_l.encoder_speed,motor_r.encoder_speed,motor_l.target_speed,motor_r.target_speed);
 
     }
     return 0;

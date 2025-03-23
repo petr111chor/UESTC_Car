@@ -358,3 +358,5 @@ image.o :	"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\cod
 "D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\pidpid.h" :
 image.o :	"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\motor.h"
 "D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\motor.h" :
+image.o :	"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\wifi.h"
+"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\wifi.h" :

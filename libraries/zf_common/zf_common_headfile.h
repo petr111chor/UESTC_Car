@@ -155,6 +155,7 @@
 #include "variables.h"
 #include "pidpid.h"
 #include "motor.h"
+#include "wifi.h"
 
 //#include <diskio.h>
 //#include <bmp.h>

@@ -33,6 +33,43 @@ float PID_Increase(PID*PID ,float now_data ,float target_data)
 }
 
 
+
+float PidIncCtrltest(volatile pid_param_tt * pid, int16_t error) {
+
+    pid->out_p = pid->kp * (error - pid->last_error);
+    pid->out_i = pid->ki * error;
+    pid->out_d = pid->kd * ((error - pid->last_error) - pid->last_derivative);
+
+    pid->last_derivative = error - pid->last_error;
+    pid->last_error = error;
+
+    pid->out += pid->out_p + pid->out_i + pid->out_d;
+
+    pid->out = LIMIT(pid->out, -10000, 10000);
+
+    return pid->out;
+}
+
+
+float PidLocCtrltest(volatile pid_param_tt * pid, float error) {
+    /* 累积误差 */
+    pid->integrator += error;
+
+    /* 误差限幅 */
+    pid->integrator = constrain_float(pid->integrator, -pid->imax, pid->imax);
+
+    pid->out_p = pid->kp * error;
+    pid->out_i = pid->ki * pid->integrator;
+    pid->out_d = pid->kd * (error - pid->last_error);
+
+    pid->last_error = error;
+
+    pid->out = pid->out_p + pid->out_i + pid->out_d;
+
+    return pid->out;
+}
+
+
 int limit_int(int a, int b, int c)
 {
     // 自动确定最小最大值，避免参数顺序错误

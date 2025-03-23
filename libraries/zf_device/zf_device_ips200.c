@@ -504,7 +504,7 @@ void ips200_set_color (const uint16 pen, const uint16 bgcolor)
 // 参数说明     color           颜色格式 RGB565 或者可以使用 zf_common_font.h 内 rgb565_color_enum 枚举值或者自行写入
 // 返回参数     void
 // 使用示例     ips200_draw_point(0, 0, RGB565_RED);            //坐标0,0画一个红色的点
-// 备注信息     
+// 备注信息
 //-------------------------------------------------------------------------------------------------------------------
 void ips200_draw_point (uint16 x, uint16 y, const uint16 color)
 {
@@ -534,7 +534,7 @@ void ips200_draw_point (uint16 x, uint16 y, const uint16 color)
 // 参数说明     color           颜色格式 RGB565 或者可以使用 zf_common_font.h 内 rgb565_color_enum 枚举值或者自行写入
 // 返回参数     void
 // 使用示例     ips200_draw_line(0, 0, 10, 10, RGB565_RED);     // 坐标 0,0 到 10,10 画一条红色的线
-// 备注信息     
+// 备注信息
 //-------------------------------------------------------------------------------------------------------------------
 void ips200_draw_line (uint16 x_start, uint16 y_start, uint16 x_end, uint16 y_end, const uint16 color)
 {
@@ -597,7 +597,7 @@ void ips200_draw_line (uint16 x_start, uint16 y_start, uint16 x_end, uint16 y_en
 // 参数说明     dat             需要显示的字符
 // 返回参数     void
 // 使用示例     ips200_show_char(0, 0, 'x');                     // 坐标0,0写一个字符x
-// 备注信息     
+// 备注信息
 //-------------------------------------------------------------------------------------------------------------------
 void ips200_show_char (uint16 x, uint16 y, const char dat)
 {
@@ -690,7 +690,7 @@ void ips200_show_char (uint16 x, uint16 y, const char dat)
 // 参数说明     dat             需要显示的字符串
 // 返回参数     void
 // 使用示例     ips200_show_string(0, 0, "seekfree");
-// 备注信息     
+// 备注信息
 //-------------------------------------------------------------------------------------------------------------------
 void ips200_show_string (uint16 x, uint16 y, const char dat[])
 {
@@ -759,7 +759,7 @@ void ips200_show_int (uint16 x, uint16 y, const int32 dat, uint8 num)
 // 参数说明     num             需要显示的位数 最高10位  不包含正负号
 // 返回参数     void
 // 使用示例     ips200_show_uint(0, 0, x, 3);                   // x 可以为 uint32 uint16 uint8 类型
-// 备注信息     
+// 备注信息
 //-------------------------------------------------------------------------------------------------------------------
 void ips200_show_uint (uint16 x, uint16 y, const uint32 dat, uint8 num)
 {
@@ -794,7 +794,7 @@ void ips200_show_uint (uint16 x, uint16 y, const uint32 dat, uint8 num)
 // 参数说明     x               坐标x方向的起点 参数范围 [0, ips200_width_max-1]
 // 参数说明     y               坐标y方向的起点 参数范围 [0, ips200_height_max-1]
 // 参数说明     dat             需要显示的变量 数据类型 double
-// 参数说明     num             整数位显示长度   最高8位  
+// 参数说明     num             整数位显示长度   最高8位
 // 参数说明     pointnum        小数位显示长度   最高6位
 // 返回参数     void
 // 使用示例     ips200_show_float(0, 0, x, 2, 3);               // 显示浮点数   整数显示2位   小数显示三位
@@ -1024,7 +1024,7 @@ void ips200_show_rgb565_image (uint16 x, uint16 y, const uint16 *image, uint16 w
 // 参数说明     dis_value_max   波形显示最大值 参数范围 [0, ips200_height_max]
 // 返回参数     void
 // 使用示例     ips200_show_wave(0, 0, data, 128, 64, 64, 32);
-// 备注信息     
+// 备注信息
 //-------------------------------------------------------------------------------------------------------------------
 void ips200_show_wave (uint16 x, uint16 y, const uint16 *wave, uint16 width, uint16 value_max, uint16 dis_width, uint16 dis_value_max)
 {
@@ -1132,7 +1132,7 @@ void ips200_show_chinese (uint16 x, uint16 y, uint8 size, const uint8 *chinese_b
 // 参数说明     type_select     两寸屏接口类型 IPS200_TYPE_SPI 为 SPI 接口串口两寸屏 IPS200_TYPE_PARALLEL8 为 8080 协议八位并口两寸屏
 // 返回参数     void
 // 使用示例     ips200_init(IPS200_TYPE_PARALLEL8);
-// 备注信息     
+// 备注信息
 //-------------------------------------------------------------------------------------------------------------------
 void ips200_init (ips200_type_enum type_select)
 {

@@ -143,7 +143,7 @@ void Break_Road_2(void);
 
 void updateMediumLine(void);//更新中线打角
 bool MediumLineCal(volatile float* final);//计算中线打角
-
+void show_line();
 
 
 #endif

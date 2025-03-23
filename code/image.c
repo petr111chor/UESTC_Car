@@ -4536,3 +4536,15 @@ void updateMediumLine(void)
     oled_show_int(32, 1, (int16_t)(servo_param.cam_servo_temp_1),3);
 #endif
 }
+
+
+void show_line(){
+    uint8 i;
+    uint8 j=0;
+    for(i=50+ImageW*2;i>50;i--){
+            ips200_draw_point(imageLine.Point_Left[j],i,RGB565_RED);
+            ips200_draw_point(imageLine.Point_Right[j],i,RGB565_BLUE);
+            ips200_draw_point(imageLine.Point_Center[j],i,RGB565_GREEN);
+            j++;
+  }
+}

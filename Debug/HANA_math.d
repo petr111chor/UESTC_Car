@@ -360,3 +360,5 @@ HANA_math.o :	"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\
 "D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\pidpid.h" :
 HANA_math.o :	"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\motor.h"
 "D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\motor.h" :
+HANA_math.o :	"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\wifi.h"
+"D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\code\wifi.h" :
