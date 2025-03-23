@@ -89,6 +89,34 @@ int core0_main(void)
 
     cpu_wait_event_ready();
     //MotorCtrl(-2000,-2000);
+    while(1)
+    {
+        IfxScuWdt_serviceCpuWatchdog(0x3C); // 使用相同的密码喂狗
+        key_clear_all_state();
+        key_scanner();
+        if(key_get_state(KEY_1) == KEY_SHORT_PRESS)
+            pd_flag = pd_flag==1?0:1;                                            // 翻转 LED 引脚输出电平 控制 LED 亮灭
+
+        if(key_get_state(KEY_2) == KEY_SHORT_PRESS)
+                    //threshold -= 5;
+            if(pd_flag)
+            motor_pid_direction.kp+=0.1;
+            else
+                motor_pid_direction.kd+=0.1;
+
+        if(key_get_state(KEY_3) == KEY_SHORT_PRESS)
+            if(pd_flag)
+                motor_pid_direction.kp-=0.1;
+            else
+                motor_pid_direction.kd-=0.1;
+        // 翻转 LED 引脚输出电平 控制 LED 亮灭
+
+        if(key_get_state(KEY_4) == KEY_SHORT_PRESS)
+                    break;
+        ips200_show_string(25, 200, "kp:"); ips200_show_float(25, 225, motor_pid_direction.kp, 3,3);
+        ips200_show_string(110, 200, "kd:");ips200_show_float(110, 225, motor_pid_direction.kd, 3,3);
+        ips200_show_int(110,240,motor_param.Ui_Speed,3);
+    }
     while (1)
     {
         // 喂狗
@@ -96,68 +124,36 @@ int core0_main(void)
         IfxScuWdt_serviceCpuWatchdog(0x3C); // 使用相同的密码喂狗
         //wifi(32);
 
+
         if (mt9v03x_finish_flag)//mt9v03x_finish_flag
                 {
                     //oled_show_int(0, 0, Total_time, 3);
                     //garage_out_process(); //出库
                     /******************图像处理*******************************/
+                    show_img_flag = 0;
                     ImageProcess();
-                    ips200_show_gray_image(25, 50, (const uint8 *)C_Image, ImageW, ImageH, ImageW, ImageH, threshold);
-                    ips200_show_int(25, 225, threshold, 3);
-                    ips200_show_string(25, 200, "threshold:");
-                    ips200_show_int(110, 225, light, 3);
-                    ips200_show_string(110, 200, "light:");
 
-                    key_clear_all_state();
-                    key_scanner();
-                    if(key_get_state(KEY_1) == KEY_SHORT_PRESS)
-                                threshold += 5;                                            // 翻转 LED 引脚输出电平 控制 LED 亮灭
 
-                    if(key_get_state(KEY_2) == KEY_SHORT_PRESS)
-                                threshold -= 5;
 
-                    if(key_get_state(KEY_3) == KEY_SHORT_PRESS)
-                                light += 50;                                            // 翻转 LED 引脚输出电平 控制 LED 亮灭
-
-                    if(key_get_state(KEY_4) == KEY_SHORT_PRESS)
-                                light -= 50;
 
                     //mt9v03x_test();
                     Get_White_Num();
                     trackDFS();
                     Left_Right_Confusion_Filter();
-                    if (!Flag.Ramp && !Flag.barricade && !Flag.Garage_Out && !Flag.break_Road)
-                    {
-                        TurnPointL_Find(&LTurnPoint_Row, &LTurnPoint, &Kl_up, &Bl_up, &Kl_down, &Bl_down, &Error_Cnt_L);
-                        TurnPointR_Find(&RTurnPoint_Row, &RTurnPoint, &Kr_up, &Br_up, &Kr_down, &Br_down, &Error_Cnt_R);
-                        //Left_Ring();
-                        //Right_Ring();
-                    }
+
+                    TurnPointL_Find(&LTurnPoint_Row, &LTurnPoint, &Kl_up, &Bl_up, &Kl_down, &Bl_down, &Error_Cnt_L);
+                    TurnPointR_Find(&RTurnPoint_Row, &RTurnPoint, &Kr_up, &Br_up, &Kr_down, &Br_down, &Error_Cnt_R);
 
                     doFilter();
                     doMend();
                    // Break_Road_2();
                     updateMediumLine();
-                    show_line();
-                    //turn_Update(); //舵机调整角度
-                    ips200_show_int(150,230,servo_param.Servo_filter,3);
-
-                    for(uint8 i=0;i<9;i++){
-                        ips200_show_int(25*i+5, 150, image.cam_finalCenterERR[i], 2);
-                    }
 
 
+                    show_img_flag = 1;
                     mt9v03x_finish_flag = 0;
 
                 }
-        ips200_show_string(10,240,"turn_value"); ips200_show_int(110,240,ssss,3);
-        ips200_show_string(10,260,"l_speed"); ips200_show_int(110,260,motor_l.encoder_speed,3);
-        ips200_show_string(10,280,"r_speed"); ips200_show_int(110,280,motor_r.encoder_speed,3);
-        ips200_show_string(10,300,"difference"); ips200_show_int(110,300,motor_l.encoder_speed-motor_r.encoder_speed,3);
-
-
-        //system_delay(1000);
-        printf("%d,%d,%d,%d\n",motor_l.encoder_speed,motor_r.encoder_speed,motor_l.target_speed,motor_r.target_speed);
 
     }
     return 0;

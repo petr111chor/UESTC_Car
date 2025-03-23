@@ -10,6 +10,8 @@
 volatile short Cam_Process_Result;
 
 uint8_t send_data_flag = 0;//标志位发送
+uint8_t show_img_flag = 0;//标志显示图像
+uint8_t pd_flag = 0;//标志显示图像
 
 /************************************PID结构体***********************************************/
 volatile pid_param_t  Motor_Left_pid;         //左电机控制PID

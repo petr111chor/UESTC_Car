@@ -9,11 +9,11 @@
 motor1 motor_l;
 motor1 motor_r;
 PID motor_dir  =PID_CREATE(1,0,0,1);
-PID motor_pid_l=PID_CREATE(20,0.2,0,1);//电机
-PID motor_pid_r=PID_CREATE(20,0.2,0,1);//电机
+PID motor_pid_l=PID_CREATE(16,4.2,0,1);//电机
+PID motor_pid_r=PID_CREATE(16,4.2,0,1);//电机
 pid_param_tt motor_pid_left=PID_CREATETEST(2,0.05,0);
 pid_param_tt motor_pid_right=PID_CREATETEST(2,0.05,0);
-pid_param_tt motor_pid_direction=PID_CREATETEST(1,0.1,0.6);//转向
+pid_param_tt motor_pid_direction=PID_CREATETEST(1.0,0,3);//转向
 
 volatile extern uint32_t start = 0;
 
@@ -84,6 +84,10 @@ void Motor_Control(int Speed_L, int Speed_R)
 
     Speed_Set(Motor_PWM_Left,Motor_GPIO_Left,motor_l.duty,0,1);
     Speed_Set(Motor_PWM_Right,Motor_GPIO_Right,motor_r.duty,0,1);
+    if(Flag.turnWAY_state == 2)
+    {
+        MotorCtrl(0, 0);
+    }
 }
 
 

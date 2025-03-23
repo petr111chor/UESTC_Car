@@ -4040,7 +4040,7 @@ void updateMediumLine(void)
         + 0.1f * image.cam_finalCenterERR[2] + 0.05f * image.cam_finalCenterERR[3];
 
     //中线打角
-    if (rst)//摄像头打角
+    if (rst &&!Flag.turnWAY_state)//摄像头打角
     {
         if(Flag.break_Road)
         {
@@ -4056,6 +4056,10 @@ void updateMediumLine(void)
     {
         lostTime++;
         Flag.turnWAY_state = 1;
+    }
+    else if (!rst && (lostTime >= 20))
+    {
+        Flag.turnWAY_state = 2;
     }
     /*else if(!Flag.Garage_Out && !Flag.Right_Ring && !Flag.Left_Ring)    //丢线太多，电感跑
     {
