@@ -26,10 +26,10 @@ void speed_Update(void)
     static int16_t last_ecpulse2;
 
     /*******************得到编码器的值（当前速度）******************************/
-    ecpulse1 = encoder_get_count(TIM2_ENCODER);                              // 左
-    encoder_clear_count(TIM2_ENCODER);
-    ecpulse2 = -encoder_get_count(TIM3_ENCODER);                              // 右
-    encoder_clear_count(TIM3_ENCODER);
+    ecpulse1 = -encoder_get_count(TIM4_ENCODER);                              // 左
+    encoder_clear_count(TIM4_ENCODER);
+    ecpulse2 = encoder_get_count(TIM6_ENCODER);                              // 右
+    encoder_clear_count(TIM6_ENCODER);
 
 
     if(ecpulse1 > 500 || ecpulse1 < -300)
@@ -59,26 +59,26 @@ void speed_Update(void)
 
     Update_Purpost_Speed();
 
-    if (Flag.Ui_Stop_Flag == 1 )//停车
-    {
-        Purpost_Left_Speed = 0;
-        Purpost_Rigt_Speed = 0;
-        Flag.Begin_run = 1;
+    //if (Flag.Ui_Stop_Flag == 1 )//停车
+    //{
+    //    Purpost_Left_Speed = 0;
+    //    Purpost_Rigt_Speed = 0;
+    //    Flag.Begin_run = 1;
         //Total_time = 0;
-    }
+    //}
 
-    if(Flag.Ui_Stop_Flag == 0 && Flag.Begin_run == 1)
-    {
-        Flag.Run_Time = 1;
-        Purpost_Left_Speed = 0.7*Purpost_Left_Speed*Total_time/begin_time+0.3*Purpost_Left_Speed;
-        Purpost_Rigt_Speed = 0.7*Purpost_Rigt_Speed*Total_time/begin_time+0.3*Purpost_Left_Speed;
-        if(Total_time >= begin_time)
-        {
-            Flag.Run_Time = 0;
-            Flag.Begin_run = 0;
-            Total_time = 0;
-        }
-    }
+    //if(Flag.Ui_Stop_Flag == 0 && Flag.Begin_run == 1)
+    //{
+    //    Flag.Run_Time = 1;
+    //    Purpost_Left_Speed = 0.7*Purpost_Left_Speed*Total_time/begin_time+0.3*Purpost_Left_Speed;
+     //   Purpost_Rigt_Speed = 0.7*Purpost_Rigt_Speed*Total_time/begin_time+0.3*Purpost_Left_Speed;
+     //   if(Total_time >= begin_time)
+     //   {
+     //       Flag.Run_Time = 0;
+     //       Flag.Begin_run = 0;
+     //       Total_time = 0;
+     //   }
+    //}
 
     Error1 = (int16)(Purpost_Left_Speed - ecpulse1);
     Error2 = (int16)(Purpost_Rigt_Speed - ecpulse2);
@@ -89,13 +89,13 @@ void speed_Update(void)
     LIMIT(Left_Motor_Duty, -8000, 8000);
     LIMIT(Rigt_Motor_Duty, -8000, 8000);
 
-    if (Flag.Duty_Stop_Flag == 1)//遥控停车
-    {
-        Left_Motor_Duty = 0;
-        Rigt_Motor_Duty = 0;
-    }
+    //if (Flag.Duty_Stop_Flag == 1)//遥控停车
+    //{
+    //    Left_Motor_Duty = 0;
+    //    Rigt_Motor_Duty = 0;
+    //}
 
-    MotorCtrl(Left_Motor_Duty, Rigt_Motor_Duty);
+    MotorCtrl(-Left_Motor_Duty, -Rigt_Motor_Duty);
 }
 
 /*****************************************************************
@@ -106,59 +106,59 @@ void speed_Update(void)
 *****************************************************************/
 void Update_Purpost_Speed(void)
 {
-    if(Flag.break_Road || Flag.Fix_adc)
-    {
-        Purpost_Speed = motor_param.Ui_Adc_Speed;
-        if(Flag.break_Road_in)
-        {
+   // if(Flag.break_Road || Flag.Fix_adc)
+    //{
+      //  Purpost_Speed = motor_param.Ui_Adc_Speed;
+     //   if(Flag.break_Road_in)
+     //   {
 
-           Purpost_Speed = (1-break_rate)*Purpost_Speed*(Total_time_2)/break_time + break_rate*Purpost_Speed;
-        }
+     //      Purpost_Speed = (1-break_rate)*Purpost_Speed*(Total_time_2)/break_time + break_rate*Purpost_Speed;
+     //   }
 //        diff_speed = -(short)PidLocCtrl(&Motor_Dir_A_pid, err_steering.Err);
-        diff_speed = 0;
-    }
-    else
-    {
-        Purpost_Speed = motor_param.Ui_Speed;
-        if(longStraightFlag && longStraightAccelerate)
-            Purpost_Speed = motor_param.Ui_Speed + longStr_Acc_Speed_2;
-        else if(longStraightCount > 0 && longStraightAccelerate)
-            Purpost_Speed = motor_param.Ui_Speed + longStr_Acc_Speed_1;
+     //   diff_speed = 0;
+    //}
+    //else
+    //{
+        Purpost_Speed = 60;
+        //if(longStraightFlag && longStraightAccelerate)
+        //    Purpost_Speed = motor_param.Ui_Speed + longStr_Acc_Speed_2;
+        //else if(longStraightCount > 0 && longStraightAccelerate)
+        //    Purpost_Speed = motor_param.Ui_Speed + longStr_Acc_Speed_1;
 
-        diff_speed = (short)PidLocCtrl(&Motor_Dir_pid, servo_param.cam_servo_temp_1);
-    }
+        diff_speed = (short)PidLocCtrltest(&motor_pid_direction, 10);
+    //}
 
-    if(Flag.Ramp)
-    {
-        Purpost_Speed = Ramp_Speed_Up;
-    }
+    //if(Flag.Ramp)
+    //{
+    //    Purpost_Speed = Ramp_Speed_Up;
+    //}
 
 
-    speed_delta = (int)abs(diff_speed*motor_param.Dece_K);
+    speed_delta = (int)abs(diff_speed*0.3);
     Purpost_Left_Speed = Purpost_Speed - speed_delta + diff_speed;
     Purpost_Rigt_Speed = Purpost_Speed - speed_delta - diff_speed;
 
 
-    if (Flag.Garage_Out)  //出库固定差速
-    {
-        if (Garage_Direction == 0)  // 左
-        {
-            Purpost_Left_Speed = -Garage_Out_Inner_Speed;
-            Purpost_Rigt_Speed = -Garage_Out_Outer_Speed;
-        }
-        else if(Garage_Direction == 1) // 右
-        {
-            Purpost_Left_Speed = -Garage_Out_Outer_Speed;
-            Purpost_Rigt_Speed = -Garage_Out_Inner_Speed;
-        }
+    //if (Flag.Garage_Out)  //出库固定差速
+    //{
+    //    if (Garage_Direction == 0)  // 左
+    //    {
+    //        Purpost_Left_Speed = -Garage_Out_Inner_Speed;
+    //        Purpost_Rigt_Speed = -Garage_Out_Outer_Speed;
+    //   }
+    //    else if(Garage_Direction == 1) // 右
+    //    {
+    //        Purpost_Left_Speed = -Garage_Out_Outer_Speed;
+    //        Purpost_Rigt_Speed = -Garage_Out_Inner_Speed;
+    //    }
 
-        if(eulerAngle.yaw >= Garage_Out_Imu_Angle || eulerAngle.yaw <= -Garage_Out_Imu_Angle)
-        {
-            Flag.Run_Time = true;
-            Purpost_Rigt_Speed = -(int)(((Garage_Out_Time - Total_time)*1.0/Garage_Out_Time)*Garage_Out_Mid_Speed);
-            Purpost_Left_Speed = -(int)(((Garage_Out_Time - Total_time)*1.0/Garage_Out_Time)*Garage_Out_Mid_Speed);
-        }
-    }
+    //    if(eulerAngle.yaw >= Garage_Out_Imu_Angle || eulerAngle.yaw <= -Garage_Out_Imu_Angle)
+    //    {
+    //        Flag.Run_Time = true;
+    //        Purpost_Rigt_Speed = -(int)(((Garage_Out_Time - Total_time)*1.0/Garage_Out_Time)*Garage_Out_Mid_Speed);
+    //        Purpost_Left_Speed = -(int)(((Garage_Out_Time - Total_time)*1.0/Garage_Out_Time)*Garage_Out_Mid_Speed);
+    //    }
+    //}
 
 
 
@@ -169,18 +169,18 @@ void Update_Purpost_Speed(void)
 //获得左轮控制量
 float Get_Left_Uk(int16_t LeftEk)
 {
-    return PidIncCtrl(&Motor_Left_pid, LeftEk);
+    return PidIncCtrltest(&motor_pid_left, LeftEk);
 }
 
 
 //获得右轮控制量
 float Get_Right_Uk(int16_t RightEk)
 {
-    return PidIncCtrl(&Motor_Rigt_pid, RightEk);
+    return PidIncCtrltest(&motor_pid_right, RightEk);
 }
 
 //获得偏差控制量
 float Get_delta(int16_t dis_error)
 {
-    return PidLocCtrl(&ctrl_dis_pid, dis_error);
+    return PidLocCtrltest(&ctrl_dis_pid, dis_error);
 }

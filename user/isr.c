@@ -45,6 +45,9 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, CCU6_0_CH0_INT_VECTAB_NUM, CCU6_0_CH0_ISR_PRIORI
     interrupt_global_enable(0);                     // ¿ªÆôÖÐ¶ÏÇ¶Ì×
     pit_clear_flag(CCU60_CH0);
 
+   // Final_Motor_Control(50,1.2,30,40);
+    //Final_Motor_Control(50,0.2,servo_param.Servo_filter,30);
+
 
 
 
@@ -56,6 +59,10 @@ IFX_INTERRUPT(cc60_pit_ch1_isr, CCU6_0_CH1_INT_VECTAB_NUM, CCU6_0_CH1_ISR_PRIORI
     interrupt_global_enable(0);                     // ¿ªÆôÖÐ¶ÏÇ¶Ì×
     pit_clear_flag(CCU60_CH1);
 
+    Encoder_Data_Get();
+    //car_turn(20);
+    Final_Motor_Control(50,0.5,servo_param.Servo_filter,40);
+    //speed_Update();
 
 
 

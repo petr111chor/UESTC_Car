@@ -38,27 +38,27 @@ libraries/zf_common/zf_common_interrupt.o
 
 # Each subdirectory must supply rules for building sources it contributes
 libraries/zf_common/zf_common_clock.src: ../libraries/zf_common/zf_common_clock.c libraries/zf_common/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fD:/AURIX/ADS_finalfinaltest/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Program Files (x86)/Infineon/AURIX-v1.10.2-workspace/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 libraries/zf_common/zf_common_clock.o: libraries/zf_common/zf_common_clock.src libraries/zf_common/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/zf_common/zf_common_debug.src: ../libraries/zf_common/zf_common_debug.c libraries/zf_common/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fD:/AURIX/ADS_finalfinaltest/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Program Files (x86)/Infineon/AURIX-v1.10.2-workspace/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 libraries/zf_common/zf_common_debug.o: libraries/zf_common/zf_common_debug.src libraries/zf_common/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/zf_common/zf_common_fifo.src: ../libraries/zf_common/zf_common_fifo.c libraries/zf_common/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fD:/AURIX/ADS_finalfinaltest/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Program Files (x86)/Infineon/AURIX-v1.10.2-workspace/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 libraries/zf_common/zf_common_fifo.o: libraries/zf_common/zf_common_fifo.src libraries/zf_common/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/zf_common/zf_common_font.src: ../libraries/zf_common/zf_common_font.c libraries/zf_common/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fD:/AURIX/ADS_finalfinaltest/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Program Files (x86)/Infineon/AURIX-v1.10.2-workspace/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 libraries/zf_common/zf_common_font.o: libraries/zf_common/zf_common_font.src libraries/zf_common/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/zf_common/zf_common_function.src: ../libraries/zf_common/zf_common_function.c libraries/zf_common/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fD:/AURIX/ADS_finalfinaltest/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Program Files (x86)/Infineon/AURIX-v1.10.2-workspace/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 libraries/zf_common/zf_common_function.o: libraries/zf_common/zf_common_function.src libraries/zf_common/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/zf_common/zf_common_interrupt.src: ../libraries/zf_common/zf_common_interrupt.c libraries/zf_common/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fD:/AURIX/ADS_finalfinaltest/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Program Files (x86)/Infineon/AURIX-v1.10.2-workspace/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 libraries/zf_common/zf_common_interrupt.o: libraries/zf_common/zf_common_interrupt.src libraries/zf_common/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 

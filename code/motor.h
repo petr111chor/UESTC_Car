@@ -26,7 +26,7 @@ typedef struct motor1
 
 extern struct motor1 motor_l;
 extern struct motor1 motor_r;
-
+extern int ssss;
 
 
 void MotorInit(unsigned short freq);
@@ -36,8 +36,8 @@ void Motor_Control(int Speed_L, int Speed_R);
 void Motor_ControlR(int Speed_R);
 void Motor_ControlL(int Speed_L);
 void car_start(void);
-int car_turn(uint8 mid);
-void Final_Motor_Control(int speed,float k,int mid,int limit);
+void car_turn(float mid);
+void Final_Motor_Control(int speed,float k,float mid,int limit);
 void Encoder_Init(void);
 void Encoder_Data_Get(void);
 

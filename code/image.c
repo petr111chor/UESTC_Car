@@ -1014,7 +1014,7 @@ void trackMend_startPart(void)
                     //开始补线
                     for (i=i+5; i < ImageH; i++)
                     {
-                         imageLine.Point_Left[i] = getLineValue(i, k_left, b_left);
+                         imageLine.Point_Left[i] = constrain_int16(getLineValue(i, k_left, b_left), 0, ImageW - 1);
                          imageLine.Exist_Left[i] = 1;
                     }
                     break;
@@ -1045,7 +1045,7 @@ void trackMend_startPart(void)
                     //开始补线
                     for (i = i + 5; i < ImageH; i++)
                     {
-                        imageLine.Point_Right[i] = getLineValue(i, k_right, b_right);
+                        imageLine.Point_Right[i] = constrain_int16(getLineValue(i, k_right, b_right), 0, ImageW - 1);
                         imageLine.Exist_Right[i] = 1;
                     }
                     break;
@@ -1364,6 +1364,8 @@ bool isLeftPoint(uint16_t i, uint16_t j)
     //左边一定不能出现路
     if (isWhite(i, j - 1) || isWhite(i, j - 2) || isWhite(i, j - 3) || isWhite(i, j - 4) || isWhite(i, j - 5))
         return false;
+    if (j < 0 || j >= ImageW)// 列索引超出范围，直接返回无效
+        return false;
 
     return true;
 }
@@ -1376,6 +1378,8 @@ bool isRightPoint(uint16_t i, uint16_t j)
         return false;
     //右边一定不能出现路
     if (isWhite(i, j + 1) || isWhite(i, j + 2) || isWhite(i, j + 3) || isWhite(i, j + 4) || isWhite(i, j + 5))
+        return false;
+    if (j < 0 || j >= ImageW)// 列索引超出范围，直接返回无效
         return false;
 
     return true;
@@ -3736,457 +3740,6 @@ void Right_Ring_Out_Mend2(void)
         imageLine.Point_Right[i] = getLineValue(i, k_right, b_right);
     }
 }
-/****************************************坡道******************************************************/
-
-
-
-void Ramp_task(void)
-{
-    if (Flag.Ramp)
-    {
-        AIM_LINE = Ramp_AimLine;
-    }
-      static uint8_t ramp_time_cnt = 0;
-      short lost_cnt = 20,i= 0;
-      if (Ramp_Cnt <= 0 || Flag.barricade || Flag.Garage_Out || Flag.break_Road || Flag.Right_Ring_Find || Flag.Right_Ring_Turn
-              || Flag.Left_Ring_Find || Flag.Left_Ring_Turn)
-          return;
-      switch (ramp_task_state)
-      {
-          case 0: //识别状态
-              if (dl1b_distance_mm < Ramp_Dis_up)
-                  {
-                  for(i=20;i<40;i++)
-                      {
-                      if(imageLine.Exist_Center[i] && ABS(imageLine.Point_Center[i] - center) < 10)
-                          lost_cnt--;
-                      }
-                  if(lost_cnt < 5)//20-40行不在中心线不超过5行
-                      ramp_time_cnt++;
-                  }
-              else
-                  ramp_time_cnt = 0;
-
-              if (ramp_time_cnt > 2)
-              {
-                  // 识别到坡道，改变目标行
-                  Flag.Ramp = true;
-                  AIM_LINE = Ramp_AimLine;
-                  ramp_task_state ++;
-                  eulerAngle.pitch = 0;
-                  beep_set_sound(BEEP_ON);
-              }
-              break;
-          case 1: //平路进入上坡后减速状态
-              if (eulerAngle.pitch > Ramp_pitch_1 )
-              {
-                  ramp_task_state++;
-              }
-              break;
-          case 2://上坡结束开始下坡
-              if (eulerAngle.pitch < -Ramp_pitch_2)
-              {
-                  ramp_task_state++;
-              }
-              break;
-          case 3://下坡结束进入正常运行状态，正常
-              if (ABS(eulerAngle.pitch) < Ramp_pitch_3)
-              {
-                  Flag.Ramp = false;
-                  ramp_task_state = 0;
-                  Ramp_Cnt--;
-                  beep_set_sound(BEEP_OFF);
-
-              }
-              break;
-          default:
-              break;
-      }
-
-//      oled_show_int(1, 1, ramp_task_state, 1);
-}
-
-
-void  barricade_by_image(void)
-{
-    if (Barr_Cnt <= 0 || Flag.Ramp|| Flag.Garage_Out || Flag.Right_Ring|| Flag.Left_Ring)
-    {
-        Flag.barricade = 0;
-        return;
-    }
-
-    if(Bar_break_order < 16 && (Bar_break_order >> (Bar_break_count - 1) & 1) == 0)
-    {
-        return;
-    }
-
-
-
-
-    float k, b, err;
-    short x[2], y[2];
-
-
-    short i, L_Exit_Line = EFFECTIVE_ROW, R_Exit_Line = EFFECTIVE_ROW;
-
-    if (!Flag.barricade)//识别路障
-    {
-        if (dl1b_distance_mm < Barr_Dis_up)
-          {
-
-              for (i = ImageH;i > 3;i--)
-              {
-                  if (imageLine.Exist_Left[i] && imageLine.Exist_Left[i + 1] && imageLine.Exist_Left[i + 2] && (!imageLine.Exist_Left[i - 1]) && (!imageLine.Exist_Left[i - 2]) && (!imageLine.Exist_Left[i - 3]))
-                  {
-                      L_Exit_Line = i;
-                  }
-              }
-
-              for (i = ImageH;i > 3;i--)
-              {
-                  if (imageLine.Exist_Right[i] && imageLine.Exist_Right[i + 1] && imageLine.Exist_Right[i + 2] && (!imageLine.Exist_Right[i - 1]) && (!imageLine.Exist_Right[i - 2]) && (!imageLine.Exist_Right[i - 3]))
-                  {
-                      R_Exit_Line = i;
-                  }
-              }
-              if ((R_Exit_Line > barricade_Line) && (L_Exit_Line > barricade_Line) && (ABS(R_Exit_Line - L_Exit_Line) < 5)  && ((imageLine.Point_Right[R_Exit_Line] - imageLine.Point_Left[L_Exit_Line]) > 8))
-              {
-                  Flag.barricade = true;
-                  barr_state += 1;
-
-                  beep_set_sound(BEEP_ON);
-
-              }
-          }
-
-    }
-
-
-    if (Flag.barricade && barr_state == 1)
-    {
-        // 在底端中线和丢线的最左边补线
-
-        x[0] = ImageH - 1;
-        y[0] = ImageW / 2;
-
-
-        for (i = x[0]; i >= 0; i--)
-        {
-            if (!imageLine.Exist_Center[i])
-            {
-                x[1]   = i+1;
-                if(Barr_Direction == 0)
-                {
-                    y[1]   = imageLine.Point_Left[x[1]] - bar_width;
-                    if(y[1] < 0)
-                        y[1] = 0;
-                }
-                else
-                {
-                    y[1]   = imageLine.Point_Right[x[1]] + bar_width;
-                    if(y[1] > ImageW-1)
-                        y[1] = ImageW-1;
-                }
-
-
-                break;
-            }
-        }
-
-        leastSquareMethod(x, y, 2, &k, &b);
-        err = getLeastSquareMethodERROR(x, y, 2, k, b);
-        if (ABS(err) > 2)
-        {
-            barr_state += 1;
-            eulerAngle.yaw = 0;
-        }
-        else
-        {
-            // 补线
-            for (i = ImageH - 1; i >= 0; i--)
-            {
-                imageLine.Exist_Center[i] = true;
-                imageLine.Point_Center[i] = getLineValue(i, k, b);
-            }
-        }
-
-
-    }
-
-    if (Flag.barricade && barr_state == 2)
-      {
-          x[0] = ImageH - 1;
-          y[0] = ImageW / 2;
-
-          x[1] = 0;
-
-          if(Barr_Direction == 0)
-          {
-              y[1] = ImageW + bar_width2;
-          }
-          else
-          {
-              y[1] = 0 - bar_width2;
-          }
-
-          leastSquareMethod(x, y, 2, &k, &b);
-
-              // 补线
-          for (i = ImageH - 1; i >= 0; i--)
-          {
-              imageLine.Exist_Center[i] = true;
-              imageLine.Lost_Center = false;
-              imageLine.Point_Center[i] = getLineValue(i, k, b);
-          }
-
-          if(Barr_Direction == 0)
-          {
-              if ((ABS(eulerAngle.yaw) > Barr_Fixd_Dis_up))
-              {
-                  barr_state += 1;
-                  eulerAngle.yaw = 0;
-              }
-          }
-          else
-          {
-              if ((ABS(eulerAngle.yaw) > Barr_Fixd_Dis_up))
-              {
-                  barr_state += 1;
-                  eulerAngle.yaw = 0;
-              }
-          }
-
-      }
-
-
-    if (Flag.barricade && barr_state == 3)
-      {
-        for (i = ImageH - 1; i >= 0; i--)
-           {
-               imageLine.Exist_Center[i] = true;
-               imageLine.Lost_Center = false;
-               imageLine.Point_Center[i] = 47;
-           }
-           if (Barr_Direction == 0)
-           {
-               if ( imageLine.Exist_Left[ImageH - 1] && (imageLine.Point_Left[ImageH - 1] > 0))// &&
-               {
-                   Flag.barricade = 0;
-                   Barr_Cnt--;
-                   Bar_break_count--;
-
-               }
-           }
-           else
-           {
-               if ( imageLine.Exist_Right[ImageH - 1] && (imageLine.Point_Right[ImageH - 1] < ImageW))// &&
-               {
-                   Flag.barricade = 0;
-                   Barr_Cnt--;
-                   Bar_break_count--;
-               }
-           }
-
-
-      }
-
-
-
-}
-
-
-
-//void  barricade_by_imu(void)
-//{
-//    short i, L_Exit_Line = EFFECTIVE_ROW, R_Exit_Line = EFFECTIVE_ROW;
-//    if (Barr_Cnt <= 0 || Flag.Ramp|| Flag.Garage_Out || Flag.Right_Ring_Find || Flag.Right_Ring_Turn
-//            || Flag.Left_Ring_Find || Flag.Left_Ring_Turn)
-//    {
-//        Flag.barricade = 0;
-//        return;
-//    }
-//
-//    if (!Flag.barricade)//识别路障
-//    {
-//        if (dl1a_distance_mm < Barr_Dis_up)
-//          {
-//              for (i = ImageH;i > barricade_Line;i--)
-//              {
-//                  if (imageLine.Exist_Left[i])
-//                      break;
-//              }
-//              for (;i > barricade_Line;i--)
-//              {
-//                  if (imageLine.Exist_Left[i] && imageLine.Exist_Left[i + 1] && imageLine.Exist_Left[i + 2] && (!imageLine.Exist_Left[i - 1]) && (!imageLine.Exist_Left[i - 2]) && (!imageLine.Exist_Left[i - 3]))
-//                  {
-//                      L_Exit_Line = i;
-//                  }
-//              }
-//              for (i = ImageH;i > barricade_Line;i--)
-//              {
-//                  if (imageLine.Exist_Right[i])
-//                      break;
-//              }
-//              for (;i > barricade_Line;i--)
-//              {
-//                  if (imageLine.Exist_Right[i] && imageLine.Exist_Right[i + 1] && imageLine.Exist_Right[i + 2] && (!imageLine.Exist_Right[i - 1]) && (!imageLine.Exist_Right[i - 2]) && (!imageLine.Exist_Right[i - 3]))
-//                  {
-//                      R_Exit_Line = i;
-//                  }
-//              }
-//              if ((R_Exit_Line > barricade_Line) && (L_Exit_Line > barricade_Line) && (ABS(R_Exit_Line - L_Exit_Line) < 5) && ((imageLine.Point_Right[R_Exit_Line] - imageLine.Point_Left[L_Exit_Line]) > 10))
-//              {
-//                  Flag.barricade = true;
-//                  eulerAngle.yaw = 0;
-//                  barr_state += 1;
-//
-//                  beep_set_sound(BEEP_ON);
-//
-//              }
-//          }
-//
-//    }
-//    else if (barr_state==1 && (ABS(eulerAngle.yaw) > Barr_Fixd_Dis_up))
-//    {
-//        // 归中
-//        Barr_Direction = !Barr_Direction;
-//        barr_state += 1;
-//        eulerAngle.yaw = 0;
-//    }
-//    else if (barr_state==2 && (ABS(eulerAngle.yaw) > Barr_Fixd_Dis_Mid))
-//    {
-//        // 反转
-//        Barr_Direction = !Barr_Direction;
-//        barr_state += 1;
-//        eulerAngle.yaw = 0;
-//    }
-//    else if (barr_state==3 && (ABS(eulerAngle.yaw) > Barr_Fixd_Dis_up_2))
-//    {
-//        // 开启摄像头
-//        Flag.barricade = false;
-//        Barr_Cnt--;
-//        return;
-//    }
-//
-//}
-//
-
-
-/***************************************斑马线*****************************************************/
-/*寻找黑点来判断斑马线*/
-void zebra_found_zz(void)
-{
-    uint8_t i = 0, j = 0;
-    uint8_t count1 = 0, count2 = 0;
-    uint16_t add1 = 0, add2 = 0;
-    uint8_t bianli_qidian1 = 0;
-    uint8_t bianli_qidian2 = 0;
-    uint8_t poat_num = 0;
-    static uint8_t lose_cnt = 0;
-
-    if ((Flag.Left_Ring && !Flag.Left_Ring_Find) || (Flag.Right_Ring && !Flag.Right_Ring_Find)  || Flag.Ramp || Flag.Garage_Out || Flag.barricade || Flag.break_Road || Flag.Begin_run)
-        return;
-    for (i = 46 - 2; i < 46 + 2; i++)
-    {
-        //得到需要遍历的列范围
-        if (imageLine.Point_Left[i] < 70 && imageLine.Point_Left[i]>10)
-        {
-            add1 = add1 + imageLine.Point_Left[i];
-            count1++;
-        }
-
-        if (imageLine.Point_Right[i] > 60)
-        {
-            add2 = add2 + imageLine.Point_Right[i];
-            count2++;
-        }
-    }
-
-    if (count1)  //防止一个边界点都没用
-        bianli_qidian1 = add1 / count1;
-    if (count2)  //防止一个边界点都没用
-        bianli_qidian2 = add2 / count2;
-
-
-    for (i = 20; i < ImageH - 10; i++)
-    {
-        for (j = bianli_qidian1; j < bianli_qidian2; j++)
-        {
-            if ((Pixle[i][j] == 0
-                && Pixle[i + 3][j] == 1
-                && Pixle[i - 1][j] == 1
-                && Pixle[i][j + 3] == 1
-                && Pixle[i][j - 1] == 1)
-                ||
-                (
-                    Pixle[i][j] == 0
-                    && Pixle[i + 1][j] == 0
-                    && Pixle[i][j + 1] == 0
-                    && Pixle[i + 1][j + 1] == 0
-
-                    && Pixle[i - 1][j - 1] == 1
-                    && Pixle[i - 1][j] == 1
-                    && Pixle[i - 1][j + 1] == 1
-                    && Pixle[i - 1][j + 2] == 1
-
-                    && Pixle[i][j - 1] == 1
-
-                    && Pixle[i + 1][j - 1] == 1
-
-                    && Pixle[i + 2][j - 1] == 1
-
-                    && Pixle[i + 3][j] == 1
-                    && Pixle[i][j + 3] == 1
-                    && Pixle[i + 3][j + 3] == 1
-                    )
-                )
-                poat_num++;
-            if (poat_num >= 5)
-                break;
-        }
-        if (poat_num >= 5)
-        {
-            if(i > 30 && Garage_Clc == 1)
-            {
-                bluetooth_ch9141_send_string("2ga");
-            }
-            break;
-        }
-
-    }
-
-
-
-
-    if (poat_num >= 5)
-    {
-        Flag.Garage_Find = true;
-
-//        sprintf(txt, "%2d", i);
-//        bluetooth_ch9141_send_string(txt);
-
-    }
-    else if (Flag.Garage_Find && poat_num < 1)
-    {
-        lose_cnt++;
-
-        if (lose_cnt > 12)
-        {
-            lose_cnt = 0;
-            Flag.Garage_Find = false;
-            Flag.Garage_Go = true;
-            Garage_Clc--;
-            if(Garage_Clc == 0)
-            {
-                beep_set_sound(BEEP_ON);
-                Flag.Ui_Stop_Flag = 1;
-            }
-        }
-    }
-    else
-        Flag.Garage_Go = false;
-
-}
 
 /***************************************断路2******************************************************/
 
@@ -4535,4 +4088,36 @@ void updateMediumLine(void)
     oled_show_string(32, 1, "   ");
     oled_show_int(32, 1, (int16_t)(servo_param.cam_servo_temp_1),3);
 #endif
+}
+
+
+void show_line(){
+    uint8 i;
+    uint8 j=0;
+    uint8 leftLine, rightLine, centerLine;
+    for(i = 50 ; i < 50 + ImageH ; i++){
+        if(imageLine.Point_Left[j] > ImageW ){
+            leftLine = ImageW ;
+        }
+        else{
+            leftLine = imageLine.Point_Left[j];
+            //ips200_show_int(110, 225, leftLine, 3);
+        }
+        if(imageLine.Point_Right[j] > ImageW ){
+            rightLine = ImageW ;
+        }
+        else{
+            rightLine = imageLine.Point_Right[j];
+        }
+        if(imageLine.Point_Center[j] > ImageW ){
+            centerLine = ImageW ;
+        }
+        else{
+            centerLine = imageLine.Point_Center[j];
+        }
+        ips200_draw_point(25 + leftLine, i, RGB565_BLUE);
+        ips200_draw_point(25 + rightLine, i, RGB565_GREEN);
+        ips200_draw_point(25 + centerLine, i, RGB565_RED);
+        j++;
+    }
 }

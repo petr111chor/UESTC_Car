@@ -18,7 +18,7 @@ libraries/infineon_libraries/iLLD/TC37A/Tricore/Cpu/Std/IfxCpu.o
 
 # Each subdirectory must supply rules for building sources it contributes
 libraries/infineon_libraries/iLLD/TC37A/Tricore/Cpu/Std/IfxCpu.src: ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Cpu/Std/IfxCpu.c libraries/infineon_libraries/iLLD/TC37A/Tricore/Cpu/Std/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fD:/AURIX/ADS_finalfinaltest/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Program Files (x86)/Infineon/AURIX-v1.10.2-workspace/Seekfree_TC377_Opensource_Library/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 libraries/infineon_libraries/iLLD/TC37A/Tricore/Cpu/Std/IfxCpu.o: libraries/infineon_libraries/iLLD/TC37A/Tricore/Cpu/Std/IfxCpu.src libraries/infineon_libraries/iLLD/TC37A/Tricore/Cpu/Std/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 

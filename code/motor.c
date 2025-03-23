@@ -8,9 +8,13 @@
 
 motor1 motor_l;
 motor1 motor_r;
-PID motor_dir  =PID_CREATE(8,2,0,1);//转向PID
-PID motor_pid_l=PID_CREATE(8,0.5,0,1);
-PID motor_pid_r=PID_CREATE(8,0.5,0,1);
+PID motor_dir  =PID_CREATE(1,0,0,1);
+PID motor_pid_l=PID_CREATE(20,0.2,0,1);//电机
+PID motor_pid_r=PID_CREATE(20,0.2,0,1);//电机
+pid_param_tt motor_pid_left=PID_CREATETEST(2,0.05,0);
+pid_param_tt motor_pid_right=PID_CREATETEST(2,0.05,0);
+pid_param_tt motor_pid_direction=PID_CREATETEST(1,0.1,0.6);//转向
+
 volatile extern uint32_t start = 0;
 
 //电机初始化
@@ -75,8 +79,8 @@ void Motor_Control(int Speed_L, int Speed_R)
     motor_l.target_speed=Speed_L;
     motor_r.target_speed=Speed_R;
 
-    motor_l.duty=limit_int(-pid_out_limit,motor_l.duty+PID_Increase(&motor_pid_l,(float)motor_l.encoder_speed,(float)motor_l.target_speed),pid_out_limit);
-    motor_r.duty=limit_int(-pid_out_limit,motor_r.duty+PID_Increase(&motor_pid_r,(float)motor_r.encoder_speed,(float)motor_r.target_speed),pid_out_limit);
+    motor_l.duty=limit_int(0,motor_l.duty+PID_Increase(&motor_pid_l,(float)motor_l.encoder_speed,(float)motor_l.target_speed),pid_out_limit);
+    motor_r.duty=limit_int(0,motor_r.duty+PID_Increase(&motor_pid_r,(float)motor_r.encoder_speed,(float)motor_r.target_speed),pid_out_limit);
 
     Speed_Set(Motor_PWM_Left,Motor_GPIO_Left,motor_l.duty,0,1);
     Speed_Set(Motor_PWM_Right,Motor_GPIO_Right,motor_r.duty,0,1);
@@ -129,27 +133,34 @@ void car_start(void)
         }
     }
 }
+extern int ssss=10;
 
-
-int car_turn(uint8 mid)
+void car_turn(float mid)
 {
     int actuall_speed_difference;
     int turn_value;
     int left_target_speed,right_target_speed;
     actuall_speed_difference=motor_r.encoder_speed-motor_l.encoder_speed;//不知道这个值能不能取负值
     turn_value=PID_Normal(&motor_dir,(float)actuall_speed_difference,mid);
+    //ssss=turn_value;
     left_target_speed=motor_l.encoder_speed-turn_value;
     right_target_speed=motor_r.encoder_speed+turn_value;
     Motor_Control(left_target_speed, right_target_speed);
-    return turn_value;
+    //ips200_show_string(10,240,"turn_value"); ips200_show_int(110,240,turn_value,3);
+    //return turn_value;
 }
 
 
-void Final_Motor_Control(int speed,float k,int mid,int limit)
+void Final_Motor_Control(int speed,float k,float mid,int limit)
 {
-    Motor_Control(limit_int(speed-limit,speed-k*mid,speed+limit),limit_int(speed-limit,speed+k*mid,speed+limit));
+    float difference_speed;
+    difference_speed = PidLocCtrltest(&motor_pid_direction,mid);
+    ssss=difference_speed;
+    Motor_Control(limit_int(speed-limit,speed+k*difference_speed,speed+limit),limit_int(speed-limit,speed-k*difference_speed,speed+limit));
 
 }
+
+
 
 
 
