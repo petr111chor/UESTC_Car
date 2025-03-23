@@ -61,7 +61,7 @@ IFX_INTERRUPT(cc60_pit_ch1_isr, CCU6_0_CH1_INT_VECTAB_NUM, CCU6_0_CH1_ISR_PRIORI
 
     Encoder_Data_Get();
     //car_turn(20);
-    Final_Motor_Control(50,0.5,servo_param.Servo_filter,40);
+    Final_Motor_Control(80,1,servo_param.Servo_filter,40);
     //speed_Update();
 
 

@@ -14,6 +14,8 @@
 /************************************处理结果***********************************************/
 extern volatile short Cam_Process_Result;
 extern uint8_t send_data_flag;      //标志位发送
+extern uint8_t show_img_flag;          //标志显示图像
+extern uint8_t pd_flag ;
 
 /************************************PID结构体***********************************************/
 extern volatile pid_param_t  Motor_Left_pid;

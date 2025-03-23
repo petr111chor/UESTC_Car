@@ -57,7 +57,30 @@ void core1_main(void)
     while (TRUE)
     {
         // 此处编写需要循环执行的代码
+        if(show_img_flag)
+        {
+            ips200_show_gray_image(25, 50, (const uint8 *)C_Image, ImageW, ImageH, ImageW, ImageH, threshold);
+            ips200_show_int(25, 225, threshold, 3);
+            ips200_show_string(25, 200, "threshold:");
+            ips200_show_int(110, 225, light, 3);
+            ips200_show_string(110, 200, "light:");
+            show_line();
+            //turn_Update(); //舵机调整角度
+            ips200_show_int(150,230,servo_param.Servo_filter,3);
 
+            for(uint8 i=0;i<9;i++){
+                ips200_show_int(25*i+5, 150, image.cam_finalCenterERR[i], 2);
+            }
+            ips200_show_string(10,240,"turn_value"); ips200_show_int(110,240,ssss,3);
+            ips200_show_string(10,260,"l_speed"); ips200_show_int(110,260,motor_l.encoder_speed,3);
+            ips200_show_string(10,280,"r_speed"); ips200_show_int(110,280,motor_r.encoder_speed,3);
+            ips200_show_string(10,300,"difference"); ips200_show_int(110,300,motor_l.encoder_speed-motor_r.encoder_speed,3);
+
+
+            //system_delay(1000);
+            printf("%d,%d,%d,%d\n",motor_l.encoder_speed,motor_r.encoder_speed,motor_l.target_speed,motor_r.target_speed);
+
+        }
 
         //Final_Motor_Control(60,0.6,50,30);
 
