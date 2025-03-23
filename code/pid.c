@@ -22,18 +22,18 @@
  *************************************************************************/
 float PidIncCtrl(volatile pid_param_t * pid, int16_t error) {
 
-    pid->out_p = pid->kp * (error - pid->last_error);
-    pid->out_i = pid->ki * error;
-    pid->out_d = pid->kd * ((error - pid->last_error) - pid->last_derivative);
+   pid->out_p = pid->kp * (error - pid->last_error);
+   pid->out_i = pid->ki * error;
+   pid->out_d = pid->kd * ((error - pid->last_error) - pid->last_derivative);
 
-    pid->last_derivative = error - pid->last_error;
-    pid->last_error = error;
+   pid->last_derivative = error - pid->last_error;
+  pid->last_error = error;
 
-    pid->out += pid->out_p + pid->out_i + pid->out_d;
+  pid->out += pid->out_p + pid->out_i + pid->out_d;
 
-    pid->out = LIMIT(pid->out, -10000, 10000);
+  pid->out = LIMIT(pid->out, -10000, 10000);
 
-    return pid->out;
+   return pid->out;
 }
 
 
@@ -89,8 +89,8 @@ void Param_Init(void){
     Servo_Cam_pid.kd = servo_param.Ui_Cam_SD;
 
     //电机 PID参数
-    Motor_Left_pid.kp = motor_param.Ui_Motor_P;
-    Motor_Left_pid.ki = motor_param.Ui_Motor_I;
+    Motor_Left_pid.kp = 25;
+    Motor_Left_pid.ki = 4;
     Motor_Left_pid.kd = 0;
     Motor_Left_pid.imax = 0;
     Motor_Left_pid.out_p = 0;
@@ -102,8 +102,8 @@ void Param_Init(void){
     Motor_Left_pid.last_derivative = 0;
     Motor_Left_pid.last_t = 0;
 
-    Motor_Rigt_pid.kp = motor_param.Ui_Motor_P;
-    Motor_Rigt_pid.ki = motor_param.Ui_Motor_I;
+    Motor_Rigt_pid.kp = 25;
+    Motor_Rigt_pid.ki = 4;
     Motor_Rigt_pid.kd = 0;
     Motor_Rigt_pid.imax = 0;
     Motor_Rigt_pid.out_p = 0;

@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc50436a --dep-file=IfxQspi_cfg.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\code -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_common -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_components -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_device -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_driver -ID:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxQspi_cfg.src ../libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxQspi_cfg.c"
+	.compiler_invocation	"ctc -f cc12472a --dep-file=IfxQspi_cfg.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\code -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_common -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_components -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_device -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_driver -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxQspi_cfg.src ../libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxQspi_cfg.c"
 	.compiler_name		"ctc"
 	;source	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxQspi_cfg.c'
 
@@ -19,7 +19,7 @@ IfxQspi_cfg_indexMap:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L3:
-	.word	7289
+	.word	7317
 	.half	3
 	.word	.L4
 	.byte	4
@@ -27,1077 +27,1078 @@ IfxQspi_cfg_indexMap:	.type	object
 	.byte	1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxQspi_cfg.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\Debug\\',0,12,1
+	.byte	'E:\\Program Files (x86)\\Infineon\\AURIX-v1.10.2-workspace\\Seekfree_TC377_Opensource_Library\\Debug\\',0
+	.byte	12,1
 	.word	.L5
 	.byte	2
 	.byte	'short int',0,2,5,3
 	.byte	'__wchar_t',0,1,1,1
-	.word	235
+	.word	263
 	.byte	2
 	.byte	'unsigned int',0,4,7,3
 	.byte	'__size_t',0,1,1,1
-	.word	266
+	.word	294
 	.byte	2
 	.byte	'int',0,4,5,3
 	.byte	'__ptrdiff_t',0,1,1,1
-	.word	299
+	.word	327
 	.byte	4,1,5
-	.word	326
+	.word	354
 	.byte	3
 	.byte	'__codeptr',0,1,1,1
-	.word	328
+	.word	356
 	.byte	3
 	.byte	'__intptr_t',0,1,1,1
-	.word	299
+	.word	327
 	.byte	3
 	.byte	'__uintptr_t',0,1,1,1
-	.word	266
+	.word	294
 	.byte	2
 	.byte	'unsigned short int',0,2,7,3
 	.byte	'_iob_flag_t',0,2,82,25
-	.word	390
+	.word	418
 	.byte	2
 	.byte	'unsigned char',0,1,8,3
 	.byte	'uint8',0,3,105,29
-	.word	432
+	.word	460
 	.byte	3
 	.byte	'uint16',0,3,109,29
-	.word	390
+	.word	418
 	.byte	2
 	.byte	'unsigned long int',0,4,7,3
 	.byte	'uint32',0,3,113,29
-	.word	478
+	.word	506
 	.byte	2
 	.byte	'unsigned long long int',0,8,7,3
 	.byte	'uint64',0,3,118,29
-	.word	514
+	.word	542
 	.byte	3
 	.byte	'sint16',0,3,126,29
-	.word	235
+	.word	263
 	.byte	2
 	.byte	'long int',0,4,5,3
 	.byte	'sint32',0,3,131,1,29
-	.word	570
+	.word	598
 	.byte	2
 	.byte	'long long int',0,8,5,3
 	.byte	'sint64',0,3,138,1,29
-	.word	598
+	.word	626
 	.byte	2
 	.byte	'float',0,4,4,3
 	.byte	'float32',0,3,167,1,29
-	.word	631
+	.word	659
 	.byte	2
 	.byte	'char',0,1,6,3
 	.byte	'int8',0,4,54,29
-	.word	657
+	.word	685
 	.byte	3
 	.byte	'int16',0,4,55,29
-	.word	235
+	.word	263
 	.byte	3
 	.byte	'int32',0,4,56,29
-	.word	299
+	.word	327
 	.byte	3
 	.byte	'int64',0,4,57,29
-	.word	598
+	.word	626
 	.byte	6
 	.byte	'void',0,5
-	.word	720
+	.word	748
 	.byte	3
 	.byte	'pvoid',0,5,57,28
-	.word	726
+	.word	754
 	.byte	3
 	.byte	'Ifx_TickTime',0,5,79,28
-	.word	598
+	.word	626
 	.byte	7
-	.word	720
+	.word	748
 	.byte	5
-	.word	766
+	.word	794
 	.byte	8,5,143,1,9,8,9
 	.byte	'module',0
-	.word	771
+	.word	799
 	.byte	4,2,35,0,9
 	.byte	'index',0
-	.word	570
+	.word	598
 	.byte	4,2,35,4,0,3
 	.byte	'IfxModule_IndexMap',0,5,147,1,3
-	.word	776
+	.word	804
 	.byte	3
 	.byte	'Ifx_UReg_8Bit',0,6,94,24
-	.word	432
+	.word	460
 	.byte	3
 	.byte	'Ifx_UReg_32Bit',0,6,96,24
-	.word	266
+	.word	294
 	.byte	3
 	.byte	'Ifx_SReg_32Bit',0,6,99,24
-	.word	299
+	.word	327
 	.byte	10
 	.byte	'_Ifx_QSPI_ACCEN0_Bits',0,7,70,16,4,11
 	.byte	'EN0',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,0,11
 	.byte	'EN1',0,1
-	.word	432
+	.word	460
 	.byte	1,6,2,35,0,11
 	.byte	'EN2',0,1
-	.word	432
+	.word	460
 	.byte	1,5,2,35,0,11
 	.byte	'EN3',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,0,11
 	.byte	'EN4',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,0,11
 	.byte	'EN5',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,0,11
 	.byte	'EN6',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,0,11
 	.byte	'EN7',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,0,11
 	.byte	'EN8',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,1,11
 	.byte	'EN9',0,1
-	.word	432
+	.word	460
 	.byte	1,6,2,35,1,11
 	.byte	'EN10',0,1
-	.word	432
+	.word	460
 	.byte	1,5,2,35,1,11
 	.byte	'EN11',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,1,11
 	.byte	'EN12',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,1,11
 	.byte	'EN13',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,1,11
 	.byte	'EN14',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,1,11
 	.byte	'EN15',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,1,11
 	.byte	'EN16',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,2,11
 	.byte	'EN17',0,1
-	.word	432
+	.word	460
 	.byte	1,6,2,35,2,11
 	.byte	'EN18',0,1
-	.word	432
+	.word	460
 	.byte	1,5,2,35,2,11
 	.byte	'EN19',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,2,11
 	.byte	'EN20',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,2,11
 	.byte	'EN21',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,2,11
 	.byte	'EN22',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,2,11
 	.byte	'EN23',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,2,11
 	.byte	'EN24',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,3,11
 	.byte	'EN25',0,1
-	.word	432
+	.word	460
 	.byte	1,6,2,35,3,11
 	.byte	'EN26',0,1
-	.word	432
+	.word	460
 	.byte	1,5,2,35,3,11
 	.byte	'EN27',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,3,11
 	.byte	'EN28',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,3,11
 	.byte	'EN29',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,3,11
 	.byte	'EN30',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,3,11
 	.byte	'EN31',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_QSPI_ACCEN0_Bits',0,7,104,3
-	.word	910
+	.word	938
 	.byte	10
 	.byte	'_Ifx_QSPI_ACCEN1_Bits',0,7,107,16,4,11
 	.byte	'reserved_0',0,4
-	.word	266
+	.word	294
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_QSPI_ACCEN1_Bits',0,7,110,3
-	.word	1469
+	.word	1497
 	.byte	10
 	.byte	'_Ifx_QSPI_BACON_Bits',0,7,113,16,4,11
 	.byte	'LAST',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,0,11
 	.byte	'IPRE',0,1
-	.word	432
+	.word	460
 	.byte	3,4,2,35,0,11
 	.byte	'IDLE',0,1
-	.word	432
+	.word	460
 	.byte	3,1,2,35,0,11
 	.byte	'LPRE',0,2
-	.word	390
+	.word	418
 	.byte	3,6,2,35,0,11
 	.byte	'LEAD',0,1
-	.word	432
+	.word	460
 	.byte	3,3,2,35,1,11
 	.byte	'TPRE',0,1
-	.word	432
+	.word	460
 	.byte	3,0,2,35,1,11
 	.byte	'TRAIL',0,1
-	.word	432
+	.word	460
 	.byte	3,5,2,35,2,11
 	.byte	'PARTYP',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,2,11
 	.byte	'UINT',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,2,11
 	.byte	'MSB',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,2,11
 	.byte	'BYTE',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,2,11
 	.byte	'DL',0,2
-	.word	390
+	.word	418
 	.byte	5,4,2,35,2,11
 	.byte	'CS',0,1
-	.word	432
+	.word	460
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_QSPI_BACON_Bits',0,7,128,1,3
-	.word	1548
+	.word	1576
 	.byte	10
 	.byte	'_Ifx_QSPI_BACONENTRY_Bits',0,7,131,1,16,4,11
 	.byte	'E',0,4
-	.word	266
+	.word	294
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_QSPI_BACONENTRY_Bits',0,7,134,1,3
-	.word	1810
+	.word	1838
 	.byte	10
 	.byte	'_Ifx_QSPI_CAPCON_Bits',0,7,137,1,16,4,11
 	.byte	'CAP',0,2
-	.word	390
+	.word	418
 	.byte	15,1,2,35,0,11
 	.byte	'OVF',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,1,11
 	.byte	'EDGECON',0,1
-	.word	432
+	.word	460
 	.byte	2,6,2,35,2,11
 	.byte	'INS',0,1
-	.word	432
+	.word	460
 	.byte	2,4,2,35,2,11
 	.byte	'EN',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,2,11
 	.byte	'reserved_21',0,2
-	.word	390
+	.word	418
 	.byte	7,4,2,35,2,11
 	.byte	'CAPC',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,3,11
 	.byte	'CAPS',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,3,11
 	.byte	'CAPF',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,3,11
 	.byte	'CAPSEL',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_QSPI_CAPCON_Bits',0,7,149,1,3
-	.word	1890
+	.word	1918
 	.byte	10
 	.byte	'_Ifx_QSPI_CLC_Bits',0,7,152,1,16,4,11
 	.byte	'DISR',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,0,11
 	.byte	'DISS',0,1
-	.word	432
+	.word	460
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	432
+	.word	460
 	.byte	1,5,2,35,0,11
 	.byte	'EDIS',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,0,11
 	.byte	'reserved_4',0,4
-	.word	266
+	.word	294
 	.byte	28,0,2,35,0,0,3
 	.byte	'Ifx_QSPI_CLC_Bits',0,7,159,1,3
-	.word	2116
+	.word	2144
 	.byte	10
 	.byte	'_Ifx_QSPI_DATAENTRY_Bits',0,7,162,1,16,4,11
 	.byte	'E',0,4
-	.word	266
+	.word	294
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_QSPI_DATAENTRY_Bits',0,7,165,1,3
-	.word	2261
+	.word	2289
 	.byte	10
 	.byte	'_Ifx_QSPI_ECON_Bits',0,7,168,1,16,4,11
 	.byte	'Q',0,1
-	.word	432
+	.word	460
 	.byte	6,2,2,35,0,11
 	.byte	'A',0,1
-	.word	432
+	.word	460
 	.byte	2,0,2,35,0,11
 	.byte	'B',0,1
-	.word	432
+	.word	460
 	.byte	2,6,2,35,1,11
 	.byte	'C',0,1
-	.word	432
+	.word	460
 	.byte	2,4,2,35,1,11
 	.byte	'CPH',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,1,11
 	.byte	'CPOL',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,1,11
 	.byte	'PAREN',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,1,11
 	.byte	'reserved_15',0,4
-	.word	266
+	.word	294
 	.byte	15,2,2,35,0,11
 	.byte	'BE',0,1
-	.word	432
+	.word	460
 	.byte	2,0,2,35,3,0,3
 	.byte	'Ifx_QSPI_ECON_Bits',0,7,179,1,3
-	.word	2339
+	.word	2367
 	.byte	10
 	.byte	'_Ifx_QSPI_FLAGSCLEAR_Bits',0,7,182,1,16,4,11
 	.byte	'ERRORCLEARS',0,2
-	.word	390
+	.word	418
 	.byte	9,7,2,35,0,11
 	.byte	'TXC',0,1
-	.word	432
+	.word	460
 	.byte	1,6,2,35,1,11
 	.byte	'RXC',0,1
-	.word	432
+	.word	460
 	.byte	1,5,2,35,1,11
 	.byte	'PT1C',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,1,11
 	.byte	'PT2C',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,1,11
 	.byte	'reserved_13',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,1,11
 	.byte	'reserved_14',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,1,11
 	.byte	'USRC',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,1,11
 	.byte	'reserved_16',0,2
-	.word	390
+	.word	418
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_QSPI_FLAGSCLEAR_Bits',0,7,193,1,3
-	.word	2531
+	.word	2559
 	.byte	10
 	.byte	'_Ifx_QSPI_GLOBALCON_Bits',0,7,196,1,16,4,11
 	.byte	'TQ',0,1
-	.word	432
+	.word	460
 	.byte	8,0,2,35,0,11
 	.byte	'reserved_8',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,1,11
 	.byte	'SI',0,1
-	.word	432
+	.word	460
 	.byte	1,6,2,35,1,11
 	.byte	'EXPECT',0,1
-	.word	432
+	.word	460
 	.byte	4,2,2,35,1,11
 	.byte	'LB',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,1,11
 	.byte	'DEL0',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,1,11
 	.byte	'STROBE',0,1
-	.word	432
+	.word	460
 	.byte	5,3,2,35,2,11
 	.byte	'SRF',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,2,11
 	.byte	'STIP',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,2,11
 	.byte	'reserved_23',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,2,11
 	.byte	'EN',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,3,11
 	.byte	'MS',0,1
-	.word	432
+	.word	460
 	.byte	2,5,2,35,3,11
 	.byte	'AREN',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,3,11
 	.byte	'reserved_28',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,3,11
 	.byte	'CLKSEL',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,3,11
 	.byte	'RESETS',0,1
-	.word	432
+	.word	460
 	.byte	2,0,2,35,3,0,3
 	.byte	'Ifx_QSPI_GLOBALCON_Bits',0,7,214,1,3
-	.word	2768
+	.word	2796
 	.byte	10
 	.byte	'_Ifx_QSPI_GLOBALCON1_Bits',0,7,217,1,16,4,11
 	.byte	'ERRORENS',0,2
-	.word	390
+	.word	418
 	.byte	9,7,2,35,0,11
 	.byte	'TXEN',0,1
-	.word	432
+	.word	460
 	.byte	1,6,2,35,1,11
 	.byte	'RXEN',0,1
-	.word	432
+	.word	460
 	.byte	1,5,2,35,1,11
 	.byte	'PT1EN',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,1,11
 	.byte	'PT2EN',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,1,11
 	.byte	'reserved_13',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,1,11
 	.byte	'reserved_14',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,1,11
 	.byte	'USREN',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,1,11
 	.byte	'TXFIFOINT',0,1
-	.word	432
+	.word	460
 	.byte	2,6,2,35,2,11
 	.byte	'RXFIFOINT',0,1
-	.word	432
+	.word	460
 	.byte	2,4,2,35,2,11
 	.byte	'PT1',0,1
-	.word	432
+	.word	460
 	.byte	3,1,2,35,2,11
 	.byte	'PT2',0,2
-	.word	390
+	.word	418
 	.byte	3,6,2,35,2,11
 	.byte	'TXFM',0,1
-	.word	432
+	.word	460
 	.byte	2,4,2,35,3,11
 	.byte	'RXFM',0,1
-	.word	432
+	.word	460
 	.byte	2,2,2,35,3,11
 	.byte	'reserved_30',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,3,11
 	.byte	'reserved_31',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_QSPI_GLOBALCON1_Bits',0,7,235,1,3
-	.word	3106
+	.word	3134
 	.byte	10
 	.byte	'_Ifx_QSPI_ID_Bits',0,7,238,1,16,4,11
 	.byte	'MODREV',0,1
-	.word	432
+	.word	460
 	.byte	8,0,2,35,0,11
 	.byte	'MODTYPE',0,1
-	.word	432
+	.word	460
 	.byte	8,0,2,35,1,11
 	.byte	'MODNUMBER',0,2
-	.word	390
+	.word	418
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_QSPI_ID_Bits',0,7,243,1,3
-	.word	3472
+	.word	3500
 	.byte	10
 	.byte	'_Ifx_QSPI_KRST0_Bits',0,7,246,1,16,4,11
 	.byte	'RST',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,0,11
 	.byte	'RSTSTAT',0,1
-	.word	432
+	.word	460
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,4
-	.word	266
+	.word	294
 	.byte	30,0,2,35,0,0,3
 	.byte	'Ifx_QSPI_KRST0_Bits',0,7,251,1,3
-	.word	3581
+	.word	3609
 	.byte	10
 	.byte	'_Ifx_QSPI_KRST1_Bits',0,7,254,1,16,4,11
 	.byte	'RST',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,0,11
 	.byte	'reserved_1',0,4
-	.word	266
+	.word	294
 	.byte	31,0,2,35,0,0,3
 	.byte	'Ifx_QSPI_KRST1_Bits',0,7,130,2,3
-	.word	3694
+	.word	3722
 	.byte	10
 	.byte	'_Ifx_QSPI_KRSTCLR_Bits',0,7,133,2,16,4,11
 	.byte	'CLR',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,0,11
 	.byte	'reserved_1',0,4
-	.word	266
+	.word	294
 	.byte	31,0,2,35,0,0,3
 	.byte	'Ifx_QSPI_KRSTCLR_Bits',0,7,137,2,3
-	.word	3788
+	.word	3816
 	.byte	10
 	.byte	'_Ifx_QSPI_MC_Bits',0,7,140,2,16,4,11
 	.byte	'MCOUNT',0,2
-	.word	390
+	.word	418
 	.byte	13,3,2,35,0,11
 	.byte	'reserved_13',0,1
-	.word	432
+	.word	460
 	.byte	3,0,2,35,1,11
 	.byte	'CURRENT',0,2
-	.word	390
+	.word	418
 	.byte	13,3,2,35,2,11
 	.byte	'reserved_29',0,1
-	.word	432
+	.word	460
 	.byte	3,0,2,35,3,0,3
 	.byte	'Ifx_QSPI_MC_Bits',0,7,146,2,3
-	.word	3886
+	.word	3914
 	.byte	10
 	.byte	'_Ifx_QSPI_MCCON_Bits',0,7,149,2,16,4,11
 	.byte	'TPRE2',0,1
-	.word	432
+	.word	460
 	.byte	3,5,2,35,0,11
 	.byte	'TRAIL2',0,1
-	.word	432
+	.word	460
 	.byte	3,2,2,35,0,11
 	.byte	'reserved_6',0,2
-	.word	390
+	.word	418
 	.byte	10,0,2,35,0,11
 	.byte	'IBLEN',0,1
-	.word	432
+	.word	460
 	.byte	1,7,2,35,2,11
 	.byte	'IBLF',0,1
-	.word	432
+	.word	460
 	.byte	1,6,2,35,2,11
 	.byte	'IBLC',0,1
-	.word	432
+	.word	460
 	.byte	1,5,2,35,2,11
 	.byte	'IBLS',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,2,11
 	.byte	'IALEN',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,2,11
 	.byte	'IALF',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,2,11
 	.byte	'IALC',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,2,11
 	.byte	'IALS',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,2,11
 	.byte	'reserved_24',0,1
-	.word	432
+	.word	460
 	.byte	6,2,2,35,3,11
 	.byte	'T2EN',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,3,11
 	.byte	'MCEN',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_QSPI_MCCON_Bits',0,7,165,2,3
-	.word	4020
+	.word	4048
 	.byte	10
 	.byte	'_Ifx_QSPI_MIXENTRY_Bits',0,7,168,2,16,4,11
 	.byte	'E',0,4
-	.word	266
+	.word	294
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_QSPI_MIXENTRY_Bits',0,7,171,2,3
-	.word	4319
+	.word	4347
 	.byte	10
 	.byte	'_Ifx_QSPI_OCS_Bits',0,7,174,2,16,4,11
 	.byte	'reserved_0',0,1
-	.word	432
+	.word	460
 	.byte	4,4,2,35,0,11
 	.byte	'reserved_4',0,4
-	.word	266
+	.word	294
 	.byte	20,8,2,35,0,11
 	.byte	'SUS',0,1
-	.word	432
+	.word	460
 	.byte	4,4,2,35,3,11
 	.byte	'SUS_P',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,3,11
 	.byte	'SUSSTA',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,3,11
 	.byte	'reserved_30',0,1
-	.word	432
+	.word	460
 	.byte	2,0,2,35,3,0,3
 	.byte	'Ifx_QSPI_OCS_Bits',0,7,182,2,3
-	.word	4395
+	.word	4423
 	.byte	10
 	.byte	'_Ifx_QSPI_PISEL_Bits',0,7,185,2,16,4,11
 	.byte	'MRIS',0,1
-	.word	432
+	.word	460
 	.byte	3,5,2,35,0,11
 	.byte	'reserved_3',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,0,11
 	.byte	'SRIS',0,1
-	.word	432
+	.word	460
 	.byte	3,1,2,35,0,11
 	.byte	'reserved_7',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,0,11
 	.byte	'SCIS',0,1
-	.word	432
+	.word	460
 	.byte	3,5,2,35,1,11
 	.byte	'reserved_11',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,1,11
 	.byte	'SLSIS',0,1
-	.word	432
+	.word	460
 	.byte	3,1,2,35,1,11
 	.byte	'reserved_15',0,4
-	.word	266
+	.word	294
 	.byte	17,0,2,35,0,0,3
 	.byte	'Ifx_QSPI_PISEL_Bits',0,7,195,2,3
-	.word	4565
+	.word	4593
 	.byte	10
 	.byte	'_Ifx_QSPI_RXEXIT_Bits',0,7,198,2,16,4,11
 	.byte	'E',0,4
-	.word	266
+	.word	294
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_QSPI_RXEXIT_Bits',0,7,201,2,3
-	.word	4777
+	.word	4805
 	.byte	10
 	.byte	'_Ifx_QSPI_RXEXITD_Bits',0,7,204,2,16,4,11
 	.byte	'E',0,4
-	.word	266
+	.word	294
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_QSPI_RXEXITD_Bits',0,7,207,2,3
-	.word	4849
+	.word	4877
 	.byte	10
 	.byte	'_Ifx_QSPI_SSOC_Bits',0,7,210,2,16,4,11
 	.byte	'AOL',0,2
-	.word	390
+	.word	418
 	.byte	16,0,2,35,0,11
 	.byte	'OEN',0,2
-	.word	390
+	.word	418
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_QSPI_SSOC_Bits',0,7,214,2,3
-	.word	4923
+	.word	4951
 	.byte	10
 	.byte	'_Ifx_QSPI_STATUS_Bits',0,7,217,2,16,4,11
 	.byte	'ERRORFLAGS',0,2
-	.word	390
+	.word	418
 	.byte	9,7,2,35,0,11
 	.byte	'TXF',0,1
-	.word	432
+	.word	460
 	.byte	1,6,2,35,1,11
 	.byte	'RXF',0,1
-	.word	432
+	.word	460
 	.byte	1,5,2,35,1,11
 	.byte	'PT1F',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,1,11
 	.byte	'PT2F',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,1,11
 	.byte	'reserved_13',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,1,11
 	.byte	'reserved_14',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,1,11
 	.byte	'USRF',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,1,11
 	.byte	'TXFIFOLEVEL',0,1
-	.word	432
+	.word	460
 	.byte	3,5,2,35,2,11
 	.byte	'RXFIFOLEVEL',0,1
-	.word	432
+	.word	460
 	.byte	3,2,2,35,2,11
 	.byte	'SLAVESEL',0,2
-	.word	390
+	.word	418
 	.byte	4,6,2,35,2,11
 	.byte	'RPV',0,1
-	.word	432
+	.word	460
 	.byte	1,5,2,35,3,11
 	.byte	'TPV',0,1
-	.word	432
+	.word	460
 	.byte	1,4,2,35,3,11
 	.byte	'PHASE',0,1
-	.word	432
+	.word	460
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_QSPI_STATUS_Bits',0,7,233,2,3
-	.word	5008
+	.word	5036
 	.byte	10
 	.byte	'_Ifx_QSPI_STATUS1_Bits',0,7,236,2,16,4,11
 	.byte	'BITCOUNT',0,1
-	.word	432
+	.word	460
 	.byte	8,0,2,35,0,11
 	.byte	'reserved_8',0,4
-	.word	266
+	.word	294
 	.byte	20,4,2,35,0,11
 	.byte	'BRDEN',0,1
-	.word	432
+	.word	460
 	.byte	1,3,2,35,3,11
 	.byte	'BRD',0,1
-	.word	432
+	.word	460
 	.byte	1,2,2,35,3,11
 	.byte	'SPDEN',0,1
-	.word	432
+	.word	460
 	.byte	1,1,2,35,3,11
 	.byte	'SPD',0,1
-	.word	432
+	.word	460
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_QSPI_STATUS1_Bits',0,7,244,2,3
-	.word	5326
+	.word	5354
 	.byte	10
 	.byte	'_Ifx_QSPI_XXLCON_Bits',0,7,247,2,16,4,11
 	.byte	'XDL',0,2
-	.word	390
+	.word	418
 	.byte	16,0,2,35,0,11
 	.byte	'BYTECOUNT',0,2
-	.word	390
+	.word	418
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_QSPI_XXLCON_Bits',0,7,251,2,3
-	.word	5493
+	.word	5521
 	.byte	12,7,131,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	910
+	.word	938
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_ACCEN0',0,7,136,3,3
-	.word	5588
+	.word	5616
 	.byte	12,7,139,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	1469
+	.word	1497
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_ACCEN1',0,7,144,3,3
-	.word	5653
+	.word	5681
 	.byte	12,7,147,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	1548
+	.word	1576
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_BACON',0,7,152,3,3
-	.word	5718
+	.word	5746
 	.byte	12,7,155,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	1810
+	.word	1838
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_BACONENTRY',0,7,160,3,3
-	.word	5782
+	.word	5810
 	.byte	12,7,163,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	1890
+	.word	1918
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_CAPCON',0,7,168,3,3
-	.word	5851
+	.word	5879
 	.byte	12,7,171,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	2116
+	.word	2144
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_CLC',0,7,176,3,3
-	.word	5916
+	.word	5944
 	.byte	12,7,179,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	2261
+	.word	2289
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_DATAENTRY',0,7,184,3,3
-	.word	5978
+	.word	6006
 	.byte	12,7,187,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	2339
+	.word	2367
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_ECON',0,7,192,3,3
-	.word	6046
+	.word	6074
 	.byte	12,7,195,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	2531
+	.word	2559
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_FLAGSCLEAR',0,7,200,3,3
-	.word	6109
+	.word	6137
 	.byte	12,7,203,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	2768
+	.word	2796
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_GLOBALCON',0,7,208,3,3
-	.word	6178
+	.word	6206
 	.byte	12,7,211,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	3106
+	.word	3134
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_GLOBALCON1',0,7,216,3,3
-	.word	6246
+	.word	6274
 	.byte	12,7,219,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	3472
+	.word	3500
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_ID',0,7,224,3,3
-	.word	6315
+	.word	6343
 	.byte	12,7,227,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	3581
+	.word	3609
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_KRST0',0,7,232,3,3
-	.word	6376
+	.word	6404
 	.byte	12,7,235,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	3694
+	.word	3722
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_KRST1',0,7,240,3,3
-	.word	6440
+	.word	6468
 	.byte	12,7,243,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	3788
+	.word	3816
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_KRSTCLR',0,7,248,3,3
-	.word	6504
+	.word	6532
 	.byte	12,7,251,3,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	3886
+	.word	3914
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_MC',0,7,128,4,3
-	.word	6570
+	.word	6598
 	.byte	12,7,131,4,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4020
+	.word	4048
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_MCCON',0,7,136,4,3
-	.word	6631
+	.word	6659
 	.byte	12,7,139,4,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4319
+	.word	4347
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_MIXENTRY',0,7,144,4,3
-	.word	6695
+	.word	6723
 	.byte	12,7,147,4,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4395
+	.word	4423
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_OCS',0,7,152,4,3
-	.word	6762
+	.word	6790
 	.byte	12,7,155,4,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4565
+	.word	4593
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_PISEL',0,7,160,4,3
-	.word	6824
+	.word	6852
 	.byte	12,7,163,4,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4777
+	.word	4805
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_RXEXIT',0,7,168,4,3
-	.word	6888
+	.word	6916
 	.byte	12,7,171,4,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4849
+	.word	4877
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_RXEXITD',0,7,176,4,3
-	.word	6953
+	.word	6981
 	.byte	12,7,179,4,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4923
+	.word	4951
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_SSOC',0,7,184,4,3
-	.word	7019
+	.word	7047
 	.byte	12,7,187,4,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	5008
+	.word	5036
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_STATUS',0,7,192,4,3
-	.word	7082
+	.word	7110
 	.byte	12,7,195,4,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	5326
+	.word	5354
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_STATUS1',0,7,200,4,3
-	.word	7147
+	.word	7175
 	.byte	12,7,203,4,9,4,9
 	.byte	'U',0
-	.word	266
+	.word	294
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	299
+	.word	327
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	5493
+	.word	5521
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_QSPI_XXLCON',0,7,208,4,3
-	.word	7213
+	.word	7241
 	.byte	13,40
-	.word	776
+	.word	804
 	.byte	14,4,0
 .L8:
 	.byte	15
-	.word	7278
+	.word	7306
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -1116,16 +1117,16 @@ IfxQspi_cfg_indexMap:	.type	object
 	.word	.L12-.L11
 .L11:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
-	.byte	'D:\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
-	.byte	'D:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
-	.byte	'D:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_common',0
-	.byte	'D:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
+	.byte	'E:\\Program Files (x86)\\Infineon\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
+	.byte	'E:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
+	.byte	'E:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_common',0
+	.byte	'E:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
 	.byte	0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxQspi_cfg.c',0,0,0,0
 	.byte	'stdio.h',0,1,0,0
 	.byte	'PLATFORM_TYPES.H',0,2,0,0
 	.byte	'zf_common_typedef.h',0,3,0,0
-	.byte	'D:\\\\AURIX\\\\ADS_finalfinaltest\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	'E:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
 	.byte	0,0,0
 	.byte	'Ifx_TypesReg.h',0,4,0,0
 	.byte	'IfxQspi_regdef.h',0,4,0,0,0
@@ -1134,13 +1135,14 @@ IfxQspi_cfg_indexMap:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_cfg_indexMap')
 	.sect	'.debug_info'
 .L6:
-	.word	269
+	.word	297
 	.half	3
 	.word	.L7
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxQspi_cfg.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'D:\\AURIX\\ADS_finalfinaltest\\Seekfree_TC377_Opensource_Library\\Debug\\',0,12,1,2
+	.byte	'E:\\Program Files (x86)\\Infineon\\AURIX-v1.10.2-workspace\\Seekfree_TC377_Opensource_Library\\Debug\\',0
+	.byte	12,1,2
 	.word	.L2
 	.byte	3
 	.byte	'IfxQspi_cfg_indexMap',0,1,55,30

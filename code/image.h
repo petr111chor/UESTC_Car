@@ -127,14 +127,6 @@ void Right_Ring_Turn(void);
 void Right_Ring_Out(void);
 void Right_Ring_Out_Mend1(void);
 void Right_Ring_Out_Mend2(void);
-/****************************************坡道******************************************************/
-void Ramp_task(void);
-/****************************************障碍物******************************************************/
-void  barricade_by_imu(void);
-void  barricade_by_image(void);
-void  barricade_by_time(void);
-/***************************************斑马线*****************************************************/
-void zebra_found_zz(void);
 
 /***************************************断路******************************************************/
 void Break_Road(void);
@@ -143,7 +135,7 @@ void Break_Road_2(void);
 
 void updateMediumLine(void);//更新中线打角
 bool MediumLineCal(volatile float* final);//计算中线打角
-
+void show_line();
 
 
 #endif
