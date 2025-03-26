@@ -64,7 +64,7 @@
 #define DEG_TO_RAD 0.017453292519943295769236907684886f  //°->rad
 #define RAD_TO_DEG 57.295779513082320876798154814105f   //rad->°
 
-float invSqrt(float x); //快速计算 1/Sqrt(x) 	
+float invSqrt(float x); //快速计算 1/Sqrt(x)
 float fast_atan(float v);//快速反正切
 float constrain_float(float amt, float low, float high);//float限幅
 int16_t constrain_int16(int16_t amt, int16_t low, int16_t high);//16bit限幅
@@ -89,5 +89,6 @@ int16_t constrain_int16_MAX(int16_t amt, int16_t high);
 
 float my_abs_float(float in);
 short my_abs_short(short in);
+int my_abs(int value);
 
 #endif

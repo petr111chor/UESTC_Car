@@ -1,11 +1,39 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc18076a --dep-file=HANA_math.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\code -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_common -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_components -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_device -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_driver -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/HANA_math.src ../code/HANA_math.c"
+	.compiler_invocation	"ctc -f cc24836a --dep-file=HANA_math.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\code -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_common -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_components -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_device -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\zf_driver -IE:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/HANA_math.src ../code/HANA_math.c"
 	.compiler_name		"ctc"
 	;source	'../code/HANA_math.c'
 
 	
 $TC162
+	
+	.sdecl	'.text.HANA_math.my_abs',code,cluster('my_abs')
+	.sect	'.text.HANA_math.my_abs'
+	.align	2
+	
+	.global	my_abs
+; Function my_abs
+.L66:
+my_abs:	.type	func
+	jlt	d4,#0,.L2
+.L573:
+	mov	d2,d4
+.L335:
+	j	.L3
+.L2:
+	rsub	d4,#0
+.L574:
+	mov	d2,d4
+	j	.L4
+.L4:
+.L3:
+	ret
+.L329:
+	
+__my_abs_function_end:
+	.size	my_abs,__my_abs_function_end-my_abs
+.L231:
+	; End of function
 	
 	.sdecl	'.text.HANA_math.my_abs_float',code,cluster('my_abs_float')
 	.sect	'.text.HANA_math.my_abs_float'
@@ -13,30 +41,30 @@ $TC162
 	
 	.global	my_abs_float
 ; Function my_abs_float
-.L63:
+.L68:
 my_abs_float:	.type	func
 	mov	d15,#0
-.L546:
+.L559:
 	cmp.f	d15,d4,d15
 	extr.u	d15,d15,#0,#1
-.L547:
-	jeq	d15,#0,.L2
-.L548:
+.L560:
+	jeq	d15,#0,.L5
+.L561:
 	insn.t	d2,d4:31,d4:31
-.L549:
-	j	.L3
-.L2:
+.L562:
+	j	.L6
+.L5:
 	mov	d2,d4
-.L323:
-	j	.L4
-.L4:
-.L3:
+.L336:
+	j	.L7
+.L7:
+.L6:
 	ret
-.L315:
+.L325:
 	
 __my_abs_float_function_end:
 	.size	my_abs_float,__my_abs_float_function_end-my_abs_float
-.L216:
+.L221:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.my_abs_short',code,cluster('my_abs_short')
@@ -45,26 +73,26 @@ __my_abs_float_function_end:
 	
 	.global	my_abs_short
 ; Function my_abs_short
-.L65:
+.L70:
 my_abs_short:	.type	func
-	jge	d4,#0,.L5
-.L554:
+	jge	d4,#0,.L8
+.L567:
 	rsub	d4,#0
 	extr	d2,d4,#0,#16
-.L555:
-	j	.L6
-.L5:
+.L568:
+	j	.L9
+.L8:
 	mov	d2,d4
-.L324:
-	j	.L7
-.L7:
-.L6:
+.L337:
+	j	.L10
+.L10:
+.L9:
 	ret
-.L317:
+.L327:
 	
 __my_abs_short_function_end:
 	.size	my_abs_short,__my_abs_short_function_end-my_abs_short
-.L221:
+.L226:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.invSqrt',code,cluster('invSqrt')
@@ -73,35 +101,35 @@ __my_abs_short_function_end:
 	
 	.global	invSqrt
 ; Function invSqrt
-.L67:
+.L72:
 invSqrt:	.type	func
 	movh	d15,#16128
-.L390:
+.L403:
 	mul.f	d0,d4,d15
-.L326:
+.L339:
 	mov	d15,#23007
 	addih	d15,d15,#24375
-.L391:
+.L404:
 	sha	d4,#-1
-.L325:
+.L338:
 	sub	d15,d4
-.L392:
+.L405:
 	movh	d1,#16320
-.L393:
+.L406:
 	mul.f	d0,d0,d15
-.L327:
+.L340:
 	msub.f	d0,d1,d0,d15
-.L394:
+.L407:
 	mul.f	d2,d15,d0
-.L328:
-	j	.L8
-.L8:
+.L341:
+	j	.L11
+.L11:
 	ret
-.L232:
+.L242:
 	
 __invSqrt_function_end:
 	.size	invSqrt,__invSqrt_function_end-invSqrt
-.L121:
+.L126:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.fast_atan',code,cluster('fast_atan')
@@ -110,35 +138,35 @@ __invSqrt_function_end:
 	
 	.global	fast_atan
 ; Function fast_atan
-.L69:
+.L74:
 fast_atan:	.type	func
 	mul.f	d15,d4,d4
-.L329:
+.L342:
 	mov	d0,#11735
 	addih	d0,d0,#16096
-.L399:
+.L412:
 	mov.u	d1,#59353
 	addih	d1,d1,#16343
-.L400:
+.L413:
 	madd.f	d15,d1,d15,d0
-.L330:
+.L343:
 	mul.f	d15,d4,d15
-.L401:
+.L414:
 	mov.u	d0,#59356
 	addih	d0,d0,#16343
-.L402:
+.L415:
 	madd.f	d0,d0,d4,d4
-.L403:
+.L416:
 	div.f	d2,d15,d0
-.L404:
-	j	.L9
-.L9:
+.L417:
+	j	.L12
+.L12:
 	ret
-.L238:
+.L248:
 	
 __fast_atan_function_end:
 	.size	fast_atan,__fast_atan_function_end-fast_atan
-.L126:
+.L131:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.lenOfNum',code,cluster('lenOfNum')
@@ -147,30 +175,30 @@ __fast_atan_function_end:
 	
 	.global	lenOfNum
 ; Function lenOfNum
-.L71:
+.L76:
 lenOfNum:	.type	func
 	mov	d2,#0
-.L331:
-	j	.L10
-.L11:
+.L344:
+	j	.L13
+.L14:
 	add	d2,#1
-.L332:
+.L345:
 	extr.u	d2,d2,#0,#8
-.L333:
+.L346:
 	mov	d15,#10
-.L334:
+.L347:
 	div	e4,d4,d15
-.L10:
-	jge.u	d4,#2,.L11
-.L335:
-	j	.L12
-.L12:
+.L13:
+	jge.u	d4,#2,.L14
+.L348:
+	j	.L15
+.L15:
 	ret
-.L267:
+.L277:
 	
 __lenOfNum_function_end:
 	.size	lenOfNum,__lenOfNum_function_end-lenOfNum
-.L176:
+.L181:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.leastSquareMethod',code,cluster('leastSquareMethod')
@@ -179,110 +207,110 @@ __lenOfNum_function_end:
 	
 	.global	leastSquareMethod
 ; Function leastSquareMethod
-.L73:
+.L78:
 leastSquareMethod:	.type	func
 	mov	d5,d4
-.L337:
+.L350:
 	mov	d4,#0
-.L336:
+.L349:
 	mov	d2,#0
-.L339:
+.L352:
 	mov	d1,d4
-.L341:
+.L354:
 	mov	d6,d2
-.L343:
+.L356:
 	mov	d3,#0
-.L345:
-	j	.L13
-.L14:
+.L358:
+	j	.L16
+.L17:
 	mul	d15,d3,#2
 	addsc.a	a15,a4,d15,#0
 	ld.h	d0,[a15]
-.L475:
+.L488:
 	mul	d15,d3,#2
 	addsc.a	a15,a5,d15,#0
 	ld.h	d15,[a15]
-.L476:
+.L489:
 	madd	d15,d6,d0,d15
 	extr	d6,d15,#0,#16
-.L477:
+.L490:
 	mul	d15,d3,#2
 	addsc.a	a15,a4,d15,#0
 	ld.h	d15,[a15]
-.L478:
+.L491:
 	add	d1,d15
-.L342:
+.L355:
 	extr	d1,d1,#0,#16
-.L347:
+.L360:
 	mul	d15,d3,#2
 	addsc.a	a15,a5,d15,#0
 	ld.h	d15,[a15]
-.L479:
+.L492:
 	add	d2,d15
-.L340:
+.L353:
 	extr	d2,d2,#0,#16
-.L349:
+.L362:
 	mul	d15,d3,#2
 	addsc.a	a15,a4,d15,#0
 	ld.h	d0,[a15]
-.L480:
+.L493:
 	mul	d15,d3,#2
 	addsc.a	a15,a4,d15,#0
 	ld.h	d15,[a15]
-.L481:
+.L494:
 	madd	d15,d4,d0,d15
 	extr	d4,d15,#0,#16
-.L482:
-	add	d3,#1
-.L346:
-	extr	d3,d3,#0,#16
-.L13:
-	jlt	d3,d5,.L14
-.L483:
-	itof	d15,d1
-.L484:
-	utof	d0,d5
-.L485:
-	div.f	d7,d15,d0
-.L352:
-	itof	d15,d2
-.L486:
-	utof	d0,d5
-.L487:
-	div.f	d8,d15,d0
-.L353:
-	mul	d2,d1
-.L350:
-	div	e2,d2,d5
-.L351:
-	sub	d6,d2
-.L344:
-	itof	d15,d6
-.L488:
-	mul	d1,d1
-.L348:
-	div	e0,d1,d5
-.L489:
-	sub	d4,d0
-.L338:
-	itof	d0,d4
-.L490:
-	div.f	d15,d15,d0
-.L491:
-	st.w	[a6],d15
-.L492:
-	ld.w	d15,[a6]
-.L493:
-	msub.f	d15,d8,d15,d7
-.L494:
-	st.w	[a7],d15
 .L495:
+	add	d3,#1
+.L359:
+	extr	d3,d3,#0,#16
+.L16:
+	jlt	d3,d5,.L17
+.L496:
+	itof	d15,d1
+.L497:
+	utof	d0,d5
+.L498:
+	div.f	d7,d15,d0
+.L365:
+	itof	d15,d2
+.L499:
+	utof	d0,d5
+.L500:
+	div.f	d8,d15,d0
+.L366:
+	mul	d2,d1
+.L363:
+	div	e2,d2,d5
+.L364:
+	sub	d6,d2
+.L357:
+	itof	d15,d6
+.L501:
+	mul	d1,d1
+.L361:
+	div	e0,d1,d5
+.L502:
+	sub	d4,d0
+.L351:
+	itof	d0,d4
+.L503:
+	div.f	d15,d15,d0
+.L504:
+	st.w	[a6],d15
+.L505:
+	ld.w	d15,[a6]
+.L506:
+	msub.f	d15,d8,d15,d7
+.L507:
+	st.w	[a7],d15
+.L508:
 	ret
-.L271:
+.L281:
 	
 __leastSquareMethod_function_end:
 	.size	leastSquareMethod,__leastSquareMethod_function_end-leastSquareMethod
-.L181:
+.L186:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.getLeastSquareMethodERROR',code,cluster('getLeastSquareMethodERROR')
@@ -291,55 +319,55 @@ __leastSquareMethod_function_end:
 	
 	.global	getLeastSquareMethodERROR
 ; Function getLeastSquareMethodERROR
-.L75:
+.L80:
 getLeastSquareMethodERROR:	.type	func
 	mov	d2,#0
-.L354:
+.L367:
 	mov	d3,#0
-.L356:
-	j	.L15
-.L16:
+.L369:
+	j	.L18
+.L19:
 	mul	d15,d3,#2
 	addsc.a	a15,a4,d15,#0
 	ld.h	d15,[a15]
 	itof	d15,d15
-.L511:
+.L524:
 	madd.f	d0,d6,d15,d5
-.L358:
+.L371:
 	mul	d15,d3,#2
 	addsc.a	a15,a5,d15,#0
 	ld.h	d15,[a15]
 	itof	d15,d15
-.L512:
+.L525:
 	sub.f	d1,d0,d15
-.L513:
+.L526:
 	mul	d15,d3,#2
 	addsc.a	a15,a5,d15,#0
 	ld.h	d15,[a15]
 	itof	d15,d15
-.L514:
+.L527:
 	sub.f	d15,d0,d15
-.L515:
+.L528:
 	madd.f	d2,d2,d1,d15
-.L516:
+.L529:
 	add	d3,#1
-.L357:
+.L370:
 	extr	d3,d3,#0,#16
-.L15:
-	jlt	d3,d4,.L16
-.L517:
+.L18:
+	jlt	d3,d4,.L19
+.L530:
 	utof	d15,d4
-.L518:
+.L531:
 	div.f	d2,d2,d15
-.L355:
-	j	.L17
-.L17:
+.L368:
+	j	.L20
+.L20:
 	ret
-.L291:
+.L301:
 	
 __getLeastSquareMethodERROR_function_end:
 	.size	getLeastSquareMethodERROR,__getLeastSquareMethodERROR_function_end-getLeastSquareMethodERROR
-.L191:
+.L196:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.getLineValue',code,cluster('getLineValue')
@@ -348,20 +376,20 @@ __getLeastSquareMethodERROR_function_end:
 	
 	.global	getLineValue
 ; Function getLineValue
-.L77:
+.L82:
 getLineValue:	.type	func
 	utof	d15,d4
-.L523:
+.L536:
 	madd.f	d2,d6,d5,d15
-.L524:
-	j	.L18
-.L18:
+.L537:
+	j	.L21
+.L21:
 	ret
-.L300:
+.L310:
 	
 __getLineValue_function_end:
 	.size	getLineValue,__getLineValue_function_end-getLineValue
-.L196:
+.L201:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.getLineValueX',code,cluster('getLineValueX')
@@ -370,24 +398,24 @@ __getLineValue_function_end:
 	
 	.global	getLineValueX
 ; Function getLineValueX
-.L79:
+.L84:
 getLineValueX:	.type	func
 	sub	d4,d5
-.L359:
+.L372:
 	itof	d15,d4
-.L529:
+.L542:
 	itof	d0,d6
-.L530:
+.L543:
 	madd.f	d2,d0,d7,d15
-.L531:
-	j	.L19
-.L19:
+.L544:
+	j	.L22
+.L22:
 	ret
-.L304:
+.L314:
 	
 __getLineValueX_function_end:
 	.size	getLineValueX,__getLineValueX_function_end-getLineValueX
-.L201:
+.L206:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.getLineK',code,cluster('getLineK')
@@ -396,30 +424,30 @@ __getLineValueX_function_end:
 	
 	.global	getLineK
 ; Function getLineK
-.L81:
+.L86:
 getLineK:	.type	func
 	itof	d15,d7
-.L500:
+.L513:
 	itof	d0,d5
-.L501:
+.L514:
 	sub.f	d15,d15,d0
-.L502:
+.L515:
 	itof	d0,d6
-.L503:
+.L516:
 	itof	d1,d4
-.L504:
+.L517:
 	sub.f	d0,d0,d1
-.L505:
+.L518:
 	div.f	d2,d15,d0
-.L506:
-	j	.L20
-.L20:
+.L519:
+	j	.L23
+.L23:
 	ret
-.L286:
+.L296:
 	
 __getLineK_function_end:
 	.size	getLineK,__getLineK_function_end-getLineK
-.L186:
+.L191:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.constrain_float',code,cluster('constrain_float')
@@ -428,33 +456,33 @@ __getLineK_function_end:
 	
 	.global	constrain_float
 ; Function constrain_float
-.L83:
+.L88:
 constrain_float:	.type	func
 	cmp.f	d15,d4,d5
 	extr.u	d15,d15,#0,#1
-.L383:
-	jeq	d15,#0,.L21
-.L384:
-	j	.L22
-.L21:
-	cmp.f	d15,d4,d6
-	jnz.t	d15:2,.L23
-.L385:
-	j	.L24
-.L23:
-	mov	d4,d6
-.L24:
-	mov	d5,d4
-.L22:
-	mov	d2,d5
+.L396:
+	jeq	d15,#0,.L24
+.L397:
 	j	.L25
+.L24:
+	cmp.f	d15,d4,d6
+	jnz.t	d15:2,.L26
+.L398:
+	j	.L27
+.L26:
+	mov	d4,d6
+.L27:
+	mov	d5,d4
 .L25:
+	mov	d2,d5
+	j	.L28
+.L28:
 	ret
-.L228:
+.L238:
 	
 __constrain_float_function_end:
 	.size	constrain_float,__constrain_float_function_end-constrain_float
-.L116:
+.L121:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.constrain_int16',code,cluster('constrain_int16')
@@ -463,29 +491,29 @@ __constrain_float_function_end:
 	
 	.global	constrain_int16
 ; Function constrain_int16
-.L85:
+.L90:
 constrain_int16:	.type	func
-	jge	d4,d5,.L26
-.L409:
-	j	.L27
-.L26:
-	jge	d6,d4,.L28
-.L410:
-	j	.L29
-.L28:
-	mov	d6,d4
-.L29:
-	mov	d5,d6
-.L27:
-	mov	d2,d5
+	jge	d4,d5,.L29
+.L422:
 	j	.L30
+.L29:
+	jge	d6,d4,.L31
+.L423:
+	j	.L32
+.L31:
+	mov	d6,d4
+.L32:
+	mov	d5,d6
 .L30:
+	mov	d2,d5
+	j	.L33
+.L33:
 	ret
-.L242:
+.L252:
 	
 __constrain_int16_function_end:
 	.size	constrain_int16,__constrain_int16_function_end-constrain_int16
-.L131:
+.L136:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.constrain_int16_MAX',code,cluster('constrain_int16_MAX')
@@ -494,35 +522,10 @@ __constrain_int16_function_end:
 	
 	.global	constrain_int16_MAX
 ; Function constrain_int16_MAX
-.L87:
+.L92:
 constrain_int16_MAX:	.type	func
-	jge	d5,d4,.L31
-.L541:
-	j	.L32
-.L31:
-	mov	d5,d4
-.L32:
-	mov	d2,d5
-	j	.L33
-.L33:
-	ret
-.L312:
-	
-__constrain_int16_MAX_function_end:
-	.size	constrain_int16_MAX,__constrain_int16_MAX_function_end-constrain_int16_MAX
-.L211:
-	; End of function
-	
-	.sdecl	'.text.HANA_math.constrain_int16_LOW',code,cluster('constrain_int16_LOW')
-	.sect	'.text.HANA_math.constrain_int16_LOW'
-	.align	2
-	
-	.global	constrain_int16_LOW
-; Function constrain_int16_LOW
-.L89:
-constrain_int16_LOW:	.type	func
-	jge	d4,d5,.L34
-.L536:
+	jge	d5,d4,.L34
+.L554:
 	j	.L35
 .L34:
 	mov	d5,d4
@@ -531,11 +534,36 @@ constrain_int16_LOW:	.type	func
 	j	.L36
 .L36:
 	ret
-.L309:
+.L322:
+	
+__constrain_int16_MAX_function_end:
+	.size	constrain_int16_MAX,__constrain_int16_MAX_function_end-constrain_int16_MAX
+.L216:
+	; End of function
+	
+	.sdecl	'.text.HANA_math.constrain_int16_LOW',code,cluster('constrain_int16_LOW')
+	.sect	'.text.HANA_math.constrain_int16_LOW'
+	.align	2
+	
+	.global	constrain_int16_LOW
+; Function constrain_int16_LOW
+.L94:
+constrain_int16_LOW:	.type	func
+	jge	d4,d5,.L37
+.L549:
+	j	.L38
+.L37:
+	mov	d5,d4
+.L38:
+	mov	d2,d5
+	j	.L39
+.L39:
+	ret
+.L319:
 	
 __constrain_int16_LOW_function_end:
 	.size	constrain_int16_LOW,__constrain_int16_LOW_function_end-constrain_int16_LOW
-.L206:
+.L211:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.constrain_int32',code,cluster('constrain_int32')
@@ -544,29 +572,29 @@ __constrain_int16_LOW_function_end:
 	
 	.global	constrain_int32
 ; Function constrain_int32
-.L91:
+.L96:
 constrain_int32:	.type	func
-	jge	d4,d5,.L37
-.L560:
-	j	.L38
-.L37:
-	jge	d6,d4,.L39
-.L561:
-	j	.L40
-.L39:
-	mov	d6,d4
-.L40:
-	mov	d5,d6
-.L38:
-	mov	d2,d5
+	jge	d4,d5,.L40
+.L579:
 	j	.L41
+.L40:
+	jge	d6,d4,.L42
+.L580:
+	j	.L43
+.L42:
+	mov	d6,d4
+.L43:
+	mov	d5,d6
 .L41:
+	mov	d2,d5
+	j	.L44
+.L44:
 	ret
-.L319:
+.L331:
 	
 __constrain_int32_function_end:
 	.size	constrain_int32,__constrain_int32_function_end-constrain_int32
-.L226:
+.L236:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.radians',code,cluster('radians')
@@ -575,21 +603,21 @@ __constrain_int32_function_end:
 	
 	.global	radians
 ; Function radians
-.L93:
+.L98:
 radians:	.type	func
 	mov.u	d15,#64053
 	addih	d15,d15,#15502
-.L447:
+.L460:
 	mul.f	d2,d4,d15
-.L448:
-	j	.L42
-.L42:
+.L461:
+	j	.L45
+.L45:
 	ret
-.L255:
+.L265:
 	
 __radians_function_end:
 	.size	radians,__radians_function_end-radians
-.L156:
+.L161:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.degrees',code,cluster('degrees')
@@ -598,21 +626,21 @@ __radians_function_end:
 	
 	.global	degrees
 ; Function degrees
-.L95:
+.L100:
 degrees:	.type	func
 	mov	d15,#12001
 	addih	d15,d15,#16997
-.L453:
+.L466:
 	mul.f	d2,d4,d15
-.L454:
-	j	.L43
-.L43:
+.L467:
+	j	.L46
+.L46:
 	ret
-.L257:
+.L267:
 	
 __degrees_function_end:
 	.size	degrees,__degrees_function_end-degrees
-.L161:
+.L166:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.sq',code,cluster('sq')
@@ -621,18 +649,18 @@ __degrees_function_end:
 	
 	.global	sq
 ; Function sq
-.L97:
+.L102:
 sq:	.type	func
 	mul.f	d2,d4,d4
-.L442:
-	j	.L44
-.L44:
+.L455:
+	j	.L47
+.L47:
 	ret
-.L253:
+.L263:
 	
 __sq_function_end:
 	.size	sq,__sq_function_end-sq
-.L151:
+.L156:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.pythagorous2',code,cluster('pythagorous2')
@@ -641,29 +669,29 @@ __sq_function_end:
 	
 	.global	pythagorous2
 ; Function pythagorous2
-.L99:
+.L104:
 pythagorous2:	.type	func
 	mov	d15,d5
-.L361:
+.L374:
 	call	sq
-.L360:
+.L373:
 	mov	d8,d2
-.L459:
+.L472:
 	mov	d4,d15
-.L362:
+.L375:
 	call	sq
-.L363:
+.L376:
 	add.f	d4,d8,d2
 	call	sqrtf
-.L460:
-	j	.L45
-.L45:
+.L473:
+	j	.L48
+.L48:
 	ret
-.L259:
+.L269:
 	
 __pythagorous2_function_end:
 	.size	pythagorous2,__pythagorous2_function_end-pythagorous2
-.L166:
+.L171:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.pythagorous3',code,cluster('pythagorous3')
@@ -672,37 +700,37 @@ __pythagorous2_function_end:
 	
 	.global	pythagorous3
 ; Function pythagorous3
-.L101:
+.L106:
 pythagorous3:	.type	func
 	mov	d15,d5
-.L365:
+.L378:
 	mov	d8,d6
-.L367:
+.L380:
 	call	sq
-.L364:
+.L377:
 	mov	d9,d2
-.L465:
+.L478:
 	mov	d4,d15
-.L368:
+.L381:
 	call	sq
-.L369:
+.L382:
 	add.f	d15,d9,d2
-.L366:
+.L379:
 	mov	d4,d8
-.L370:
+.L383:
 	call	sq
-.L371:
+.L384:
 	add.f	d4,d15,d2
 	call	sqrtf
-.L466:
-	j	.L46
-.L46:
+.L479:
+	j	.L49
+.L49:
 	ret
-.L262:
+.L272:
 	
 __pythagorous3_function_end:
 	.size	pythagorous3,__pythagorous3_function_end-pythagorous3
-.L171:
+.L176:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.wrap_360_cd',code,cluster('wrap_360_cd')
@@ -711,32 +739,32 @@ __pythagorous3_function_end:
 	
 	.global	wrap_360_cd
 ; Function wrap_360_cd
-.L103:
+.L108:
 wrap_360_cd:	.type	func
-	j	.L47
-.L48:
-	addi	d4,d4,#-360
-.L47:
-	mov	d15,#360
-.L415:
-	jlt	d15,d4,.L48
-.L416:
-	j	.L49
-.L50:
-	addi	d4,d4,#360
-.L49:
-	jlt	d4,#0,.L50
-.L417:
-	mov	d2,d4
-.L372:
-	j	.L51
+	j	.L50
 .L51:
+	addi	d4,d4,#-360
+.L50:
+	mov	d15,#360
+.L428:
+	jlt	d15,d4,.L51
+.L429:
+	j	.L52
+.L53:
+	addi	d4,d4,#360
+.L52:
+	jlt	d4,#0,.L53
+.L430:
+	mov	d2,d4
+.L385:
+	j	.L54
+.L54:
 	ret
-.L247:
+.L257:
 	
 __wrap_360_cd_function_end:
 	.size	wrap_360_cd,__wrap_360_cd_function_end-wrap_360_cd
-.L136:
+.L141:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.wrap_180_cd',code,cluster('wrap_180_cd')
@@ -745,40 +773,40 @@ __wrap_360_cd_function_end:
 	
 	.global	wrap_180_cd
 ; Function wrap_180_cd
-.L105:
+.L110:
 wrap_180_cd:	.type	func
-	j	.L52
-.L53:
-	movh	d15,#17332
-.L422:
-	sub.f	d4,d4,d15
-.L52:
-	movh	d15,#17204
-.L423:
-	cmp.f	d15,d4,d15
-	jnz.t	d15:2,.L53
-.L424:
-	j	.L54
-.L55:
-	movh	d15,#17332
-.L425:
-	add.f	d4,d4,d15
-.L54:
-	movh	d15,#49972
-.L426:
-	cmp.f	d15,d4,d15
-	jnz.t	d15:0,.L55
-.L427:
-	mov	d2,d4
-.L373:
-	j	.L56
+	j	.L55
 .L56:
+	movh	d15,#17332
+.L435:
+	sub.f	d4,d4,d15
+.L55:
+	movh	d15,#17204
+.L436:
+	cmp.f	d15,d4,d15
+	jnz.t	d15:2,.L56
+.L437:
+	j	.L57
+.L58:
+	movh	d15,#17332
+.L438:
+	add.f	d4,d4,d15
+.L57:
+	movh	d15,#49972
+.L439:
+	cmp.f	d15,d4,d15
+	jnz.t	d15:0,.L58
+.L440:
+	mov	d2,d4
+.L386:
+	j	.L59
+.L59:
 	ret
-.L249:
+.L259:
 	
 __wrap_180_cd_function_end:
 	.size	wrap_180_cd,__wrap_180_cd_function_end-wrap_180_cd
-.L141:
+.L146:
 	; End of function
 	
 	.sdecl	'.text.HANA_math.wrap_90_cd',code,cluster('wrap_90_cd')
@@ -787,46 +815,47 @@ __wrap_180_cd_function_end:
 	
 	.global	wrap_90_cd
 ; Function wrap_90_cd
-.L107:
+.L112:
 wrap_90_cd:	.type	func
-	j	.L57
-.L58:
-	movh	d15,#17204
-.L432:
-	sub.f	d4,d4,d15
-.L57:
-	movh	d15,#17076
-.L433:
-	cmp.f	d15,d4,d15
-	jnz.t	d15:2,.L58
-.L434:
-	j	.L59
-.L60:
-	movh	d15,#17204
-.L435:
-	add.f	d4,d4,d15
-.L59:
-	movh	d15,#49844
-.L436:
-	cmp.f	d15,d4,d15
-	jnz.t	d15:0,.L60
-.L437:
-	mov	d2,d4
-.L374:
-	j	.L61
+	j	.L60
 .L61:
+	movh	d15,#17204
+.L445:
+	sub.f	d4,d4,d15
+.L60:
+	movh	d15,#17076
+.L446:
+	cmp.f	d15,d4,d15
+	jnz.t	d15:2,.L61
+.L447:
+	j	.L62
+.L63:
+	movh	d15,#17204
+.L448:
+	add.f	d4,d4,d15
+.L62:
+	movh	d15,#49844
+.L449:
+	cmp.f	d15,d4,d15
+	jnz.t	d15:0,.L63
+.L450:
+	mov	d2,d4
+.L387:
+	j	.L64
+.L64:
 	ret
-.L251:
+.L261:
 	
 __wrap_90_cd_function_end:
 	.size	wrap_90_cd,__wrap_90_cd_function_end-wrap_90_cd
-.L146:
+.L151:
 	; End of function
 	
 	.calls	'pythagorous2','sq'
 	.calls	'pythagorous2','sqrtf'
 	.calls	'pythagorous3','sq'
 	.calls	'pythagorous3','sqrtf'
+	.calls	'my_abs','',0
 	.calls	'my_abs_float','',0
 	.calls	'my_abs_short','',0
 	.calls	'invSqrt','',0
@@ -853,18 +882,18 @@ __wrap_90_cd_function_end:
 	.calls	'wrap_90_cd','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L109:
+.L114:
 	.word	152305
 	.half	3
-	.word	.L110
+	.word	.L115
 	.byte	4
-.L108:
+.L113:
 	.byte	1
 	.byte	'../code/HANA_math.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\Program Files (x86)\\Infineon\\AURIX-v1.10.2-workspace\\Seekfree_TC377_Opensource_Library\\Debug\\',0
 	.byte	12,1
-	.word	.L111
+	.word	.L116
 	.byte	2,1,1,3
 	.word	212
 	.byte	4
@@ -873,7 +902,7 @@ __wrap_90_cd_function_end:
 	.word	215
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
-.L227:
+.L237:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
@@ -901,13 +930,13 @@ __wrap_90_cd_function_end:
 	.word	358
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7
-.L246:
+.L256:
 	.byte	7
 	.byte	'int',0,4,5
-.L266:
+.L276:
 	.byte	7
 	.byte	'unsigned char',0,1,8
-.L268:
+.L278:
 	.byte	7
 	.byte	'unsigned short int',0,2,7,10
 	.byte	'_Ifx_SCU_WDTCPU_CON0_Bits',0,4,210,9,16,4,11
@@ -5812,10 +5841,10 @@ __wrap_90_cd_function_end:
 	.byte	'alti',0,17,218,18,82
 	.word	31608
 	.byte	6,0
-.L241:
+.L251:
 	.byte	7
 	.byte	'short int',0,2,5
-.L236:
+.L246:
 	.byte	7
 	.byte	'long int',0,4,5,20,19,60,9,12,13
 	.byte	'count',0
@@ -6204,10 +6233,10 @@ __wrap_90_cd_function_end:
 	.byte	24
 	.word	32211
 	.byte	6,0
-.L272:
+.L282:
 	.byte	3
 	.word	31900
-.L276:
+.L286:
 	.byte	3
 	.word	272
 	.byte	28
@@ -20993,7 +21022,7 @@ __wrap_90_cd_function_end:
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L110:
+.L115:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -21006,12 +21035,12 @@ __wrap_90_cd_function_end:
 	.byte	39,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L111:
-	.word	.L376-.L375
-.L375:
+.L116:
+	.word	.L389-.L388
+.L388:
 	.half	3
-	.word	.L378-.L377
-.L377:
+	.word	.L391-.L390
+.L390:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'E:\\\\Program Files (x86)\\\\Infineon\\\\AURIX-v1.10.2-workspace\\\\Seekfree_TC377_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
 	.byte	'E:\\Program Files (x86)\\Infineon\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
@@ -21097,82 +21126,9 @@ __wrap_90_cd_function_end:
 	.byte	'zf_device_wifi_uart.h',0,10,0,0
 	.byte	'zf_device_wifi_spi.h',0,10,0,0
 	.byte	'seekfree_assistant.h',0,11,0,0,0
-.L378:
-.L376:
+.L391:
+.L389:
 	.sdecl	'.debug_info',debug,cluster('constrain_float')
-	.sect	'.debug_info'
-.L112:
-	.word	316
-	.half	3
-	.word	.L113
-	.byte	4,1
-	.byte	'../code/HANA_math.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\Program Files (x86)\\Infineon\\AURIX-v1.10.2-workspace\\Seekfree_TC377_Opensource_Library\\Debug\\',0
-	.byte	12,1
-	.word	.L115,.L114
-	.byte	2
-	.word	.L108
-	.byte	3
-	.byte	'constrain_float',0,1,124,7
-	.word	.L227
-	.byte	1,1,1
-	.word	.L83,.L228,.L82
-	.byte	4
-	.byte	'amt',0,1,124,29
-	.word	.L227,.L229
-	.byte	4
-	.byte	'low',0,1,124,40
-	.word	.L227,.L230
-	.byte	4
-	.byte	'high',0,1,124,51
-	.word	.L227,.L231
-	.byte	5
-	.word	.L83,.L228
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('constrain_float')
-	.sect	'.debug_abbrev'
-.L113:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('constrain_float')
-	.sect	'.debug_line'
-.L114:
-	.word	.L380-.L379
-.L379:
-	.half	3
-	.word	.L382-.L381
-.L381:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L382:
-	.byte	5,15,7,0,5,2
-	.word	.L83
-	.byte	3,253,0,1,5,10,9
-	.half	.L383-.L83
-	.byte	1,5,27,7,9
-	.half	.L384-.L383
-	.byte	1,5,29,9
-	.half	.L21-.L384
-	.byte	1,5,48,9
-	.half	.L385-.L21
-	.byte	1,5,41,9
-	.half	.L23-.L385
-	.byte	1,5,21,9
-	.half	.L24-.L23
-	.byte	1,5,2,9
-	.half	.L22-.L24
-	.byte	1,5,1,9
-	.half	.L25-.L22
-	.byte	3,1,1,7,9
-	.half	.L116-.L25
-	.byte	0,1,1
-.L380:
-	.sdecl	'.debug_ranges',debug,cluster('constrain_float')
-	.sect	'.debug_ranges'
-.L115:
-	.word	-1,.L83,0,.L116-.L83,0,0
-	.sdecl	'.debug_info',debug,cluster('invSqrt')
 	.sect	'.debug_info'
 .L117:
 	.word	320
@@ -21185,78 +21141,70 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L120,.L119
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'invSqrt',0,1,22,7
-	.word	.L227
+	.byte	'constrain_float',0,1,130,1,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L67,.L232,.L66
+	.word	.L88,.L238,.L87
 	.byte	4
-	.byte	'x',0,1,22,21
-	.word	.L227,.L233
+	.byte	'amt',0,1,130,1,29
+	.word	.L237,.L239
+	.byte	4
+	.byte	'low',0,1,130,1,40
+	.word	.L237,.L240
+	.byte	4
+	.byte	'high',0,1,130,1,51
+	.word	.L237,.L241
 	.byte	5
-	.word	.L67,.L232
-	.byte	6
-	.byte	'halfx',0,1,24,8
-	.word	.L227,.L234
-	.byte	6
-	.byte	'y',0,1,25,8
-	.word	.L227,.L235
-	.byte	6
-	.byte	'i',0,1,26,7
-	.word	.L236,.L237
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('invSqrt')
+	.word	.L88,.L238
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('constrain_float')
 	.sect	'.debug_abbrev'
 .L118:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
-	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('invSqrt')
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('constrain_float')
 	.sect	'.debug_line'
 .L119:
-	.word	.L387-.L386
-.L386:
+	.word	.L393-.L392
+.L392:
 	.half	3
-	.word	.L389-.L388
-.L388:
+	.word	.L395-.L394
+.L394:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L389:
-	.byte	5,16,7,0,5,2
-	.word	.L67
-	.byte	3,23,1,5,21,9
-	.half	.L390-.L67
-	.byte	1,5,6,9
-	.half	.L326-.L390
-	.byte	3,3,1,5,21,9
-	.half	.L391-.L326
-	.byte	1,5,17,9
-	.half	.L325-.L391
-	.byte	1,5,11,9
-	.half	.L392-.L325
-	.byte	3,2,1,5,25,9
-	.half	.L393-.L392
-	.byte	1,5,16,9
-	.half	.L327-.L393
-	.byte	1,5,8,9
-	.half	.L394-.L327
+.L395:
+	.byte	5,15,7,0,5,2
+	.word	.L88
+	.byte	3,131,1,1,5,10,9
+	.half	.L396-.L88
+	.byte	1,5,27,7,9
+	.half	.L397-.L396
+	.byte	1,5,29,9
+	.half	.L24-.L397
+	.byte	1,5,48,9
+	.half	.L398-.L24
+	.byte	1,5,41,9
+	.half	.L26-.L398
+	.byte	1,5,21,9
+	.half	.L27-.L26
 	.byte	1,5,2,9
-	.half	.L328-.L394
-	.byte	3,1,1,5,1,9
-	.half	.L8-.L328
+	.half	.L25-.L27
+	.byte	1,5,1,9
+	.half	.L28-.L25
 	.byte	3,1,1,7,9
-	.half	.L121-.L8
+	.half	.L121-.L28
 	.byte	0,1,1
-.L387:
-	.sdecl	'.debug_ranges',debug,cluster('invSqrt')
+.L393:
+	.sdecl	'.debug_ranges',debug,cluster('constrain_float')
 	.sect	'.debug_ranges'
 .L120:
-	.word	-1,.L67,0,.L121-.L67,0,0
-	.sdecl	'.debug_info',debug,cluster('fast_atan')
+	.word	-1,.L88,0,.L121-.L88,0,0
+	.sdecl	'.debug_info',debug,cluster('invSqrt')
 	.sect	'.debug_info'
 .L122:
-	.word	291
+	.word	320
 	.half	3
 	.word	.L123
 	.byte	4,1
@@ -21266,70 +21214,78 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L125,.L124
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'fast_atan',0,1,35,7
-	.word	.L227
+	.byte	'invSqrt',0,1,28,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L69,.L238,.L68
+	.word	.L72,.L242,.L71
 	.byte	4
-	.byte	'v',0,1,35,23
-	.word	.L227,.L239
+	.byte	'x',0,1,28,21
+	.word	.L237,.L243
 	.byte	5
-	.word	.L69,.L238
+	.word	.L72,.L242
 	.byte	6
-	.byte	'v2',0,1,37,11
-	.word	.L227,.L240
+	.byte	'halfx',0,1,30,8
+	.word	.L237,.L244
+	.byte	6
+	.byte	'y',0,1,31,8
+	.word	.L237,.L245
+	.byte	6
+	.byte	'i',0,1,32,7
+	.word	.L246,.L247
 	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('fast_atan')
+	.sdecl	'.debug_abbrev',debug,cluster('invSqrt')
 	.sect	'.debug_abbrev'
 .L123:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('fast_atan')
+	.sdecl	'.debug_line',debug,cluster('invSqrt')
 	.sect	'.debug_line'
 .L124:
-	.word	.L396-.L395
-.L395:
+	.word	.L400-.L399
+.L399:
 	.half	3
-	.word	.L398-.L397
-.L397:
+	.word	.L402-.L401
+.L401:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L398:
-	.byte	5,17,7,0,5,2
-	.word	.L69
-	.byte	3,36,1,5,35,9
-	.half	.L329-.L69
-	.byte	3,1,1,5,16,9
-	.half	.L399-.L329
-	.byte	1,5,30,9
-	.half	.L400-.L399
-	.byte	1,5,14,9
-	.half	.L330-.L400
-	.byte	1,5,51,9
-	.half	.L401-.L330
-	.byte	1,5,65,9
-	.half	.L402-.L401
-	.byte	1,5,49,9
-	.half	.L403-.L402
-	.byte	1,5,5,9
-	.half	.L404-.L403
-	.byte	1,5,1,9
-	.half	.L9-.L404
+.L402:
+	.byte	5,16,7,0,5,2
+	.word	.L72
+	.byte	3,29,1,5,21,9
+	.half	.L403-.L72
+	.byte	1,5,6,9
+	.half	.L339-.L403
+	.byte	3,3,1,5,21,9
+	.half	.L404-.L339
+	.byte	1,5,17,9
+	.half	.L338-.L404
+	.byte	1,5,11,9
+	.half	.L405-.L338
+	.byte	3,2,1,5,25,9
+	.half	.L406-.L405
+	.byte	1,5,16,9
+	.half	.L340-.L406
+	.byte	1,5,8,9
+	.half	.L407-.L340
+	.byte	1,5,2,9
+	.half	.L341-.L407
+	.byte	3,1,1,5,1,9
+	.half	.L11-.L341
 	.byte	3,1,1,7,9
-	.half	.L126-.L9
+	.half	.L126-.L11
 	.byte	0,1,1
-.L396:
-	.sdecl	'.debug_ranges',debug,cluster('fast_atan')
+.L400:
+	.sdecl	'.debug_ranges',debug,cluster('invSqrt')
 	.sect	'.debug_ranges'
 .L125:
-	.word	-1,.L69,0,.L126-.L69,0,0
-	.sdecl	'.debug_info',debug,cluster('constrain_int16')
+	.word	-1,.L72,0,.L126-.L72,0,0
+	.sdecl	'.debug_info',debug,cluster('fast_atan')
 	.sect	'.debug_info'
 .L127:
-	.word	320
+	.word	291
 	.half	3
 	.word	.L128
 	.byte	4,1
@@ -21339,68 +21295,70 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L130,.L129
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'constrain_int16',0,1,130,1,9
-	.word	.L241
+	.byte	'fast_atan',0,1,41,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L85,.L242,.L84
+	.word	.L74,.L248,.L73
 	.byte	4
-	.byte	'amt',0,1,130,1,33
-	.word	.L241,.L243
-	.byte	4
-	.byte	'low',0,1,130,1,46
-	.word	.L241,.L244
-	.byte	4
-	.byte	'high',0,1,130,1,59
-	.word	.L241,.L245
+	.byte	'v',0,1,41,23
+	.word	.L237,.L249
 	.byte	5
-	.word	.L85,.L242
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('constrain_int16')
+	.word	.L74,.L248
+	.byte	6
+	.byte	'v2',0,1,43,11
+	.word	.L237,.L250
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('fast_atan')
 	.sect	'.debug_abbrev'
 .L128:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('constrain_int16')
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('fast_atan')
 	.sect	'.debug_line'
 .L129:
-	.word	.L406-.L405
-.L405:
+	.word	.L409-.L408
+.L408:
 	.half	3
-	.word	.L408-.L407
-.L407:
+	.word	.L411-.L410
+.L410:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L408:
-	.byte	5,10,7,0,5,2
-	.word	.L85
-	.byte	3,131,1,1,5,27,7,9
-	.half	.L409-.L85
-	.byte	1,5,29,9
-	.half	.L26-.L409
-	.byte	1,5,48,7,9
-	.half	.L410-.L26
-	.byte	1,5,41,9
-	.half	.L28-.L410
-	.byte	1,5,21,9
-	.half	.L29-.L28
-	.byte	1,5,2,9
-	.half	.L27-.L29
+.L411:
+	.byte	5,17,7,0,5,2
+	.word	.L74
+	.byte	3,42,1,5,35,9
+	.half	.L342-.L74
+	.byte	3,1,1,5,16,9
+	.half	.L412-.L342
+	.byte	1,5,30,9
+	.half	.L413-.L412
+	.byte	1,5,14,9
+	.half	.L343-.L413
+	.byte	1,5,51,9
+	.half	.L414-.L343
+	.byte	1,5,65,9
+	.half	.L415-.L414
+	.byte	1,5,49,9
+	.half	.L416-.L415
+	.byte	1,5,5,9
+	.half	.L417-.L416
 	.byte	1,5,1,9
-	.half	.L30-.L27
+	.half	.L12-.L417
 	.byte	3,1,1,7,9
-	.half	.L131-.L30
+	.half	.L131-.L12
 	.byte	0,1,1
-.L406:
-	.sdecl	'.debug_ranges',debug,cluster('constrain_int16')
+.L409:
+	.sdecl	'.debug_ranges',debug,cluster('fast_atan')
 	.sect	'.debug_ranges'
 .L130:
-	.word	-1,.L85,0,.L131-.L85,0,0
-	.sdecl	'.debug_info',debug,cluster('wrap_360_cd')
+	.word	-1,.L74,0,.L131-.L74,0,0
+	.sdecl	'.debug_info',debug,cluster('constrain_int16')
 	.sect	'.debug_info'
 .L132:
-	.word	283
+	.word	320
 	.half	3
 	.word	.L133
 	.byte	4,1
@@ -21410,61 +21368,65 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L135,.L134
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'wrap_360_cd',0,1,185,1,9
-	.word	.L246
+	.byte	'constrain_int16',0,1,136,1,9
+	.word	.L251
 	.byte	1,1,1
-	.word	.L103,.L247,.L102
+	.word	.L90,.L252,.L89
 	.byte	4
-	.byte	'error',0,1,185,1,29
-	.word	.L246,.L248
+	.byte	'amt',0,1,136,1,33
+	.word	.L251,.L253
+	.byte	4
+	.byte	'low',0,1,136,1,46
+	.word	.L251,.L254
+	.byte	4
+	.byte	'high',0,1,136,1,59
+	.word	.L251,.L255
 	.byte	5
-	.word	.L103,.L247
+	.word	.L90,.L252
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('wrap_360_cd')
+	.sdecl	'.debug_abbrev',debug,cluster('constrain_int16')
 	.sect	'.debug_abbrev'
 .L133:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('wrap_360_cd')
+	.sdecl	'.debug_line',debug,cluster('constrain_int16')
 	.sect	'.debug_line'
 .L134:
-	.word	.L412-.L411
-.L411:
+	.word	.L419-.L418
+.L418:
 	.half	3
-	.word	.L414-.L413
-.L413:
+	.word	.L421-.L420
+.L420:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L414:
-	.byte	5,23,7,0,5,2
-	.word	.L103
-	.byte	3,186,1,1,5,31,9
-	.half	.L48-.L103
-	.byte	1,5,20,9
-	.half	.L47-.L48
-	.byte	1,5,23,9
-	.half	.L415-.L47
-	.byte	1,5,21,7,9
-	.half	.L416-.L415
-	.byte	3,1,1,5,29,9
-	.half	.L50-.L416
+.L421:
+	.byte	5,10,7,0,5,2
+	.word	.L90
+	.byte	3,137,1,1,5,27,7,9
+	.half	.L422-.L90
+	.byte	1,5,29,9
+	.half	.L29-.L422
+	.byte	1,5,48,7,9
+	.half	.L423-.L29
+	.byte	1,5,41,9
+	.half	.L31-.L423
 	.byte	1,5,21,9
-	.half	.L49-.L50
-	.byte	1,5,5,7,9
-	.half	.L417-.L49
-	.byte	3,1,1,5,1,9
-	.half	.L51-.L417
+	.half	.L32-.L31
+	.byte	1,5,2,9
+	.half	.L30-.L32
+	.byte	1,5,1,9
+	.half	.L33-.L30
 	.byte	3,1,1,7,9
-	.half	.L136-.L51
+	.half	.L136-.L33
 	.byte	0,1,1
-.L412:
-	.sdecl	'.debug_ranges',debug,cluster('wrap_360_cd')
+.L419:
+	.sdecl	'.debug_ranges',debug,cluster('constrain_int16')
 	.sect	'.debug_ranges'
 .L135:
-	.word	-1,.L103,0,.L136-.L103,0,0
-	.sdecl	'.debug_info',debug,cluster('wrap_180_cd')
+	.word	-1,.L90,0,.L136-.L90,0,0
+	.sdecl	'.debug_info',debug,cluster('wrap_360_cd')
 	.sect	'.debug_info'
 .L137:
 	.word	283
@@ -21477,70 +21439,64 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L140,.L139
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'wrap_180_cd',0,1,193,1,7
-	.word	.L227
+	.byte	'wrap_360_cd',0,1,191,1,9
+	.word	.L256
 	.byte	1,1,1
-	.word	.L105,.L249,.L104
+	.word	.L108,.L257,.L107
 	.byte	4
-	.byte	'error',0,1,193,1,25
-	.word	.L227,.L250
+	.byte	'error',0,1,191,1,29
+	.word	.L256,.L258
 	.byte	5
-	.word	.L105,.L249
+	.word	.L108,.L257
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('wrap_180_cd')
+	.sdecl	'.debug_abbrev',debug,cluster('wrap_360_cd')
 	.sect	'.debug_abbrev'
 .L138:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('wrap_180_cd')
+	.sdecl	'.debug_line',debug,cluster('wrap_360_cd')
 	.sect	'.debug_line'
 .L139:
-	.word	.L419-.L418
-.L418:
+	.word	.L425-.L424
+.L424:
 	.half	3
-	.word	.L421-.L420
-.L420:
+	.word	.L427-.L426
+.L426:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L421:
+.L427:
 	.byte	5,23,7,0,5,2
-	.word	.L105
-	.byte	3,194,1,1,5,34,9
-	.half	.L53-.L105
-	.byte	1,5,31,9
-	.half	.L422-.L53
+	.word	.L108
+	.byte	3,192,1,1,5,31,9
+	.half	.L51-.L108
 	.byte	1,5,20,9
-	.half	.L52-.L422
+	.half	.L50-.L51
 	.byte	1,5,23,9
-	.half	.L423-.L52
-	.byte	1,5,24,9
-	.half	.L424-.L423
-	.byte	3,1,1,5,35,9
-	.half	.L55-.L424
-	.byte	1,5,32,9
-	.half	.L425-.L55
-	.byte	1,5,20,9
-	.half	.L54-.L425
-	.byte	1,5,24,9
-	.half	.L426-.L54
-	.byte	1,5,5,9
-	.half	.L427-.L426
+	.half	.L428-.L50
+	.byte	1,5,21,7,9
+	.half	.L429-.L428
+	.byte	3,1,1,5,29,9
+	.half	.L53-.L429
+	.byte	1,5,21,9
+	.half	.L52-.L53
+	.byte	1,5,5,7,9
+	.half	.L430-.L52
 	.byte	3,1,1,5,1,9
-	.half	.L56-.L427
+	.half	.L54-.L430
 	.byte	3,1,1,7,9
-	.half	.L141-.L56
+	.half	.L141-.L54
 	.byte	0,1,1
-.L419:
-	.sdecl	'.debug_ranges',debug,cluster('wrap_180_cd')
+.L425:
+	.sdecl	'.debug_ranges',debug,cluster('wrap_360_cd')
 	.sect	'.debug_ranges'
 .L140:
-	.word	-1,.L105,0,.L141-.L105,0,0
-	.sdecl	'.debug_info',debug,cluster('wrap_90_cd')
+	.word	-1,.L108,0,.L141-.L108,0,0
+	.sdecl	'.debug_info',debug,cluster('wrap_180_cd')
 	.sect	'.debug_info'
 .L142:
-	.word	282
+	.word	283
 	.half	3
 	.word	.L143
 	.byte	4,1
@@ -21550,70 +21506,70 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L145,.L144
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'wrap_90_cd',0,1,201,1,7
-	.word	.L227
+	.byte	'wrap_180_cd',0,1,199,1,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L107,.L251,.L106
+	.word	.L110,.L259,.L109
 	.byte	4
-	.byte	'error',0,1,201,1,24
-	.word	.L227,.L252
+	.byte	'error',0,1,199,1,25
+	.word	.L237,.L260
 	.byte	5
-	.word	.L107,.L251
+	.word	.L110,.L259
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('wrap_90_cd')
+	.sdecl	'.debug_abbrev',debug,cluster('wrap_180_cd')
 	.sect	'.debug_abbrev'
 .L143:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('wrap_90_cd')
+	.sdecl	'.debug_line',debug,cluster('wrap_180_cd')
 	.sect	'.debug_line'
 .L144:
-	.word	.L429-.L428
-.L428:
+	.word	.L432-.L431
+.L431:
 	.half	3
-	.word	.L431-.L430
-.L430:
+	.word	.L434-.L433
+.L433:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L431:
-	.byte	5,22,7,0,5,2
-	.word	.L107
-	.byte	3,202,1,1,5,33,9
-	.half	.L58-.L107
-	.byte	1,5,30,9
-	.half	.L432-.L58
-	.byte	1,5,20,9
-	.half	.L57-.L432
-	.byte	1,5,22,9
-	.half	.L433-.L57
-	.byte	1,5,23,9
-	.half	.L434-.L433
-	.byte	3,1,1,5,34,9
-	.half	.L60-.L434
+.L434:
+	.byte	5,23,7,0,5,2
+	.word	.L110
+	.byte	3,200,1,1,5,34,9
+	.half	.L56-.L110
 	.byte	1,5,31,9
-	.half	.L435-.L60
+	.half	.L435-.L56
 	.byte	1,5,20,9
-	.half	.L59-.L435
+	.half	.L55-.L435
 	.byte	1,5,23,9
-	.half	.L436-.L59
-	.byte	1,5,5,9
+	.half	.L436-.L55
+	.byte	1,5,24,9
 	.half	.L437-.L436
+	.byte	3,1,1,5,35,9
+	.half	.L58-.L437
+	.byte	1,5,32,9
+	.half	.L438-.L58
+	.byte	1,5,20,9
+	.half	.L57-.L438
+	.byte	1,5,24,9
+	.half	.L439-.L57
+	.byte	1,5,5,9
+	.half	.L440-.L439
 	.byte	3,1,1,5,1,9
-	.half	.L61-.L437
+	.half	.L59-.L440
 	.byte	3,1,1,7,9
-	.half	.L146-.L61
+	.half	.L146-.L59
 	.byte	0,1,1
-.L429:
-	.sdecl	'.debug_ranges',debug,cluster('wrap_90_cd')
+.L432:
+	.sdecl	'.debug_ranges',debug,cluster('wrap_180_cd')
 	.sect	'.debug_ranges'
 .L145:
-	.word	-1,.L107,0,.L146-.L107,0,0
-	.sdecl	'.debug_info',debug,cluster('sq')
+	.word	-1,.L110,0,.L146-.L110,0,0
+	.sdecl	'.debug_info',debug,cluster('wrap_90_cd')
 	.sect	'.debug_info'
 .L147:
-	.word	270
+	.word	282
 	.half	3
 	.word	.L148
 	.byte	4,1
@@ -21623,52 +21579,70 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L150,.L149
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'sq',0,1,166,1,7
-	.word	.L227
+	.byte	'wrap_90_cd',0,1,207,1,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L97,.L253,.L96
+	.word	.L112,.L261,.L111
 	.byte	4
-	.byte	'v',0,1,166,1,16
-	.word	.L227,.L254
+	.byte	'error',0,1,207,1,24
+	.word	.L237,.L262
 	.byte	5
-	.word	.L97,.L253
+	.word	.L112,.L261
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('sq')
+	.sdecl	'.debug_abbrev',debug,cluster('wrap_90_cd')
 	.sect	'.debug_abbrev'
 .L148:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('sq')
+	.sdecl	'.debug_line',debug,cluster('wrap_90_cd')
 	.sect	'.debug_line'
 .L149:
-	.word	.L439-.L438
-.L438:
+	.word	.L442-.L441
+.L441:
 	.half	3
-	.word	.L441-.L440
-.L440:
+	.word	.L444-.L443
+.L443:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L441:
-	.byte	5,10,7,0,5,2
-	.word	.L97
-	.byte	3,167,1,1,5,2,9
-	.half	.L442-.L97
-	.byte	1,5,1,9
-	.half	.L44-.L442
+.L444:
+	.byte	5,22,7,0,5,2
+	.word	.L112
+	.byte	3,208,1,1,5,33,9
+	.half	.L61-.L112
+	.byte	1,5,30,9
+	.half	.L445-.L61
+	.byte	1,5,20,9
+	.half	.L60-.L445
+	.byte	1,5,22,9
+	.half	.L446-.L60
+	.byte	1,5,23,9
+	.half	.L447-.L446
+	.byte	3,1,1,5,34,9
+	.half	.L63-.L447
+	.byte	1,5,31,9
+	.half	.L448-.L63
+	.byte	1,5,20,9
+	.half	.L62-.L448
+	.byte	1,5,23,9
+	.half	.L449-.L62
+	.byte	1,5,5,9
+	.half	.L450-.L449
+	.byte	3,1,1,5,1,9
+	.half	.L64-.L450
 	.byte	3,1,1,7,9
-	.half	.L151-.L44
+	.half	.L151-.L64
 	.byte	0,1,1
-.L439:
-	.sdecl	'.debug_ranges',debug,cluster('sq')
+.L442:
+	.sdecl	'.debug_ranges',debug,cluster('wrap_90_cd')
 	.sect	'.debug_ranges'
 .L150:
-	.word	-1,.L97,0,.L151-.L97,0,0
-	.sdecl	'.debug_info',debug,cluster('radians')
+	.word	-1,.L112,0,.L151-.L112,0,0
+	.sdecl	'.debug_info',debug,cluster('sq')
 	.sect	'.debug_info'
 .L152:
-	.word	277
+	.word	270
 	.half	3
 	.word	.L153
 	.byte	4,1
@@ -21678,51 +21652,49 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L155,.L154
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'radians',0,1,154,1,7
-	.word	.L227
+	.byte	'sq',0,1,172,1,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L93,.L255,.L92
+	.word	.L102,.L263,.L101
 	.byte	4
-	.byte	'deg',0,1,154,1,21
-	.word	.L227,.L256
+	.byte	'v',0,1,172,1,16
+	.word	.L237,.L264
 	.byte	5
-	.word	.L93,.L255
+	.word	.L102,.L263
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('radians')
+	.sdecl	'.debug_abbrev',debug,cluster('sq')
 	.sect	'.debug_abbrev'
 .L153:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('radians')
+	.sdecl	'.debug_line',debug,cluster('sq')
 	.sect	'.debug_line'
 .L154:
-	.word	.L444-.L443
-.L443:
+	.word	.L452-.L451
+.L451:
 	.half	3
-	.word	.L446-.L445
-.L445:
+	.word	.L454-.L453
+.L453:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L446:
-	.byte	5,15,7,0,5,2
-	.word	.L93
-	.byte	3,155,1,1,5,13,9
-	.half	.L447-.L93
-	.byte	1,5,2,9
-	.half	.L448-.L447
+.L454:
+	.byte	5,10,7,0,5,2
+	.word	.L102
+	.byte	3,173,1,1,5,2,9
+	.half	.L455-.L102
 	.byte	1,5,1,9
-	.half	.L42-.L448
+	.half	.L47-.L455
 	.byte	3,1,1,7,9
-	.half	.L156-.L42
+	.half	.L156-.L47
 	.byte	0,1,1
-.L444:
-	.sdecl	'.debug_ranges',debug,cluster('radians')
+.L452:
+	.sdecl	'.debug_ranges',debug,cluster('sq')
 	.sect	'.debug_ranges'
 .L155:
-	.word	-1,.L93,0,.L156-.L93,0,0
-	.sdecl	'.debug_info',debug,cluster('degrees')
+	.word	-1,.L102,0,.L156-.L102,0,0
+	.sdecl	'.debug_info',debug,cluster('radians')
 	.sect	'.debug_info'
 .L157:
 	.word	277
@@ -21735,54 +21707,54 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L160,.L159
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'degrees',0,1,160,1,7
-	.word	.L227
+	.byte	'radians',0,1,160,1,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L95,.L257,.L94
+	.word	.L98,.L265,.L97
 	.byte	4
-	.byte	'rad',0,1,160,1,21
-	.word	.L227,.L258
+	.byte	'deg',0,1,160,1,21
+	.word	.L237,.L266
 	.byte	5
-	.word	.L95,.L257
+	.word	.L98,.L265
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('degrees')
+	.sdecl	'.debug_abbrev',debug,cluster('radians')
 	.sect	'.debug_abbrev'
 .L158:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('degrees')
+	.sdecl	'.debug_line',debug,cluster('radians')
 	.sect	'.debug_line'
 .L159:
-	.word	.L450-.L449
-.L449:
+	.word	.L457-.L456
+.L456:
 	.half	3
-	.word	.L452-.L451
-.L451:
+	.word	.L459-.L458
+.L458:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L452:
+.L459:
 	.byte	5,15,7,0,5,2
-	.word	.L95
+	.word	.L98
 	.byte	3,161,1,1,5,13,9
-	.half	.L453-.L95
+	.half	.L460-.L98
 	.byte	1,5,2,9
-	.half	.L454-.L453
+	.half	.L461-.L460
 	.byte	1,5,1,9
-	.half	.L43-.L454
+	.half	.L45-.L461
 	.byte	3,1,1,7,9
-	.half	.L161-.L43
+	.half	.L161-.L45
 	.byte	0,1,1
-.L450:
-	.sdecl	'.debug_ranges',debug,cluster('degrees')
+.L457:
+	.sdecl	'.debug_ranges',debug,cluster('radians')
 	.sect	'.debug_ranges'
 .L160:
-	.word	-1,.L95,0,.L161-.L95,0,0
-	.sdecl	'.debug_info',debug,cluster('pythagorous2')
+	.word	-1,.L98,0,.L161-.L98,0,0
+	.sdecl	'.debug_info',debug,cluster('degrees')
 	.sect	'.debug_info'
 .L162:
-	.word	295
+	.word	277
 	.half	3
 	.word	.L163
 	.byte	4,1
@@ -21792,63 +21764,54 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L165,.L164
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'pythagorous2',0,1,172,1,7
-	.word	.L227
+	.byte	'degrees',0,1,166,1,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L99,.L259,.L98
+	.word	.L100,.L267,.L99
 	.byte	4
-	.byte	'a',0,1,172,1,26
-	.word	.L227,.L260
-	.byte	4
-	.byte	'b',0,1,172,1,35
-	.word	.L227,.L261
+	.byte	'rad',0,1,166,1,21
+	.word	.L237,.L268
 	.byte	5
-	.word	.L99,.L259
+	.word	.L100,.L267
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('pythagorous2')
+	.sdecl	'.debug_abbrev',debug,cluster('degrees')
 	.sect	'.debug_abbrev'
 .L163:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('pythagorous2')
+	.sdecl	'.debug_line',debug,cluster('degrees')
 	.sect	'.debug_line'
 .L164:
-	.word	.L456-.L455
-.L455:
+	.word	.L463-.L462
+.L462:
 	.half	3
-	.word	.L458-.L457
-.L457:
+	.word	.L465-.L464
+.L464:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L458:
-	.byte	5,7,7,0,5,2
-	.word	.L99
-	.byte	3,171,1,1,5,18,9
-	.half	.L361-.L99
-	.byte	3,2,1,5,20,9
-	.half	.L360-.L361
-	.byte	1,5,24,9
-	.half	.L459-.L360
-	.byte	1,5,20,9
-	.half	.L363-.L459
+.L465:
+	.byte	5,15,7,0,5,2
+	.word	.L100
+	.byte	3,167,1,1,5,13,9
+	.half	.L466-.L100
 	.byte	1,5,2,9
-	.half	.L460-.L363
+	.half	.L467-.L466
 	.byte	1,5,1,9
-	.half	.L45-.L460
+	.half	.L46-.L467
 	.byte	3,1,1,7,9
-	.half	.L166-.L45
+	.half	.L166-.L46
 	.byte	0,1,1
-.L456:
-	.sdecl	'.debug_ranges',debug,cluster('pythagorous2')
+.L463:
+	.sdecl	'.debug_ranges',debug,cluster('degrees')
 	.sect	'.debug_ranges'
 .L165:
-	.word	-1,.L99,0,.L166-.L99,0,0
-	.sdecl	'.debug_info',debug,cluster('pythagorous3')
+	.word	-1,.L100,0,.L166-.L100,0,0
+	.sdecl	'.debug_info',debug,cluster('pythagorous2')
 	.sect	'.debug_info'
 .L167:
-	.word	310
+	.word	295
 	.half	3
 	.word	.L168
 	.byte	4,1
@@ -21858,70 +21821,63 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L170,.L169
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'pythagorous3',0,1,178,1,7
-	.word	.L227
+	.byte	'pythagorous2',0,1,178,1,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L101,.L262,.L100
+	.word	.L104,.L269,.L103
 	.byte	4
 	.byte	'a',0,1,178,1,26
-	.word	.L227,.L263
+	.word	.L237,.L270
 	.byte	4
 	.byte	'b',0,1,178,1,35
-	.word	.L227,.L264
-	.byte	4
-	.byte	'c',0,1,178,1,44
-	.word	.L227,.L265
+	.word	.L237,.L271
 	.byte	5
-	.word	.L101,.L262
+	.word	.L104,.L269
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('pythagorous3')
+	.sdecl	'.debug_abbrev',debug,cluster('pythagorous2')
 	.sect	'.debug_abbrev'
 .L168:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('pythagorous3')
+	.sdecl	'.debug_line',debug,cluster('pythagorous2')
 	.sect	'.debug_line'
 .L169:
-	.word	.L462-.L461
-.L461:
+	.word	.L469-.L468
+.L468:
 	.half	3
-	.word	.L464-.L463
-.L463:
+	.word	.L471-.L470
+.L470:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L464:
+.L471:
 	.byte	5,7,7,0,5,2
-	.word	.L101
+	.word	.L104
 	.byte	3,177,1,1,5,18,9
-	.half	.L367-.L101
+	.half	.L374-.L104
 	.byte	3,2,1,5,20,9
-	.half	.L364-.L367
+	.half	.L373-.L374
 	.byte	1,5,24,9
-	.half	.L465-.L364
+	.half	.L472-.L373
 	.byte	1,5,20,9
-	.half	.L369-.L465
-	.byte	1,5,30,9
-	.half	.L366-.L369
-	.byte	1,5,26,9
-	.half	.L371-.L366
+	.half	.L376-.L472
 	.byte	1,5,2,9
-	.half	.L466-.L371
+	.half	.L473-.L376
 	.byte	1,5,1,9
-	.half	.L46-.L466
+	.half	.L48-.L473
 	.byte	3,1,1,7,9
-	.half	.L171-.L46
+	.half	.L171-.L48
 	.byte	0,1,1
-.L462:
-	.sdecl	'.debug_ranges',debug,cluster('pythagorous3')
+.L469:
+	.sdecl	'.debug_ranges',debug,cluster('pythagorous2')
 	.sect	'.debug_ranges'
 .L170:
-	.word	-1,.L101,0,.L171-.L101,0,0
-	.sdecl	'.debug_info',debug,cluster('lenOfNum')
+	.word	-1,.L104,0,.L171-.L104,0,0
+	.sdecl	'.debug_info',debug,cluster('pythagorous3')
 	.sect	'.debug_info'
 .L172:
-	.word	291
+	.word	310
 	.half	3
 	.word	.L173
 	.byte	4,1
@@ -21931,66 +21887,70 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L175,.L174
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'lenOfNum',0,1,42,9
-	.word	.L266
+	.byte	'pythagorous3',0,1,184,1,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L71,.L267,.L70
+	.word	.L106,.L272,.L105
 	.byte	4
-	.byte	'num',0,1,42,27
-	.word	.L268,.L269
+	.byte	'a',0,1,184,1,26
+	.word	.L237,.L273
+	.byte	4
+	.byte	'b',0,1,184,1,35
+	.word	.L237,.L274
+	.byte	4
+	.byte	'c',0,1,184,1,44
+	.word	.L237,.L275
 	.byte	5
-	.word	.L71,.L267
-	.byte	6
-	.byte	'i',0,1,44,9
-	.word	.L266,.L270
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('lenOfNum')
+	.word	.L106,.L272
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('pythagorous3')
 	.sect	'.debug_abbrev'
 .L173:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
-	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('lenOfNum')
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('pythagorous3')
 	.sect	'.debug_line'
 .L174:
-	.word	.L468-.L467
-.L467:
+	.word	.L475-.L474
+.L474:
 	.half	3
-	.word	.L470-.L469
-.L469:
+	.word	.L477-.L476
+.L476:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L470:
-	.byte	5,10,7,0,5,2
-	.word	.L71
-	.byte	3,43,1,5,13,9
-	.half	.L331-.L71
-	.byte	3,1,1,5,3,9
-	.half	.L11-.L331
-	.byte	3,2,1,5,10,9
-	.half	.L333-.L11
-	.byte	3,1,1,5,9,9
-	.half	.L334-.L333
-	.byte	1,5,13,9
-	.half	.L10-.L334
-	.byte	3,125,1,5,2,7,9
-	.half	.L335-.L10
-	.byte	3,5,1,5,1,9
-	.half	.L12-.L335
+.L477:
+	.byte	5,7,7,0,5,2
+	.word	.L106
+	.byte	3,183,1,1,5,18,9
+	.half	.L380-.L106
+	.byte	3,2,1,5,20,9
+	.half	.L377-.L380
+	.byte	1,5,24,9
+	.half	.L478-.L377
+	.byte	1,5,20,9
+	.half	.L382-.L478
+	.byte	1,5,30,9
+	.half	.L379-.L382
+	.byte	1,5,26,9
+	.half	.L384-.L379
+	.byte	1,5,2,9
+	.half	.L479-.L384
+	.byte	1,5,1,9
+	.half	.L49-.L479
 	.byte	3,1,1,7,9
-	.half	.L176-.L12
+	.half	.L176-.L49
 	.byte	0,1,1
-.L468:
-	.sdecl	'.debug_ranges',debug,cluster('lenOfNum')
+.L475:
+	.sdecl	'.debug_ranges',debug,cluster('pythagorous3')
 	.sect	'.debug_ranges'
 .L175:
-	.word	-1,.L71,0,.L176-.L71,0,0
-	.sdecl	'.debug_info',debug,cluster('leastSquareMethod')
+	.word	-1,.L106,0,.L176-.L106,0,0
+	.sdecl	'.debug_info',debug,cluster('lenOfNum')
 	.sect	'.debug_info'
 .L177:
-	.word	456
+	.word	291
 	.half	3
 	.word	.L178
 	.byte	4,1
@@ -22000,156 +21960,66 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L180,.L179
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'leastSquareMethod',0,1,60,6,1,1,1
-	.word	.L73,.L271,.L72
+	.byte	'lenOfNum',0,1,48,9
+	.word	.L276
+	.byte	1,1,1
+	.word	.L76,.L277,.L75
 	.byte	4
-	.byte	'x',0,1,60,31
-	.word	.L272,.L273
-	.byte	4
-	.byte	'y',0,1,60,41
-	.word	.L272,.L274
-	.byte	4
-	.byte	'len',0,1,60,52
-	.word	.L266,.L275
-	.byte	4
-	.byte	'k',0,1,60,64
-	.word	.L276,.L277
-	.byte	4
-	.byte	'b',0,1,60,74
-	.word	.L276,.L278
+	.byte	'num',0,1,48,27
+	.word	.L278,.L279
 	.byte	5
-	.word	.L73,.L271
+	.word	.L76,.L277
 	.byte	6
-	.byte	'i',0,1,62,8
-	.word	.L241,.L279
-	.byte	6
-	.byte	'sumXY',0,1,64,8
-	.word	.L241,.L280
-	.byte	6
-	.byte	'sumX',0,1,64,15
-	.word	.L241,.L281
-	.byte	6
-	.byte	'sumY',0,1,64,21
-	.word	.L241,.L282
-	.byte	6
-	.byte	'sumX2',0,1,64,27
-	.word	.L241,.L283
-	.byte	6
-	.byte	'aveX',0,1,65,8
-	.word	.L227,.L284
-	.byte	6
-	.byte	'aveY',0,1,65,14
-	.word	.L227,.L285
+	.byte	'i',0,1,50,9
+	.word	.L276,.L280
 	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('leastSquareMethod')
+	.sdecl	'.debug_abbrev',debug,cluster('lenOfNum')
 	.sect	'.debug_abbrev'
 .L178:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
-	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('leastSquareMethod')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('lenOfNum')
 	.sect	'.debug_line'
 .L179:
-	.word	.L472-.L471
-.L471:
+	.word	.L481-.L480
+.L480:
 	.half	3
-	.word	.L474-.L473
-.L473:
+	.word	.L483-.L482
+.L482:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L474:
-	.byte	5,6,7,0,5,2
-	.word	.L73
-	.byte	3,59,1,5,30,9
-	.half	.L337-.L73
-	.byte	3,7,1,5,22,9
-	.half	.L336-.L337
-	.byte	1,5,15,9
-	.half	.L339-.L336
-	.byte	1,5,8,9
-	.half	.L341-.L339
-	.byte	1,5,9,9
-	.half	.L343-.L341
-	.byte	3,2,1,5,21,9
-	.half	.L345-.L343
+.L483:
+	.byte	5,10,7,0,5,2
+	.word	.L76
+	.byte	3,49,1,5,13,9
+	.half	.L344-.L76
+	.byte	3,1,1,5,3,9
+	.half	.L14-.L344
+	.byte	3,2,1,5,10,9
+	.half	.L346-.L14
+	.byte	3,1,1,5,9,9
+	.half	.L347-.L346
 	.byte	1,5,13,9
-	.half	.L14-.L345
-	.byte	3,2,1,5,20,9
-	.half	.L475-.L14
-	.byte	1,5,9,9
-	.half	.L476-.L475
-	.byte	1,5,12,9
-	.half	.L477-.L476
-	.byte	3,1,1,5,8,9
-	.half	.L478-.L477
-	.byte	1,5,12,9
-	.half	.L347-.L478
-	.byte	3,1,1,5,8,9
-	.half	.L479-.L347
-	.byte	1,5,13,9
-	.half	.L349-.L479
-	.byte	3,1,1,5,20,9
-	.half	.L480-.L349
-	.byte	1,5,9,9
-	.half	.L481-.L480
-	.byte	1,5,24,9
-	.half	.L482-.L481
-	.byte	3,123,1,5,21,9
-	.half	.L13-.L482
-	.byte	1,5,9,7,9
-	.half	.L483-.L13
-	.byte	3,8,1,5,23,9
-	.half	.L484-.L483
-	.byte	1,5,21,9
-	.half	.L485-.L484
-	.byte	1,5,9,9
-	.half	.L352-.L485
-	.byte	3,1,1,5,23,9
-	.half	.L486-.L352
-	.byte	1,5,21,9
-	.half	.L487-.L486
-	.byte	1,5,28,9
-	.half	.L353-.L487
-	.byte	3,2,1,5,35,9
-	.half	.L350-.L353
-	.byte	1,5,21,9
-	.half	.L351-.L350
-	.byte	1,5,7,9
-	.half	.L344-.L351
-	.byte	1,5,65,9
-	.half	.L488-.L344
-	.byte	1,5,72,9
-	.half	.L348-.L488
-	.byte	1,5,58,9
-	.half	.L489-.L348
-	.byte	1,5,44,9
-	.half	.L338-.L489
-	.byte	1,5,42,9
-	.half	.L490-.L338
-	.byte	1,5,5,9
-	.half	.L491-.L490
-	.byte	1,5,23,9
-	.half	.L492-.L491
-	.byte	3,1,1,5,20,9
-	.half	.L493-.L492
-	.byte	1,5,5,9
-	.half	.L494-.L493
-	.byte	1,5,1,9
-	.half	.L495-.L494
+	.half	.L13-.L347
+	.byte	3,125,1,5,2,7,9
+	.half	.L348-.L13
+	.byte	3,5,1,5,1,9
+	.half	.L15-.L348
 	.byte	3,1,1,7,9
-	.half	.L181-.L495
+	.half	.L181-.L15
 	.byte	0,1,1
-.L472:
-	.sdecl	'.debug_ranges',debug,cluster('leastSquareMethod')
+.L481:
+	.sdecl	'.debug_ranges',debug,cluster('lenOfNum')
 	.sect	'.debug_ranges'
 .L180:
-	.word	-1,.L73,0,.L181-.L73,0,0
-	.sdecl	'.debug_info',debug,cluster('getLineK')
+	.word	-1,.L76,0,.L181-.L76,0,0
+	.sdecl	'.debug_info',debug,cluster('leastSquareMethod')
 	.sect	'.debug_info'
 .L182:
-	.word	320
+	.word	456
 	.half	3
 	.word	.L183
 	.byte	4,1
@@ -22159,73 +22029,156 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L185,.L184
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'getLineK',0,1,118,7
-	.word	.L227
-	.byte	1,1,1
-	.word	.L81,.L286,.L80
+	.byte	'leastSquareMethod',0,1,66,6,1,1,1
+	.word	.L78,.L281,.L77
 	.byte	4
-	.byte	'x1',0,1,118,22
-	.word	.L241,.L287
+	.byte	'x',0,1,66,31
+	.word	.L282,.L283
 	.byte	4
-	.byte	'y1',0,1,118,31
-	.word	.L241,.L288
+	.byte	'y',0,1,66,41
+	.word	.L282,.L284
 	.byte	4
-	.byte	'x2',0,1,118,40
-	.word	.L241,.L289
+	.byte	'len',0,1,66,52
+	.word	.L276,.L285
 	.byte	4
-	.byte	'y2',0,1,118,49
-	.word	.L241,.L290
+	.byte	'k',0,1,66,64
+	.word	.L286,.L287
+	.byte	4
+	.byte	'b',0,1,66,74
+	.word	.L286,.L288
 	.byte	5
-	.word	.L81,.L286
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('getLineK')
+	.word	.L78,.L281
+	.byte	6
+	.byte	'i',0,1,68,8
+	.word	.L251,.L289
+	.byte	6
+	.byte	'sumXY',0,1,70,8
+	.word	.L251,.L290
+	.byte	6
+	.byte	'sumX',0,1,70,15
+	.word	.L251,.L291
+	.byte	6
+	.byte	'sumY',0,1,70,21
+	.word	.L251,.L292
+	.byte	6
+	.byte	'sumX2',0,1,70,27
+	.word	.L251,.L293
+	.byte	6
+	.byte	'aveX',0,1,71,8
+	.word	.L237,.L294
+	.byte	6
+	.byte	'aveY',0,1,71,14
+	.word	.L237,.L295
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('leastSquareMethod')
 	.sect	'.debug_abbrev'
 .L183:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('getLineK')
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('leastSquareMethod')
 	.sect	'.debug_line'
 .L184:
-	.word	.L497-.L496
-.L496:
+	.word	.L485-.L484
+.L484:
 	.half	3
-	.word	.L499-.L498
-.L498:
+	.word	.L487-.L486
+.L486:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L499:
-	.byte	5,10,7,0,5,2
-	.word	.L81
-	.byte	3,247,0,1,5,22,9
-	.half	.L500-.L81
-	.byte	1,5,20,9
-	.half	.L501-.L500
-	.byte	1,5,36,9
-	.half	.L502-.L501
-	.byte	1,5,48,9
-	.half	.L503-.L502
-	.byte	1,5,46,9
+.L487:
+	.byte	5,6,7,0,5,2
+	.word	.L78
+	.byte	3,193,0,1,5,30,9
+	.half	.L350-.L78
+	.byte	3,7,1,5,22,9
+	.half	.L349-.L350
+	.byte	1,5,15,9
+	.half	.L352-.L349
+	.byte	1,5,8,9
+	.half	.L354-.L352
+	.byte	1,5,9,9
+	.half	.L356-.L354
+	.byte	3,2,1,5,21,9
+	.half	.L358-.L356
+	.byte	1,5,13,9
+	.half	.L17-.L358
+	.byte	3,2,1,5,20,9
+	.half	.L488-.L17
+	.byte	1,5,9,9
+	.half	.L489-.L488
+	.byte	1,5,12,9
+	.half	.L490-.L489
+	.byte	3,1,1,5,8,9
+	.half	.L491-.L490
+	.byte	1,5,12,9
+	.half	.L360-.L491
+	.byte	3,1,1,5,8,9
+	.half	.L492-.L360
+	.byte	1,5,13,9
+	.half	.L362-.L492
+	.byte	3,1,1,5,20,9
+	.half	.L493-.L362
+	.byte	1,5,9,9
+	.half	.L494-.L493
+	.byte	1,5,24,9
+	.half	.L495-.L494
+	.byte	3,123,1,5,21,9
+	.half	.L16-.L495
+	.byte	1,5,9,7,9
+	.half	.L496-.L16
+	.byte	3,8,1,5,23,9
+	.half	.L497-.L496
+	.byte	1,5,21,9
+	.half	.L498-.L497
+	.byte	1,5,9,9
+	.half	.L365-.L498
+	.byte	3,1,1,5,23,9
+	.half	.L499-.L365
+	.byte	1,5,21,9
+	.half	.L500-.L499
+	.byte	1,5,28,9
+	.half	.L366-.L500
+	.byte	3,2,1,5,35,9
+	.half	.L363-.L366
+	.byte	1,5,21,9
+	.half	.L364-.L363
+	.byte	1,5,7,9
+	.half	.L357-.L364
+	.byte	1,5,65,9
+	.half	.L501-.L357
+	.byte	1,5,72,9
+	.half	.L361-.L501
+	.byte	1,5,58,9
+	.half	.L502-.L361
+	.byte	1,5,44,9
+	.half	.L351-.L502
+	.byte	1,5,42,9
+	.half	.L503-.L351
+	.byte	1,5,5,9
 	.half	.L504-.L503
-	.byte	1,5,33,9
+	.byte	1,5,23,9
 	.half	.L505-.L504
-	.byte	1,5,2,9
+	.byte	3,1,1,5,20,9
 	.half	.L506-.L505
+	.byte	1,5,5,9
+	.half	.L507-.L506
 	.byte	1,5,1,9
-	.half	.L20-.L506
+	.half	.L508-.L507
 	.byte	3,1,1,7,9
-	.half	.L186-.L20
+	.half	.L186-.L508
 	.byte	0,1,1
-.L497:
-	.sdecl	'.debug_ranges',debug,cluster('getLineK')
+.L485:
+	.sdecl	'.debug_ranges',debug,cluster('leastSquareMethod')
 	.sect	'.debug_ranges'
 .L185:
-	.word	-1,.L81,0,.L186-.L81,0,0
-	.sdecl	'.debug_info',debug,cluster('getLeastSquareMethodERROR')
+	.word	-1,.L78,0,.L186-.L78,0,0
+	.sdecl	'.debug_info',debug,cluster('getLineK')
 	.sect	'.debug_info'
 .L187:
-	.word	402
+	.word	320
 	.half	3
 	.word	.L188
 	.byte	4,1
@@ -22235,100 +22188,73 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L190,.L189
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'getLeastSquareMethodERROR',0,1,90,7
-	.word	.L227
+	.byte	'getLineK',0,1,124,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L75,.L291,.L74
+	.word	.L86,.L296,.L85
 	.byte	4
-	.byte	'x',0,1,90,40
-	.word	.L272,.L292
+	.byte	'x1',0,1,124,22
+	.word	.L251,.L297
 	.byte	4
-	.byte	'y',0,1,90,50
-	.word	.L272,.L293
+	.byte	'y1',0,1,124,31
+	.word	.L251,.L298
 	.byte	4
-	.byte	'len',0,1,90,61
-	.word	.L266,.L294
+	.byte	'x2',0,1,124,40
+	.word	.L251,.L299
 	.byte	4
-	.byte	'k',0,1,90,72
-	.word	.L227,.L295
-	.byte	4
-	.byte	'b',0,1,90,81
-	.word	.L227,.L296
+	.byte	'y2',0,1,124,49
+	.word	.L251,.L300
 	.byte	5
-	.word	.L75,.L291
-	.byte	6
-	.byte	'fitVal',0,1,92,8
-	.word	.L227,.L297
-	.byte	6
-	.byte	'i',0,1,93,8
-	.word	.L241,.L298
-	.byte	6
-	.byte	'fitErr',0,1,94,8
-	.word	.L227,.L299
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('getLeastSquareMethodERROR')
+	.word	.L86,.L296
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('getLineK')
 	.sect	'.debug_abbrev'
 .L188:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
-	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('getLeastSquareMethodERROR')
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('getLineK')
 	.sect	'.debug_line'
 .L189:
-	.word	.L508-.L507
-.L507:
-	.half	3
 	.word	.L510-.L509
 .L509:
+	.half	3
+	.word	.L512-.L511
+.L511:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L510:
-	.byte	5,15,7,0,5,2
-	.word	.L75
-	.byte	3,221,0,1,5,9,9
-	.half	.L354-.L75
-	.byte	3,2,1,5,21,9
-	.half	.L356-.L354
-	.byte	1,5,13,9
-	.half	.L16-.L356
-	.byte	3,2,1,5,21,9
-	.half	.L511-.L16
-	.byte	1,5,24,9
-	.half	.L358-.L511
-	.byte	3,1,1,5,21,9
-	.half	.L512-.L358
-	.byte	1,5,42,9
-	.half	.L513-.L512
-	.byte	1,5,39,9
+.L512:
+	.byte	5,10,7,0,5,2
+	.word	.L86
+	.byte	3,253,0,1,5,22,9
+	.half	.L513-.L86
+	.byte	1,5,20,9
 	.half	.L514-.L513
-	.byte	1,5,10,9
+	.byte	1,5,36,9
 	.half	.L515-.L514
-	.byte	1,5,24,9
+	.byte	1,5,48,9
 	.half	.L516-.L515
-	.byte	3,125,1,5,21,9
-	.half	.L15-.L516
-	.byte	1,5,26,7,9
-	.half	.L517-.L15
-	.byte	3,6,1,5,24,9
+	.byte	1,5,46,9
+	.half	.L517-.L516
+	.byte	1,5,33,9
 	.half	.L518-.L517
 	.byte	1,5,2,9
-	.half	.L355-.L518
+	.half	.L519-.L518
 	.byte	1,5,1,9
-	.half	.L17-.L355
+	.half	.L23-.L519
 	.byte	3,1,1,7,9
-	.half	.L191-.L17
+	.half	.L191-.L23
 	.byte	0,1,1
-.L508:
-	.sdecl	'.debug_ranges',debug,cluster('getLeastSquareMethodERROR')
+.L510:
+	.sdecl	'.debug_ranges',debug,cluster('getLineK')
 	.sect	'.debug_ranges'
 .L190:
-	.word	-1,.L75,0,.L191-.L75,0,0
-	.sdecl	'.debug_info',debug,cluster('getLineValue')
+	.word	-1,.L86,0,.L191-.L86,0,0
+	.sdecl	'.debug_info',debug,cluster('getLeastSquareMethodERROR')
 	.sect	'.debug_info'
 .L192:
-	.word	306
+	.word	402
 	.half	3
 	.word	.L193
 	.byte	4,1
@@ -22338,60 +22264,100 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L195,.L194
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'getLineValue',0,1,106,7
-	.word	.L227
+	.byte	'getLeastSquareMethodERROR',0,1,96,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L77,.L300,.L76
+	.word	.L80,.L301,.L79
 	.byte	4
-	.byte	'x',0,1,106,28
-	.word	.L266,.L301
+	.byte	'x',0,1,96,40
+	.word	.L282,.L302
 	.byte	4
-	.byte	'k',0,1,106,36
-	.word	.L227,.L302
+	.byte	'y',0,1,96,50
+	.word	.L282,.L303
 	.byte	4
-	.byte	'b',0,1,106,44
-	.word	.L227,.L303
+	.byte	'len',0,1,96,61
+	.word	.L276,.L304
+	.byte	4
+	.byte	'k',0,1,96,72
+	.word	.L237,.L305
+	.byte	4
+	.byte	'b',0,1,96,81
+	.word	.L237,.L306
 	.byte	5
-	.word	.L77,.L300
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('getLineValue')
+	.word	.L80,.L301
+	.byte	6
+	.byte	'fitVal',0,1,98,8
+	.word	.L237,.L307
+	.byte	6
+	.byte	'i',0,1,99,8
+	.word	.L251,.L308
+	.byte	6
+	.byte	'fitErr',0,1,100,8
+	.word	.L237,.L309
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('getLeastSquareMethodERROR')
 	.sect	'.debug_abbrev'
 .L193:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('getLineValue')
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('getLeastSquareMethodERROR')
 	.sect	'.debug_line'
 .L194:
-	.word	.L520-.L519
-.L519:
+	.word	.L521-.L520
+.L520:
 	.half	3
-	.word	.L522-.L521
-.L521:
+	.word	.L523-.L522
+.L522:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L522:
-	.byte	5,17,7,0,5,2
-	.word	.L77
-	.byte	3,235,0,1,5,19,9
-	.half	.L523-.L77
-	.byte	1,5,5,9
-	.half	.L524-.L523
+.L523:
+	.byte	5,15,7,0,5,2
+	.word	.L80
+	.byte	3,227,0,1,5,9,9
+	.half	.L367-.L80
+	.byte	3,2,1,5,21,9
+	.half	.L369-.L367
+	.byte	1,5,13,9
+	.half	.L19-.L369
+	.byte	3,2,1,5,21,9
+	.half	.L524-.L19
+	.byte	1,5,24,9
+	.half	.L371-.L524
+	.byte	3,1,1,5,21,9
+	.half	.L525-.L371
+	.byte	1,5,42,9
+	.half	.L526-.L525
+	.byte	1,5,39,9
+	.half	.L527-.L526
+	.byte	1,5,10,9
+	.half	.L528-.L527
+	.byte	1,5,24,9
+	.half	.L529-.L528
+	.byte	3,125,1,5,21,9
+	.half	.L18-.L529
+	.byte	1,5,26,7,9
+	.half	.L530-.L18
+	.byte	3,6,1,5,24,9
+	.half	.L531-.L530
+	.byte	1,5,2,9
+	.half	.L368-.L531
 	.byte	1,5,1,9
-	.half	.L18-.L524
+	.half	.L20-.L368
 	.byte	3,1,1,7,9
-	.half	.L196-.L18
+	.half	.L196-.L20
 	.byte	0,1,1
-.L520:
-	.sdecl	'.debug_ranges',debug,cluster('getLineValue')
+.L521:
+	.sdecl	'.debug_ranges',debug,cluster('getLeastSquareMethodERROR')
 	.sect	'.debug_ranges'
 .L195:
-	.word	-1,.L77,0,.L196-.L77,0,0
-	.sdecl	'.debug_info',debug,cluster('getLineValueX')
+	.word	-1,.L80,0,.L196-.L80,0,0
+	.sdecl	'.debug_info',debug,cluster('getLineValue')
 	.sect	'.debug_info'
 .L197:
-	.word	323
+	.word	306
 	.half	3
 	.word	.L198
 	.byte	4,1
@@ -22401,65 +22367,60 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L200,.L199
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'getLineValueX',0,1,112,7
-	.word	.L227
+	.byte	'getLineValue',0,1,112,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L79,.L304,.L78
+	.word	.L82,.L310,.L81
 	.byte	4
-	.byte	'x',0,1,112,29
-	.word	.L266,.L305
+	.byte	'x',0,1,112,28
+	.word	.L276,.L311
 	.byte	4
-	.byte	'x1',0,1,112,40
-	.word	.L266,.L306
+	.byte	'k',0,1,112,36
+	.word	.L237,.L312
 	.byte	4
-	.byte	'y1',0,1,112,50
-	.word	.L241,.L307
-	.byte	4
-	.byte	'k',0,1,112,60
-	.word	.L227,.L308
+	.byte	'b',0,1,112,44
+	.word	.L237,.L313
 	.byte	5
-	.word	.L79,.L304
+	.word	.L82,.L310
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('getLineValueX')
+	.sdecl	'.debug_abbrev',debug,cluster('getLineValue')
 	.sect	'.debug_abbrev'
 .L198:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('getLineValueX')
+	.sdecl	'.debug_line',debug,cluster('getLineValue')
 	.sect	'.debug_line'
 .L199:
-	.word	.L526-.L525
-.L525:
+	.word	.L533-.L532
+.L532:
 	.half	3
-	.word	.L528-.L527
-.L527:
+	.word	.L535-.L534
+.L534:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L528:
+.L535:
 	.byte	5,17,7,0,5,2
-	.word	.L79
-	.byte	3,241,0,1,5,25,9
-	.half	.L529-.L79
-	.byte	1,5,23,9
-	.half	.L530-.L529
+	.word	.L82
+	.byte	3,241,0,1,5,19,9
+	.half	.L536-.L82
 	.byte	1,5,5,9
-	.half	.L531-.L530
+	.half	.L537-.L536
 	.byte	1,5,1,9
-	.half	.L19-.L531
+	.half	.L21-.L537
 	.byte	3,1,1,7,9
-	.half	.L201-.L19
+	.half	.L201-.L21
 	.byte	0,1,1
-.L526:
-	.sdecl	'.debug_ranges',debug,cluster('getLineValueX')
+.L533:
+	.sdecl	'.debug_ranges',debug,cluster('getLineValue')
 	.sect	'.debug_ranges'
 .L200:
-	.word	-1,.L79,0,.L201-.L79,0,0
-	.sdecl	'.debug_info',debug,cluster('constrain_int16_LOW')
+	.word	-1,.L82,0,.L201-.L82,0,0
+	.sdecl	'.debug_info',debug,cluster('getLineValueX')
 	.sect	'.debug_info'
 .L202:
-	.word	306
+	.word	323
 	.half	3
 	.word	.L203
 	.byte	4,1
@@ -22469,59 +22430,65 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L205,.L204
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'constrain_int16_LOW',0,1,142,1,9
-	.word	.L241
+	.byte	'getLineValueX',0,1,118,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L89,.L309,.L88
+	.word	.L84,.L314,.L83
 	.byte	4
-	.byte	'amt',0,1,142,1,37
-	.word	.L241,.L310
+	.byte	'x',0,1,118,29
+	.word	.L276,.L315
 	.byte	4
-	.byte	'low',0,1,142,1,50
-	.word	.L241,.L311
+	.byte	'x1',0,1,118,40
+	.word	.L276,.L316
+	.byte	4
+	.byte	'y1',0,1,118,50
+	.word	.L251,.L317
+	.byte	4
+	.byte	'k',0,1,118,60
+	.word	.L237,.L318
 	.byte	5
-	.word	.L89,.L309
+	.word	.L84,.L314
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('constrain_int16_LOW')
+	.sdecl	'.debug_abbrev',debug,cluster('getLineValueX')
 	.sect	'.debug_abbrev'
 .L203:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('constrain_int16_LOW')
+	.sdecl	'.debug_line',debug,cluster('getLineValueX')
 	.sect	'.debug_line'
 .L204:
-	.word	.L533-.L532
-.L532:
+	.word	.L539-.L538
+.L538:
 	.half	3
-	.word	.L535-.L534
-.L534:
+	.word	.L541-.L540
+.L540:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L535:
-	.byte	5,10,7,0,5,2
-	.word	.L89
-	.byte	3,142,1,1,5,27,7,9
-	.half	.L536-.L89
-	.byte	1,5,21,9
-	.half	.L34-.L536
-	.byte	1,5,2,9
-	.half	.L35-.L34
+.L541:
+	.byte	5,17,7,0,5,2
+	.word	.L84
+	.byte	3,247,0,1,5,25,9
+	.half	.L542-.L84
+	.byte	1,5,23,9
+	.half	.L543-.L542
+	.byte	1,5,5,9
+	.half	.L544-.L543
 	.byte	1,5,1,9
-	.half	.L36-.L35
+	.half	.L22-.L544
 	.byte	3,1,1,7,9
-	.half	.L206-.L36
+	.half	.L206-.L22
 	.byte	0,1,1
-.L533:
-	.sdecl	'.debug_ranges',debug,cluster('constrain_int16_LOW')
+.L539:
+	.sdecl	'.debug_ranges',debug,cluster('getLineValueX')
 	.sect	'.debug_ranges'
 .L205:
-	.word	-1,.L89,0,.L206-.L89,0,0
-	.sdecl	'.debug_info',debug,cluster('constrain_int16_MAX')
+	.word	-1,.L84,0,.L206-.L84,0,0
+	.sdecl	'.debug_info',debug,cluster('constrain_int16_LOW')
 	.sect	'.debug_info'
 .L207:
-	.word	307
+	.word	306
 	.half	3
 	.word	.L208
 	.byte	4,1
@@ -22531,59 +22498,59 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L210,.L209
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'constrain_int16_MAX',0,1,136,1,9
-	.word	.L241
+	.byte	'constrain_int16_LOW',0,1,148,1,9
+	.word	.L251
 	.byte	1,1,1
-	.word	.L87,.L312,.L86
+	.word	.L94,.L319,.L93
 	.byte	4
-	.byte	'amt',0,1,136,1,37
-	.word	.L241,.L313
+	.byte	'amt',0,1,148,1,37
+	.word	.L251,.L320
 	.byte	4
-	.byte	'high',0,1,136,1,50
-	.word	.L241,.L314
+	.byte	'low',0,1,148,1,50
+	.word	.L251,.L321
 	.byte	5
-	.word	.L87,.L312
+	.word	.L94,.L319
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('constrain_int16_MAX')
+	.sdecl	'.debug_abbrev',debug,cluster('constrain_int16_LOW')
 	.sect	'.debug_abbrev'
 .L208:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('constrain_int16_MAX')
+	.sdecl	'.debug_line',debug,cluster('constrain_int16_LOW')
 	.sect	'.debug_line'
 .L209:
-	.word	.L538-.L537
-.L537:
+	.word	.L546-.L545
+.L545:
 	.half	3
-	.word	.L540-.L539
-.L539:
+	.word	.L548-.L547
+.L547:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L540:
+.L548:
 	.byte	5,10,7,0,5,2
-	.word	.L87
-	.byte	3,137,1,1,5,29,7,9
-	.half	.L541-.L87
-	.byte	1,5,22,9
-	.half	.L31-.L541
+	.word	.L94
+	.byte	3,148,1,1,5,27,7,9
+	.half	.L549-.L94
+	.byte	1,5,21,9
+	.half	.L37-.L549
 	.byte	1,5,2,9
-	.half	.L32-.L31
+	.half	.L38-.L37
 	.byte	1,5,1,9
-	.half	.L33-.L32
+	.half	.L39-.L38
 	.byte	3,1,1,7,9
-	.half	.L211-.L33
+	.half	.L211-.L39
 	.byte	0,1,1
-.L538:
-	.sdecl	'.debug_ranges',debug,cluster('constrain_int16_MAX')
+.L546:
+	.sdecl	'.debug_ranges',debug,cluster('constrain_int16_LOW')
 	.sect	'.debug_ranges'
 .L210:
-	.word	-1,.L87,0,.L211-.L87,0,0
-	.sdecl	'.debug_info',debug,cluster('my_abs_float')
+	.word	-1,.L94,0,.L211-.L94,0,0
+	.sdecl	'.debug_info',debug,cluster('constrain_int16_MAX')
 	.sect	'.debug_info'
 .L212:
-	.word	279
+	.word	307
 	.half	3
 	.word	.L213
 	.byte	4,1
@@ -22593,57 +22560,56 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L215,.L214
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'my_abs_float',0,1,5,7
-	.word	.L227
+	.byte	'constrain_int16_MAX',0,1,142,1,9
+	.word	.L251
 	.byte	1,1,1
-	.word	.L63,.L315,.L62
+	.word	.L92,.L322,.L91
 	.byte	4
-	.byte	'in',0,1,5,26
-	.word	.L227,.L316
+	.byte	'amt',0,1,142,1,37
+	.word	.L251,.L323
+	.byte	4
+	.byte	'high',0,1,142,1,50
+	.word	.L251,.L324
 	.byte	5
-	.word	.L63,.L315
+	.word	.L92,.L322
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('my_abs_float')
+	.sdecl	'.debug_abbrev',debug,cluster('constrain_int16_MAX')
 	.sect	'.debug_abbrev'
 .L213:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('my_abs_float')
+	.sdecl	'.debug_line',debug,cluster('constrain_int16_MAX')
 	.sect	'.debug_line'
 .L214:
-	.word	.L543-.L542
-.L542:
+	.word	.L551-.L550
+.L550:
 	.half	3
-	.word	.L545-.L544
-.L544:
+	.word	.L553-.L552
+.L552:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L545:
+.L553:
 	.byte	5,10,7,0,5,2
-	.word	.L63
-	.byte	3,6,1,5,8,9
-	.half	.L546-.L63
+	.word	.L92
+	.byte	3,143,1,1,5,29,7,9
+	.half	.L554-.L92
+	.byte	1,5,22,9
+	.half	.L34-.L554
 	.byte	1,5,2,9
-	.half	.L547-.L546
-	.byte	1,5,10,7,9
-	.half	.L548-.L547
-	.byte	3,1,1,5,3,9
-	.half	.L549-.L548
-	.byte	1,9
-	.half	.L2-.L549
-	.byte	3,2,1,5,1,9
-	.half	.L3-.L2
+	.half	.L35-.L34
+	.byte	1,5,1,9
+	.half	.L36-.L35
 	.byte	3,1,1,7,9
-	.half	.L216-.L3
+	.half	.L216-.L36
 	.byte	0,1,1
-.L543:
-	.sdecl	'.debug_ranges',debug,cluster('my_abs_float')
+.L551:
+	.sdecl	'.debug_ranges',debug,cluster('constrain_int16_MAX')
 	.sect	'.debug_ranges'
 .L215:
-	.word	-1,.L63,0,.L216-.L63,0,0
-	.sdecl	'.debug_info',debug,cluster('my_abs_short')
+	.word	-1,.L92,0,.L216-.L92,0,0
+	.sdecl	'.debug_info',debug,cluster('my_abs_float')
 	.sect	'.debug_info'
 .L217:
 	.word	279
@@ -22656,56 +22622,60 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L220,.L219
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'my_abs_short',0,1,13,7
-	.word	.L241
+	.byte	'my_abs_float',0,1,11,7
+	.word	.L237
 	.byte	1,1,1
-	.word	.L65,.L317,.L64
+	.word	.L68,.L325,.L67
 	.byte	4
-	.byte	'in',0,1,13,26
-	.word	.L241,.L318
+	.byte	'in',0,1,11,26
+	.word	.L237,.L326
 	.byte	5
-	.word	.L65,.L317
+	.word	.L68,.L325
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('my_abs_short')
+	.sdecl	'.debug_abbrev',debug,cluster('my_abs_float')
 	.sect	'.debug_abbrev'
 .L218:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('my_abs_short')
+	.sdecl	'.debug_line',debug,cluster('my_abs_float')
 	.sect	'.debug_line'
 .L219:
-	.word	.L551-.L550
-.L550:
+	.word	.L556-.L555
+.L555:
 	.half	3
-	.word	.L553-.L552
-.L552:
+	.word	.L558-.L557
+.L557:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L553:
-	.byte	5,2,7,0,5,2
-	.word	.L65
-	.byte	3,14,1,5,10,7,9
-	.half	.L554-.L65
+.L558:
+	.byte	5,10,7,0,5,2
+	.word	.L68
+	.byte	3,12,1,5,8,9
+	.half	.L559-.L68
+	.byte	1,5,2,9
+	.half	.L560-.L559
+	.byte	1,5,10,7,9
+	.half	.L561-.L560
 	.byte	3,1,1,5,3,9
-	.half	.L555-.L554
+	.half	.L562-.L561
 	.byte	1,9
-	.half	.L5-.L555
+	.half	.L5-.L562
 	.byte	3,2,1,5,1,9
 	.half	.L6-.L5
 	.byte	3,1,1,7,9
 	.half	.L221-.L6
 	.byte	0,1,1
-.L551:
-	.sdecl	'.debug_ranges',debug,cluster('my_abs_short')
+.L556:
+	.sdecl	'.debug_ranges',debug,cluster('my_abs_float')
 	.sect	'.debug_ranges'
 .L220:
-	.word	-1,.L65,0,.L221-.L65,0,0
-	.sdecl	'.debug_info',debug,cluster('constrain_int32')
+	.word	-1,.L68,0,.L221-.L68,0,0
+	.sdecl	'.debug_info',debug,cluster('my_abs_short')
 	.sect	'.debug_info'
 .L222:
-	.word	320
+	.word	279
 	.half	3
 	.word	.L223
 	.byte	4,1
@@ -22715,725 +22685,863 @@ __wrap_90_cd_function_end:
 	.byte	12,1
 	.word	.L225,.L224
 	.byte	2
-	.word	.L108
+	.word	.L113
 	.byte	3
-	.byte	'constrain_int32',0,1,148,1,9
-	.word	.L246
+	.byte	'my_abs_short',0,1,19,7
+	.word	.L251
 	.byte	1,1,1
-	.word	.L91,.L319,.L90
+	.word	.L70,.L327,.L69
 	.byte	4
-	.byte	'amt',0,1,148,1,33
-	.word	.L246,.L320
-	.byte	4
-	.byte	'low',0,1,148,1,46
-	.word	.L246,.L321
-	.byte	4
-	.byte	'high',0,1,148,1,59
-	.word	.L246,.L322
+	.byte	'in',0,1,19,26
+	.word	.L251,.L328
 	.byte	5
-	.word	.L91,.L319
+	.word	.L70,.L327
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('constrain_int32')
+	.sdecl	'.debug_abbrev',debug,cluster('my_abs_short')
 	.sect	'.debug_abbrev'
 .L223:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('constrain_int32')
+	.sdecl	'.debug_line',debug,cluster('my_abs_short')
 	.sect	'.debug_line'
 .L224:
-	.word	.L557-.L556
-.L556:
+	.word	.L564-.L563
+.L563:
 	.half	3
-	.word	.L559-.L558
-.L558:
+	.word	.L566-.L565
+.L565:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/HANA_math.c',0,0,0,0,0
-.L559:
-	.byte	5,10,7,0,5,2
-	.word	.L91
-	.byte	3,149,1,1,5,27,7,9
-	.half	.L560-.L91
-	.byte	1,5,29,9
-	.half	.L37-.L560
-	.byte	1,5,48,7,9
-	.half	.L561-.L37
-	.byte	1,5,41,9
-	.half	.L39-.L561
-	.byte	1,5,21,9
-	.half	.L40-.L39
-	.byte	1,5,2,9
-	.half	.L38-.L40
-	.byte	1,5,1,9
-	.half	.L41-.L38
+.L566:
+	.byte	5,2,7,0,5,2
+	.word	.L70
+	.byte	3,20,1,5,10,7,9
+	.half	.L567-.L70
+	.byte	3,1,1,5,3,9
+	.half	.L568-.L567
+	.byte	1,9
+	.half	.L8-.L568
+	.byte	3,2,1,5,1,9
+	.half	.L9-.L8
 	.byte	3,1,1,7,9
-	.half	.L226-.L41
+	.half	.L226-.L9
 	.byte	0,1,1
-.L557:
-	.sdecl	'.debug_ranges',debug,cluster('constrain_int32')
+.L564:
+	.sdecl	'.debug_ranges',debug,cluster('my_abs_short')
 	.sect	'.debug_ranges'
 .L225:
-	.word	-1,.L91,0,.L226-.L91,0,0
+	.word	-1,.L70,0,.L226-.L70,0,0
+	.sdecl	'.debug_info',debug,cluster('my_abs')
+	.sect	'.debug_info'
+.L227:
+	.word	276
+	.half	3
+	.word	.L228
+	.byte	4,1
+	.byte	'../code/HANA_math.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\Program Files (x86)\\Infineon\\AURIX-v1.10.2-workspace\\Seekfree_TC377_Opensource_Library\\Debug\\',0
+	.byte	12,1
+	.word	.L230,.L229
+	.byte	2
+	.word	.L113
+	.byte	3
+	.byte	'my_abs',0,1,5,5
+	.word	.L256
+	.byte	1,1,1
+	.word	.L66,.L329,.L65
+	.byte	4
+	.byte	'value',0,1,5,16
+	.word	.L256,.L330
+	.byte	5
+	.word	.L66,.L329
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('my_abs')
+	.sect	'.debug_abbrev'
+.L228:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('my_abs')
+	.sect	'.debug_line'
+.L229:
+	.word	.L570-.L569
+.L569:
+	.half	3
+	.word	.L572-.L571
+.L571:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/HANA_math.c',0,0,0,0,0
+.L572:
+	.byte	5,1,7,0,5,2
+	.word	.L66
+	.byte	3,6,1,5,14,7,9
+	.half	.L573-.L66
+	.byte	1,5,13,9
+	.half	.L2-.L573
+	.byte	3,1,1,5,6,9
+	.half	.L574-.L2
+	.byte	1,5,1,9
+	.half	.L3-.L574
+	.byte	3,1,1,7,9
+	.half	.L231-.L3
+	.byte	0,1,1
+.L570:
+	.sdecl	'.debug_ranges',debug,cluster('my_abs')
+	.sect	'.debug_ranges'
+.L230:
+	.word	-1,.L66,0,.L231-.L66,0,0
+	.sdecl	'.debug_info',debug,cluster('constrain_int32')
+	.sect	'.debug_info'
+.L232:
+	.word	320
+	.half	3
+	.word	.L233
+	.byte	4,1
+	.byte	'../code/HANA_math.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\Program Files (x86)\\Infineon\\AURIX-v1.10.2-workspace\\Seekfree_TC377_Opensource_Library\\Debug\\',0
+	.byte	12,1
+	.word	.L235,.L234
+	.byte	2
+	.word	.L113
+	.byte	3
+	.byte	'constrain_int32',0,1,154,1,9
+	.word	.L256
+	.byte	1,1,1
+	.word	.L96,.L331,.L95
+	.byte	4
+	.byte	'amt',0,1,154,1,33
+	.word	.L256,.L332
+	.byte	4
+	.byte	'low',0,1,154,1,46
+	.word	.L256,.L333
+	.byte	4
+	.byte	'high',0,1,154,1,59
+	.word	.L256,.L334
+	.byte	5
+	.word	.L96,.L331
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('constrain_int32')
+	.sect	'.debug_abbrev'
+.L233:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('constrain_int32')
+	.sect	'.debug_line'
+.L234:
+	.word	.L576-.L575
+.L575:
+	.half	3
+	.word	.L578-.L577
+.L577:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/HANA_math.c',0,0,0,0,0
+.L578:
+	.byte	5,10,7,0,5,2
+	.word	.L96
+	.byte	3,155,1,1,5,27,7,9
+	.half	.L579-.L96
+	.byte	1,5,29,9
+	.half	.L40-.L579
+	.byte	1,5,48,7,9
+	.half	.L580-.L40
+	.byte	1,5,41,9
+	.half	.L42-.L580
+	.byte	1,5,21,9
+	.half	.L43-.L42
+	.byte	1,5,2,9
+	.half	.L41-.L43
+	.byte	1,5,1,9
+	.half	.L44-.L41
+	.byte	3,1,1,7,9
+	.half	.L236-.L44
+	.byte	0,1,1
+.L576:
+	.sdecl	'.debug_ranges',debug,cluster('constrain_int32')
+	.sect	'.debug_ranges'
+.L235:
+	.word	-1,.L96,0,.L236-.L96,0,0
 	.sdecl	'.debug_loc',debug,cluster('constrain_float')
 	.sect	'.debug_loc'
-.L229:
-	.word	-1,.L83,0,.L228-.L83
+.L239:
+	.word	-1,.L88,0,.L238-.L88
 	.half	1
 	.byte	84
 	.word	0,0
-.L82:
-	.word	-1,.L83,0,.L228-.L83
+.L87:
+	.word	-1,.L88,0,.L238-.L88
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L231:
-	.word	-1,.L83,0,.L228-.L83
+.L241:
+	.word	-1,.L88,0,.L238-.L88
 	.half	1
 	.byte	86
 	.word	0,0
-.L230:
-	.word	-1,.L83,0,.L228-.L83
+.L240:
+	.word	-1,.L88,0,.L238-.L88
 	.half	1
 	.byte	85
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('constrain_int16')
 	.sect	'.debug_loc'
-.L243:
-	.word	-1,.L85,0,.L242-.L85
+.L253:
+	.word	-1,.L90,0,.L252-.L90
 	.half	1
 	.byte	84
 	.word	0,0
-.L84:
-	.word	-1,.L85,0,.L242-.L85
+.L89:
+	.word	-1,.L90,0,.L252-.L90
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L245:
-	.word	-1,.L85,0,.L242-.L85
+.L255:
+	.word	-1,.L90,0,.L252-.L90
 	.half	1
 	.byte	86
 	.word	0,0
-.L244:
-	.word	-1,.L85,0,.L242-.L85
+.L254:
+	.word	-1,.L90,0,.L252-.L90
 	.half	1
 	.byte	85
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('constrain_int16_LOW')
 	.sect	'.debug_loc'
-.L310:
-	.word	-1,.L89,0,.L309-.L89
+.L320:
+	.word	-1,.L94,0,.L319-.L94
 	.half	1
 	.byte	84
 	.word	0,0
-.L88:
-	.word	-1,.L89,0,.L309-.L89
+.L93:
+	.word	-1,.L94,0,.L319-.L94
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L311:
-	.word	-1,.L89,0,.L309-.L89
+.L321:
+	.word	-1,.L94,0,.L319-.L94
 	.half	1
 	.byte	85
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('constrain_int16_MAX')
 	.sect	'.debug_loc'
-.L313:
-	.word	-1,.L87,0,.L312-.L87
+.L323:
+	.word	-1,.L92,0,.L322-.L92
 	.half	1
 	.byte	84
 	.word	0,0
-.L86:
-	.word	-1,.L87,0,.L312-.L87
+.L91:
+	.word	-1,.L92,0,.L322-.L92
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L314:
-	.word	-1,.L87,0,.L312-.L87
+.L324:
+	.word	-1,.L92,0,.L322-.L92
 	.half	1
 	.byte	85
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('constrain_int32')
 	.sect	'.debug_loc'
-.L320:
-	.word	-1,.L91,0,.L319-.L91
+.L332:
+	.word	-1,.L96,0,.L331-.L96
 	.half	1
 	.byte	84
 	.word	0,0
-.L90:
-	.word	-1,.L91,0,.L319-.L91
+.L95:
+	.word	-1,.L96,0,.L331-.L96
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L322:
-	.word	-1,.L91,0,.L319-.L91
+.L334:
+	.word	-1,.L96,0,.L331-.L96
 	.half	1
 	.byte	86
 	.word	0,0
-.L321:
-	.word	-1,.L91,0,.L319-.L91
+.L333:
+	.word	-1,.L96,0,.L331-.L96
 	.half	1
 	.byte	85
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('degrees')
 	.sect	'.debug_loc'
-.L94:
-	.word	-1,.L95,0,.L257-.L95
+.L99:
+	.word	-1,.L100,0,.L267-.L100
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L258:
-	.word	-1,.L95,0,.L257-.L95
+.L268:
+	.word	-1,.L100,0,.L267-.L100
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('fast_atan')
 	.sect	'.debug_loc'
-.L68:
-	.word	-1,.L69,0,.L238-.L69
+.L73:
+	.word	-1,.L74,0,.L248-.L74
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L239:
-	.word	-1,.L69,0,.L238-.L69
+.L249:
+	.word	-1,.L74,0,.L248-.L74
 	.half	1
 	.byte	84
 	.word	0,0
-.L240:
-	.word	-1,.L69,.L329-.L69,.L330-.L69
+.L250:
+	.word	-1,.L74,.L342-.L74,.L343-.L74
 	.half	1
 	.byte	95
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('getLeastSquareMethodERROR')
 	.sect	'.debug_loc'
-.L296:
-	.word	-1,.L75,0,.L291-.L75
+.L306:
+	.word	-1,.L80,0,.L301-.L80
 	.half	1
 	.byte	86
 	.word	0,0
-.L299:
-	.word	-1,.L75,.L354-.L75,.L355-.L75
+.L309:
+	.word	-1,.L80,.L367-.L80,.L368-.L80
 	.half	1
 	.byte	82
 	.word	0,0
-.L297:
-	.word	-1,.L75,.L358-.L75,.L15-.L75
+.L307:
+	.word	-1,.L80,.L371-.L80,.L18-.L80
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L74:
-	.word	-1,.L75,0,.L291-.L75
+.L79:
+	.word	-1,.L80,0,.L301-.L80
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L298:
-	.word	-1,.L75,.L356-.L75,.L357-.L75
+.L308:
+	.word	-1,.L80,.L369-.L80,.L370-.L80
 	.half	1
 	.byte	83
-	.word	.L15-.L75,.L291-.L75
+	.word	.L18-.L80,.L301-.L80
 	.half	1
 	.byte	83
 	.word	0,0
-.L295:
-	.word	-1,.L75,0,.L291-.L75
+.L305:
+	.word	-1,.L80,0,.L301-.L80
 	.half	1
 	.byte	85
 	.word	0,0
-.L294:
-	.word	-1,.L75,0,.L291-.L75
+.L304:
+	.word	-1,.L80,0,.L301-.L80
 	.half	1
 	.byte	84
 	.word	0,0
-.L292:
-	.word	-1,.L75,0,.L291-.L75
+.L302:
+	.word	-1,.L80,0,.L301-.L80
 	.half	1
 	.byte	100
 	.word	0,0
-.L293:
-	.word	-1,.L75,0,.L291-.L75
+.L303:
+	.word	-1,.L80,0,.L301-.L80
 	.half	1
 	.byte	101
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('getLineK')
 	.sect	'.debug_loc'
-.L80:
-	.word	-1,.L81,0,.L286-.L81
+.L85:
+	.word	-1,.L86,0,.L296-.L86
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L287:
-	.word	-1,.L81,0,.L286-.L81
+.L297:
+	.word	-1,.L86,0,.L296-.L86
 	.half	1
 	.byte	84
 	.word	0,0
-.L289:
-	.word	-1,.L81,0,.L286-.L81
+.L299:
+	.word	-1,.L86,0,.L296-.L86
 	.half	1
 	.byte	86
 	.word	0,0
-.L288:
-	.word	-1,.L81,0,.L286-.L81
+.L298:
+	.word	-1,.L86,0,.L296-.L86
 	.half	1
 	.byte	85
 	.word	0,0
-.L290:
-	.word	-1,.L81,0,.L286-.L81
+.L300:
+	.word	-1,.L86,0,.L296-.L86
 	.half	1
 	.byte	87
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('getLineValue')
 	.sect	'.debug_loc'
-.L303:
-	.word	-1,.L77,0,.L300-.L77
+.L313:
+	.word	-1,.L82,0,.L310-.L82
 	.half	1
 	.byte	86
 	.word	0,0
-.L76:
-	.word	-1,.L77,0,.L300-.L77
+.L81:
+	.word	-1,.L82,0,.L310-.L82
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L302:
-	.word	-1,.L77,0,.L300-.L77
+.L312:
+	.word	-1,.L82,0,.L310-.L82
 	.half	1
 	.byte	85
 	.word	0,0
-.L301:
-	.word	-1,.L77,0,.L300-.L77
+.L311:
+	.word	-1,.L82,0,.L310-.L82
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('getLineValueX')
 	.sect	'.debug_loc'
-.L78:
-	.word	-1,.L79,0,.L304-.L79
+.L83:
+	.word	-1,.L84,0,.L314-.L84
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L308:
-	.word	-1,.L79,0,.L304-.L79
+.L318:
+	.word	-1,.L84,0,.L314-.L84
 	.half	1
 	.byte	87
 	.word	0,0
-.L305:
-	.word	-1,.L79,0,.L359-.L79
+.L315:
+	.word	-1,.L84,0,.L372-.L84
 	.half	1
 	.byte	84
 	.word	0,0
-.L306:
-	.word	-1,.L79,0,.L304-.L79
+.L316:
+	.word	-1,.L84,0,.L314-.L84
 	.half	1
 	.byte	85
 	.word	0,0
-.L307:
-	.word	-1,.L79,0,.L304-.L79
+.L317:
+	.word	-1,.L84,0,.L314-.L84
 	.half	1
 	.byte	86
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('invSqrt')
 	.sect	'.debug_loc'
-.L234:
-	.word	-1,.L67,.L326-.L67,.L327-.L67
+.L244:
+	.word	-1,.L72,.L339-.L72,.L340-.L72
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L237:
-	.word	-1,.L67,.L325-.L67,.L232-.L67
+.L247:
+	.word	-1,.L72,.L338-.L72,.L242-.L72
 	.half	1
 	.byte	95
 	.word	0,0
-.L66:
-	.word	-1,.L67,0,.L232-.L67
+.L71:
+	.word	-1,.L72,0,.L242-.L72
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L233:
-	.word	-1,.L67,0,.L325-.L67
+.L243:
+	.word	-1,.L72,0,.L338-.L72
 	.half	1
 	.byte	84
 	.word	0,0
-.L235:
-	.word	-1,.L67,0,.L325-.L67
+.L245:
+	.word	-1,.L72,0,.L338-.L72
 	.half	1
 	.byte	84
-	.word	.L328-.L67,.L232-.L67
+	.word	.L341-.L72,.L242-.L72
 	.half	1
 	.byte	82
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('leastSquareMethod')
 	.sect	'.debug_loc'
-.L284:
-	.word	-1,.L73,.L352-.L73,.L271-.L73
+.L294:
+	.word	-1,.L78,.L365-.L78,.L281-.L78
 	.half	1
 	.byte	87
 	.word	0,0
-.L285:
-	.word	-1,.L73,.L353-.L73,.L271-.L73
+.L295:
+	.word	-1,.L78,.L366-.L78,.L281-.L78
 	.half	1
 	.byte	88
 	.word	0,0
-.L278:
-	.word	-1,.L73,0,.L271-.L73
+.L288:
+	.word	-1,.L78,0,.L281-.L78
 	.half	1
 	.byte	103
 	.word	0,0
-.L279:
-	.word	-1,.L73,.L345-.L73,.L346-.L73
+.L289:
+	.word	-1,.L78,.L358-.L78,.L359-.L78
 	.half	1
 	.byte	83
-	.word	.L13-.L73,.L351-.L73
+	.word	.L16-.L78,.L364-.L78
 	.half	1
 	.byte	83
 	.word	0,0
-.L277:
-	.word	-1,.L73,0,.L271-.L73
+.L287:
+	.word	-1,.L78,0,.L281-.L78
 	.half	1
 	.byte	102
 	.word	0,0
-.L72:
-	.word	-1,.L73,0,.L271-.L73
+.L77:
+	.word	-1,.L78,0,.L281-.L78
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L275:
-	.word	-1,.L73,0,.L336-.L73
+.L285:
+	.word	-1,.L78,0,.L349-.L78
 	.half	1
 	.byte	84
-	.word	.L337-.L73,.L271-.L73
+	.word	.L350-.L78,.L281-.L78
 	.half	1
 	.byte	85
 	.word	0,0
-.L281:
-	.word	-1,.L73,.L341-.L73,.L342-.L73
+.L291:
+	.word	-1,.L78,.L354-.L78,.L355-.L78
 	.half	1
 	.byte	81
-	.word	.L347-.L73,.L348-.L73
+	.word	.L360-.L78,.L361-.L78
 	.half	1
 	.byte	81
 	.word	0,0
-.L283:
-	.word	-1,.L73,.L336-.L73,.L338-.L73
+.L293:
+	.word	-1,.L78,.L349-.L78,.L351-.L78
 	.half	1
 	.byte	84
 	.word	0,0
-.L280:
-	.word	-1,.L73,.L343-.L73,.L344-.L73
+.L290:
+	.word	-1,.L78,.L356-.L78,.L357-.L78
 	.half	1
 	.byte	86
 	.word	0,0
-.L282:
-	.word	-1,.L73,.L339-.L73,.L340-.L73
+.L292:
+	.word	-1,.L78,.L352-.L78,.L353-.L78
 	.half	1
 	.byte	82
-	.word	.L349-.L73,.L350-.L73
+	.word	.L362-.L78,.L363-.L78
 	.half	1
 	.byte	82
 	.word	0,0
-.L273:
-	.word	-1,.L73,0,.L271-.L73
+.L283:
+	.word	-1,.L78,0,.L281-.L78
 	.half	1
 	.byte	100
 	.word	0,0
-.L274:
-	.word	-1,.L73,0,.L271-.L73
+.L284:
+	.word	-1,.L78,0,.L281-.L78
 	.half	1
 	.byte	101
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('lenOfNum')
 	.sect	'.debug_loc'
-.L270:
-	.word	-1,.L71,.L331-.L71,.L332-.L71
+.L280:
+	.word	-1,.L76,.L344-.L76,.L345-.L76
 	.half	1
 	.byte	82
-	.word	.L333-.L71,.L267-.L71
+	.word	.L346-.L76,.L277-.L76
 	.half	1
 	.byte	82
 	.word	0,0
-.L70:
-	.word	-1,.L71,0,.L267-.L71
+.L75:
+	.word	-1,.L76,0,.L277-.L76
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L269:
-	.word	-1,.L71,0,.L11-.L71
+.L279:
+	.word	-1,.L76,0,.L14-.L76
 	.half	1
 	.byte	84
-	.word	.L334-.L71,.L335-.L71
+	.word	.L347-.L76,.L348-.L76
 	.half	1
 	.byte	84
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('my_abs_float')
+	.sdecl	'.debug_loc',debug,cluster('my_abs')
 	.sect	'.debug_loc'
-.L316:
-	.word	-1,.L63,0,.L315-.L63
+.L65:
+	.word	-1,.L66,0,.L329-.L66
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L330:
+	.word	-1,.L66,0,.L329-.L66
 	.half	1
 	.byte	84
-	.word	.L323-.L63,.L3-.L63
+	.word	.L335-.L66,.L2-.L66
 	.half	1
 	.byte	82
 	.word	0,0
-.L62:
-	.word	-1,.L63,0,.L315-.L63
+	.sdecl	'.debug_loc',debug,cluster('my_abs_float')
+	.sect	'.debug_loc'
+.L326:
+	.word	-1,.L68,0,.L325-.L68
+	.half	1
+	.byte	84
+	.word	.L336-.L68,.L6-.L68
+	.half	1
+	.byte	82
+	.word	0,0
+.L67:
+	.word	-1,.L68,0,.L325-.L68
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('my_abs_short')
 	.sect	'.debug_loc'
-.L318:
-	.word	-1,.L65,0,.L317-.L65
+.L328:
+	.word	-1,.L70,0,.L327-.L70
 	.half	1
 	.byte	84
-	.word	.L324-.L65,.L6-.L65
+	.word	.L337-.L70,.L9-.L70
 	.half	1
 	.byte	82
 	.word	0,0
-.L64:
-	.word	-1,.L65,0,.L317-.L65
+.L69:
+	.word	-1,.L70,0,.L327-.L70
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('pythagorous2')
 	.sect	'.debug_loc'
-.L260:
-	.word	-1,.L99,0,.L360-.L99
+.L270:
+	.word	-1,.L104,0,.L373-.L104
 	.half	1
 	.byte	84
 	.word	0,0
-.L261:
-	.word	-1,.L99,0,.L360-.L99
+.L271:
+	.word	-1,.L104,0,.L373-.L104
 	.half	1
 	.byte	85
-	.word	.L361-.L99,.L259-.L99
+	.word	.L374-.L104,.L269-.L104
 	.half	1
 	.byte	95
-	.word	.L362-.L99,.L363-.L99
+	.word	.L375-.L104,.L376-.L104
 	.half	1
 	.byte	84
 	.word	0,0
-.L98:
-	.word	-1,.L99,0,.L259-.L99
+.L103:
+	.word	-1,.L104,0,.L269-.L104
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('pythagorous3')
 	.sect	'.debug_loc'
-.L263:
-	.word	-1,.L101,0,.L364-.L101
+.L273:
+	.word	-1,.L106,0,.L377-.L106
 	.half	1
 	.byte	84
 	.word	0,0
-.L264:
-	.word	-1,.L101,0,.L364-.L101
+.L274:
+	.word	-1,.L106,0,.L377-.L106
 	.half	1
 	.byte	85
-	.word	.L365-.L101,.L366-.L101
+	.word	.L378-.L106,.L379-.L106
 	.half	1
 	.byte	95
-	.word	.L368-.L101,.L369-.L101
+	.word	.L381-.L106,.L382-.L106
 	.half	1
 	.byte	84
 	.word	0,0
-.L265:
-	.word	-1,.L101,0,.L364-.L101
+.L275:
+	.word	-1,.L106,0,.L377-.L106
 	.half	1
 	.byte	86
-	.word	.L367-.L101,.L262-.L101
+	.word	.L380-.L106,.L272-.L106
 	.half	1
 	.byte	88
-	.word	.L370-.L101,.L371-.L101
+	.word	.L383-.L106,.L384-.L106
 	.half	1
 	.byte	84
 	.word	0,0
-.L100:
-	.word	-1,.L101,0,.L262-.L101
+.L105:
+	.word	-1,.L106,0,.L272-.L106
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('radians')
 	.sect	'.debug_loc'
-.L256:
-	.word	-1,.L93,0,.L255-.L93
+.L266:
+	.word	-1,.L98,0,.L265-.L98
 	.half	1
 	.byte	84
 	.word	0,0
-.L92:
-	.word	-1,.L93,0,.L255-.L93
+.L97:
+	.word	-1,.L98,0,.L265-.L98
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('sq')
 	.sect	'.debug_loc'
-.L96:
-	.word	-1,.L97,0,.L253-.L97
+.L101:
+	.word	-1,.L102,0,.L263-.L102
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L254:
-	.word	-1,.L97,0,.L253-.L97
+.L264:
+	.word	-1,.L102,0,.L263-.L102
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('wrap_180_cd')
 	.sect	'.debug_loc'
-.L250:
-	.word	-1,.L105,0,.L249-.L105
+.L260:
+	.word	-1,.L110,0,.L259-.L110
 	.half	1
 	.byte	84
-	.word	.L373-.L105,.L249-.L105
+	.word	.L386-.L110,.L259-.L110
 	.half	1
 	.byte	82
 	.word	0,0
-.L104:
-	.word	-1,.L105,0,.L249-.L105
+.L109:
+	.word	-1,.L110,0,.L259-.L110
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('wrap_360_cd')
 	.sect	'.debug_loc'
-.L248:
-	.word	-1,.L103,0,.L247-.L103
+.L258:
+	.word	-1,.L108,0,.L257-.L108
 	.half	1
 	.byte	84
-	.word	.L372-.L103,.L247-.L103
+	.word	.L385-.L108,.L257-.L108
 	.half	1
 	.byte	82
 	.word	0,0
-.L102:
-	.word	-1,.L103,0,.L247-.L103
+.L107:
+	.word	-1,.L108,0,.L257-.L108
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('wrap_90_cd')
 	.sect	'.debug_loc'
-.L252:
-	.word	-1,.L107,0,.L251-.L107
+.L262:
+	.word	-1,.L112,0,.L261-.L112
 	.half	1
 	.byte	84
-	.word	.L374-.L107,.L251-.L107
+	.word	.L387-.L112,.L261-.L112
 	.half	1
 	.byte	82
 	.word	0,0
-.L106:
-	.word	-1,.L107,0,.L251-.L107
+.L111:
+	.word	-1,.L112,0,.L261-.L112
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L562:
+.L581:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
 	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('my_abs')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L581,.L66,.L329-.L66
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('my_abs_float')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L63,.L315-.L63
+	.word	.L581,.L68,.L325-.L68
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('my_abs_short')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L65,.L317-.L65
+	.word	.L581,.L70,.L327-.L70
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('invSqrt')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L67,.L232-.L67
+	.word	.L581,.L72,.L242-.L72
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('fast_atan')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L69,.L238-.L69
+	.word	.L581,.L74,.L248-.L74
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('lenOfNum')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L71,.L267-.L71
+	.word	.L581,.L76,.L277-.L76
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('leastSquareMethod')
 	.sect	'.debug_frame'
 	.word	16
-	.word	.L562,.L73,.L271-.L73
+	.word	.L581,.L78,.L281-.L78
 	.byte	8,18,8,19
 	.sdecl	'.debug_frame',debug,cluster('getLeastSquareMethodERROR')
 	.sect	'.debug_frame'
 	.word	20
-	.word	.L562,.L75,.L291-.L75
+	.word	.L581,.L80,.L301-.L80
 	.byte	8,18,8,19,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('getLineValue')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L77,.L300-.L77
+	.word	.L581,.L82,.L310-.L82
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('getLineValueX')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L79,.L304-.L79
+	.word	.L581,.L84,.L314-.L84
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('getLineK')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L81,.L286-.L81
+	.word	.L581,.L86,.L296-.L86
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('constrain_float')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L83,.L228-.L83
+	.word	.L581,.L88,.L238-.L88
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('constrain_int16')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L85,.L242-.L85
+	.word	.L581,.L90,.L252-.L90
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('constrain_int16_MAX')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L87,.L312-.L87
+	.word	.L581,.L92,.L322-.L92
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('constrain_int16_LOW')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L89,.L309-.L89
+	.word	.L581,.L94,.L319-.L94
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('constrain_int32')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L91,.L319-.L91
+	.word	.L581,.L96,.L331-.L96
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('radians')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L93,.L255-.L93
+	.word	.L581,.L98,.L265-.L98
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('degrees')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L95,.L257-.L95
+	.word	.L581,.L100,.L267-.L100
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('sq')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L97,.L253-.L97
+	.word	.L581,.L102,.L263-.L102
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('pythagorous2')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L562,.L99,.L259-.L99
+	.word	.L581,.L104,.L269-.L104
 	.sdecl	'.debug_frame',debug,cluster('pythagorous3')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L562,.L101,.L262-.L101
+	.word	.L581,.L106,.L272-.L106
 	.sdecl	'.debug_frame',debug,cluster('wrap_360_cd')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L103,.L247-.L103
+	.word	.L581,.L108,.L257-.L108
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('wrap_180_cd')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L105,.L249-.L105
+	.word	.L581,.L110,.L259-.L110
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('wrap_90_cd')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L562,.L107,.L251-.L107
+	.word	.L581,.L112,.L261-.L112
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	; Module end

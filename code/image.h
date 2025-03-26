@@ -80,6 +80,14 @@ int GetOSTU(uint8 tmImage[ImageH][ImageW]);
 int GetOSTU_2(uint8 tmImage[ImageH][ImageW]);
 void trackDFS(void);
 void Get_White_Num(void);
+uint8 get_start_point(uint8 start_row);
+void search_l_r(uint16 break_flag, uint8(*image)[ImageW], uint16 *l_stastic, uint16 *r_stastic,
+        uint8 l_start_x, uint8 l_start_y, uint8 r_start_x, uint8 r_start_y, uint8*hightest);
+void get_left(uint16 total_L);
+void get_right(uint16 total_R);
+void image_filter(uint8(*bin_image)[ImageW]);
+void image_draw_rectan(uint8(*image)[ImageW]);
+
 /****************************************ÂË²¨******************************************************/
 void Pixle_Filter(void);
 void Left_Right_Confusion_Filter(void);

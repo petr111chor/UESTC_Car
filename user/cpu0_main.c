@@ -138,7 +138,7 @@ int core0_main(void)
 
                     //mt9v03x_test();
                     Get_White_Num();
-                    trackDFS();
+                    //trackDFS();
                     Left_Right_Confusion_Filter();
 
                     TurnPointL_Find(&LTurnPoint_Row, &LTurnPoint, &Kl_up, &Bl_up, &Kl_down, &Bl_down, &Error_Cnt_L);
