@@ -2,6 +2,12 @@
 #include "math.h"
 
 
+int my_abs(int value)
+{
+if(value>=0) return value;
+else return -value;
+}
+
 float my_abs_float(float in)
 {
 	if(in < 0.0f)
@@ -18,7 +24,7 @@ short my_abs_short(short in)
 		return in;
 }
 
-//快速计算 1/Sqrt(x) 	
+//快速计算 1/Sqrt(x)
 float invSqrt(float x) 
 {
 	float halfx = 0.5f * x;
