@@ -1,0 +1,13 @@
+-- 2025.3.1 --
+1. image.c中若出现“imageH”等变量未定义的报错，可在文件头部加入 #include "image.h"
+2. 若出现“Type 'uint8_t' could not be resolved”等类似“uint8_t\uint_16_t\uint32_t\uint64_t”数据类型未定义的报错，可在文件头部加入 #include "stdint.h"
+3. 若出现“Type 'int8' could not be resolved”的报错（int8也可以是uint8），可将int8改为int8_t
+4. 若出现“Type 'u8' could not be resolved”的报错，可在文件中加入 typedef unsigned char u8;
+5. 若出现“Type 'u16' could not be resolved”的报错，可在文件中加入 typedef unsigned short u16;（u32对应unsigned int）
+6. 若出现“Type 'pid_param_t' could not be resolved”的报错，可在文件头部加入 #include "pid.h"
+7. 若出现“Symbol 'Servo_Center_Mid' could not be resolved”的报错，可在文件头部加入 #include "motorServo.h"
+8. 若出现“Field 'Garage_Out' could not be resolved”的报错，可在文件头部加入 #include "variables.h"
+9. 若出现“Field 'yaw' could not be resolved”的报错，可在文件头部加入 #include "imu.h"
+10. 若出现“Symbol 'CHARGE_OFF' could not be resolved”的报错（CHARGE_ON与LED1同理），可在文件头部加入 #include "all_init.h"
+11. image.c文件中出现“Field 'yaw' could not be resolved”，即欧拉角的结构成员变量无法被编译器识别，需在image.c与imu.c文件头部加入 #include "imu.h"
+12. image.c文件中出现“Symbol 'CHARGE_OFF' could not be resolved”等相关问题，先在image.c文件头部加入 #include "all_init.h"，再将all_init.h中的LED1、LED2、CHARGE_PIN后面的引脚改为对应引脚。
