@@ -360,3 +360,5 @@ imu.o :	"C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\motor.h"
 "C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\motor.h" :
 imu.o :	"C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\wifi.h"
 "C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\wifi.h" :
+imu.o :	"C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\send.h"
+"C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\send.h" :

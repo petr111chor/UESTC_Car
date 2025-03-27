@@ -42,6 +42,7 @@
 // 本例程是开源库空工程 可用作移植或者测试各类内外设
 
 // **************************** 代码区域 ****************************
+char send_str[32] = {0};
 void core1_main(void)
 {
     disable_Watchdog();                     // 关闭看门狗
@@ -50,7 +51,7 @@ void core1_main(void)
 
 
 
-
+    seekfree_assistant_interface_init(SEEKFREE_ASSISTANT_WIRELESS_UART);
 
     // 此处编写用户代码 例如外设初始化代码等
     cpu_wait_event_ready();                 // 等待所有核心初始化完毕
@@ -59,7 +60,9 @@ void core1_main(void)
         // 此处编写需要循环执行的代码
         if(show_img_flag)
         {
+            // 原始图像
             ips200_show_gray_image(25+ImageW, 50, (const uint8 *)C_Image, ImageW, ImageH, ImageW, ImageH, 0);
+            // 二值化图像
             for (uint8 i = 0;i<ImageH;i++){
                 for (uint8 j = 0;j<ImageW;j++){
                     if(Pixle[i][j]==true)
@@ -83,10 +86,28 @@ void core1_main(void)
             ips200_show_string(10,260,"l_speed"); ips200_show_int(110,260,motor_l.encoder_speed,3);
             ips200_show_string(10,280,"r_speed"); ips200_show_int(110,280,motor_r.encoder_speed,3);
             ips200_show_string(10,300,"difference"); ips200_show_int(110,300,motor_l.encoder_speed-motor_r.encoder_speed,3);
+/*            //无线串口调参
+                       wireless_uart_init();
+                       seekfree_assistant_data_analysis();
+                       for(uint8_t i = 0; i < SEEKFREE_ASSISTANT_SET_PARAMETR_COUNT; i++)
+                               {
+                                   // 更新标志位
+                                   if(seekfree_assistant_parameter_update_flag[i])
+                                   {
+                                       seekfree_assistant_parameter_update_flag[i] = 0;
 
+                                       // 通过无线转串口发送信息
+                                       sprintf(send_str,"receive data channel : %d ", i);
+                                       wireless_uart_send_buffer((uint8 *)send_str,strlen(send_str));
+                                       sprintf(send_str,"data : %.2f \r\n", seekfree_assistant_parameter[i]);
+                                       wireless_uart_send_buffer((uint8 *)send_str,strlen(send_str));
+                                   }
+                               }
+                       //参数赋值：
+                               //para = seekfree_assistant_parameter[0];
 
             //system_delay(1000);
-            printf("%d,%d,%d,%d\n",motor_l.encoder_speed,motor_r.encoder_speed,motor_l.target_speed,motor_r.target_speed);
+*/            printf("%d,%d,%d,%d\n",motor_l.encoder_speed,motor_r.encoder_speed,motor_l.target_speed,motor_r.target_speed);
 
         }
 

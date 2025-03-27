@@ -28,6 +28,7 @@ int biaos = 0;
 uint8 C_Image[ImageH][ImageW];
 uint16 threshold = 230;
 uint16 light = 500;
+uint8 para = 50;
 
 uint16 data_stastics_l = 0;//统计左边找到点的个数
 uint16 data_stastics_r = 0;//统计右边找到点的个数
@@ -71,7 +72,7 @@ void ImageProcess(void)
         }
     }
     mt9v03x_finish_flag = 0;//清零标志位，图像重新采集完后重新置为1
-    gamma_correction(C_Image, 4.0);
+    gamma_correction(C_Image, 0.25);
     /*************大津法得到二值化的阈值**********************/
     if(!Flag.break_Road)
     {
@@ -79,16 +80,22 @@ void ImageProcess(void)
         {
             bin_thr = threshold;
         }else if(Flag.Ostu_2){
-            bin_thr = GetOSTU_2(C_Image)+15 > 255 ? 254:GetOSTU_2(C_Image) + 20;
+            bin_thr = GetOSTU_2(C_Image)+50 > 255 ? 254:GetOSTU_2(C_Image) + 50;
             //bin_thr = GetOSTU_2(C_Image);
         }else{
-            bin_thr = GetOSTU(C_Image)+15 > 255 ? 254:GetOSTU(C_Image) + 20;
+            bin_thr = GetOSTU(C_Image)+50 > 255 ? 254:GetOSTU(C_Image) + 50;
             //bin_thr = GetOSTU(C_Image);
         }
 
     }
 
 
+    // 对图像上部进行二次矫正
+    for (i = 0;i<10;i++){
+        for (j = 0; j<ImageW;j++){
+            C_Image[i][j]= C_Image[i][j] - para < 0 ? 0 : C_Image[i][j] - para;
+        }
+    }
     /******************图像二值化*******************************/
     for (i = 0; i < ImageH; i++)
     {

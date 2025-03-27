@@ -360,3 +360,5 @@ module_test.o :	"C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\motor.h"
 "C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\motor.h" :
 module_test.o :	"C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\wifi.h"
 "C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\wifi.h" :
+module_test.o :	"C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\send.h"
+"C:\\Users\\yolo\\Desktop\\UESTC_Car-main\\code\send.h" :

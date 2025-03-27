@@ -41,6 +41,7 @@ extern bool Flag_SpeedDown;
 #define SingleLineLeanAveERR_MAX 23                      //一边丢线，未丢线一边最大平均倾斜误差
 #define SingleLineLeanK          25                      //一边丢线，未丢线一边补偿系数(理论距离实际中线的距离)
 
+extern uint8 para;                      // 图像上部亮度矫正参数
 extern uint8 C_Image[ImageH][ImageW];
 extern uint16 threshold;
 extern uint16 light;

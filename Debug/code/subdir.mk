@@ -18,6 +18,7 @@ C_SRCS += \
 ../code/pid.c \
 ../code/pidpid.c \
 ../code/run_car.c \
+../code/send.c \
 ../code/speedprocess.c \
 ../code/ui.c \
 ../code/variables.c \
@@ -38,6 +39,7 @@ code/param_save_read.src \
 code/pid.src \
 code/pidpid.src \
 code/run_car.src \
+code/send.src \
 code/speedprocess.src \
 code/ui.src \
 code/variables.src \
@@ -58,6 +60,7 @@ code/param_save_read.d \
 code/pid.d \
 code/pidpid.d \
 code/run_car.d \
+code/send.d \
 code/speedprocess.d \
 code/ui.d \
 code/variables.d \
@@ -78,6 +81,7 @@ code/param_save_read.o \
 code/pid.o \
 code/pidpid.o \
 code/run_car.o \
+code/send.o \
 code/speedprocess.o \
 code/ui.o \
 code/variables.o \
@@ -141,6 +145,10 @@ code/run_car.src: ../code/run_car.c code/subdir.mk
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/yolo/Desktop/UESTC_Car-main/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 code/run_car.o: code/run_car.src code/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+code/send.src: ../code/send.c code/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/yolo/Desktop/UESTC_Car-main/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+code/send.o: code/send.src code/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 code/speedprocess.src: ../code/speedprocess.c code/subdir.mk
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/yolo/Desktop/UESTC_Car-main/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 code/speedprocess.o: code/speedprocess.src code/subdir.mk
@@ -161,7 +169,7 @@ code/wifi.o: code/wifi.src code/subdir.mk
 clean: clean-code
 
 clean-code:
-	-$(RM) code/HANA_math.d code/HANA_math.o code/HANA_math.src code/adc.d code/adc.o code/adc.src code/all_init.d code/all_init.o code/all_init.src code/angleprocess.d code/angleprocess.o code/angleprocess.src code/beep.d code/beep.o code/beep.src code/image.d code/image.o code/image.src code/imu.d code/imu.o code/imu.src code/module_test.d code/module_test.o code/module_test.src code/motor.d code/motor.o code/motor.src code/motorServo.d code/motorServo.o code/motorServo.src code/param_save_read.d code/param_save_read.o code/param_save_read.src code/pid.d code/pid.o code/pid.src code/pidpid.d code/pidpid.o code/pidpid.src code/run_car.d code/run_car.o code/run_car.src code/speedprocess.d code/speedprocess.o code/speedprocess.src code/ui.d code/ui.o code/ui.src code/variables.d code/variables.o code/variables.src code/wifi.d code/wifi.o code/wifi.src
+	-$(RM) code/HANA_math.d code/HANA_math.o code/HANA_math.src code/adc.d code/adc.o code/adc.src code/all_init.d code/all_init.o code/all_init.src code/angleprocess.d code/angleprocess.o code/angleprocess.src code/beep.d code/beep.o code/beep.src code/image.d code/image.o code/image.src code/imu.d code/imu.o code/imu.src code/module_test.d code/module_test.o code/module_test.src code/motor.d code/motor.o code/motor.src code/motorServo.d code/motorServo.o code/motorServo.src code/param_save_read.d code/param_save_read.o code/param_save_read.src code/pid.d code/pid.o code/pid.src code/pidpid.d code/pidpid.o code/pidpid.src code/run_car.d code/run_car.o code/run_car.src code/send.d code/send.o code/send.src code/speedprocess.d code/speedprocess.o code/speedprocess.src code/ui.d code/ui.o code/ui.src code/variables.d code/variables.o code/variables.src code/wifi.d code/wifi.o code/wifi.src
 
 .PHONY: clean-code
 
